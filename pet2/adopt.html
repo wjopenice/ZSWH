@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>宠爱之家-领养问卷</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="./public/css/mpettap/sm.min.css">
+    <link rel="stylesheet" href="./public/css/mpettap/reset.css">
+    <link rel="stylesheet" href="./public/css/mpettap/adopt.css">
+</head>
+<body>
+<div class="page">
+    <div class="content">
+        <!-- detail -->
+        <div class="detail">
+            <h1 class="newsdtit">我们希望通过这份问卷，初步了解领养人的各方面情况，以助于送养人或机构判断您是否是一个合适的领养人。希望您抽出宝贵时间，完成问卷，谢谢！</h1>
+            <form class="content-box" method="post" action="/wap/adoption">
+                <!--<img src="./public/images/mpettap/art1/g1.jpg" alt="">-->
+                <div class="part">
+                    <p class="ask">1、您的名字？</p>
+                    <p class="input_style"><input type="text" name="username" required></p>
+                </div>
+                <div class="part">
+                    <p class="ask">2、您的性别？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_sex" value="男性" checked><span>&nbsp;男性</span></label>
+                        <label><input type="radio" name="user_sex" value="女性"><span>&nbsp;女性</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">3、您的年龄段？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_age" value="00~20" checked><span>&nbsp;0~10</span></label>
+                        <label><input type="radio" name="user_age" value="20~40"><span>&nbsp;10~20</span></label>
+                        <label><input type="radio" name="user_age" value="40~60"><span>&nbsp;20~30</span></label>
+                        <label><input type="radio" name="user_age" value="60以上"><span>&nbsp;60以上</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">4、您的住宅面积？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_residential_area" value="10平米以下" checked><span>&nbsp;10平米以下</span></label>
+                        <label><input type="radio" name="user_residential_area" value="10~20平米"><span>&nbsp;10~20平米</span></label>
+                        <label><input type="radio" name="user_residential_area" value="20~50平米"><span>&nbsp;20~50平米</span></label>
+                        <label><input type="radio" name="user_residential_area" value="50平米以上"><span>&nbsp;50平米以上</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">5、您的月薪收入情况？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_income" value="4000以下" checked><span>&nbsp;4000以下</span></label>
+                        <label><input type="radio" name="user_income" value="4000~7000"><span>&nbsp;4000~7000</span></label>
+                        <label><input type="radio" name="user_income" value="7000~10000"><span>&nbsp;7000~10000</span></label>
+                        <label><input type="radio" name="user_income" value="10000以上"><span>&nbsp;10000以上</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">6、您预计平均每月花费多少在您所领养的萌宠上？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_pet_spending" value="300以下" checked><span>&nbsp;300以下</span></label>
+                        <label><input type="radio" name="user_pet_spending" value="300~600"><span>&nbsp;300~600</span></label>
+                        <label><input type="radio" name="user_pet_spending" value="600~1000"><span>&nbsp;600~1000</span></label>
+                        <label><input type="radio" name="user_pet_spending" value="1000以上"><span>&nbsp;1000以上</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">7、您有养宠经验吗？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_pet_experience" value="有" checked><span>&nbsp;有</span></label>
+                        <label><input type="radio" name="user_pet_experience" value="无"><span>&nbsp;无</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">8、您对宠物日常护理是否了解？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="user_pet_nursing" value="非常了解" checked><span>&nbsp;非常了解</span></label>
+                        <label><input type="radio" name="user_pet_nursing" value="了解一点"><span>&nbsp;了解一点</span></label>
+                        <label><input type="radio" name="user_pet_nursing" value="没有了解但是有意愿了解"><span>&nbsp;没有了解但是有意愿了解</span></label>
+                        <label><input type="radio" name="user_pet_nursing" value="不想了解"><span>&nbsp;不想了解</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">9、您是否对去领养机构领养有顾虑？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="adoption_agency" value="有" checked><span>&nbsp;有</span></label>
+                        <label><input type="radio" name="adoption_agency" value="没有"><span>&nbsp;没有</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">10、您是否关注流浪动物公益组织？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="organization" value="关注，并捐献过爱心" checked><span>&nbsp;关注，并捐献过爱心</span></label>
+                        <label><input type="radio" name="organization" value="关注"><span>&nbsp;关注</span></label>
+                        <label><input type="radio" name="organization" value="了解一点"><span>&nbsp;了解一点</span></label>
+                        <label><input type="radio" name="organization" value="不了解"><span>&nbsp;不了解</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">11、您的捐献频率？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="donation_frequency" value="经常捐献" checked><span>&nbsp;经常捐献</span></label>
+                        <label><input type="radio" name="donation_frequency" value="偶尔捐献"><span>&nbsp;偶尔捐献</span></label>
+                        <label><input type="radio" name="donation_frequency" value="没有捐献过"><span>&nbsp;没有捐献过</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">12、您是否下载过宠物相关APP？</p>
+                    <p class="input_r">
+                        <label><input type="radio" name="down_app" value="下载，并频繁使用" checked><span>&nbsp;下载，并频繁使用</span></label>
+                        <label><input type="radio" name="down_app" value="下载过，但不经常打开"><span>&nbsp;下载过，但不经常打开</span></label>
+                        <label><input type="radio" name="down_app" value="没有，但会愿意为了未来萌宠下载"><span>&nbsp;没有，但会愿意为了未来萌宠下载</span></label>
+                        <label><input type="radio" name="down_app" value="没有，不考虑下载"><span>&nbsp;没有，不考虑下载</span></label>
+                    </p>
+                </div>
+                <div class="part">
+                    <p class="ask">13、您的联系方式？</p>
+                    <p class="input_style"><input type="tel" name="phone" required></p>
+                </div>
+                <div class="part">
+                    <p class="ask">14、您的居住城市及区域？</p>
+                    <p class="input_style"><input type="text" name="city" required></p>
+                </div>
+                <div class="part">
+                    <p class="ask">15、您希望领养的宠物名？</p>
+                    <p class="input_style"><input type="text" name="pet_name" required></p>
+                </div>
+
+                <p class="sibbtn"><input type="submit" value="提交信息"></p>
+            </form>
+            <div class="unauthorized">
+                <p>以上内容均为宠爱之家原创稿件，未经授权，谢绝转载，如需转载请联系本站并保留以上全部内容。更多精彩，尽在宠爱之家！注：文章所有图片均来自于网络</p>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved
+            <a href="http://www.miitbeian.gov.cn" external rel="nofollow">粤ICP备18083935号</a>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='./public/js/mpettap/test.js' charset='utf-8'></script>
+<script type='text/javascript' src='./public/js/mpettap/sm.min.js' charset='utf-8'></script>
+</body>
+</html>

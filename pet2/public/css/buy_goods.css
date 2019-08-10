@@ -1,0 +1,33 @@
+/*     个人中心右侧     */
+.uc_right{width: 878px;border: 1px solid #ccc;background: #fff;min-height: 800px;padding: 30px;margin-bottom: 40px;}
+.buy_title span{font-size: 16px;color: #333;text-align: center;margin-right: 50px;padding-bottom: 6px;cursor: pointer;}
+.buy_title .active{border-bottom: 2px solid #ff6b63;color: #ff6b63;}
+
+.user_time{padding: 30px 0;line-height: 30px;}
+.time_text ,.order_text{font-size: 16px;}
+.time_box{margin-right: 40px;}
+.user_search{width: 280px;height: 30px;font-size: 16px;border: 1px solid #ccc;margin-left: 10px;padding-left: 10px;}
+.button{width: 80px;height: 32px;background: #f4f4f4;color: #333;font-size: 16px;border: 1px solid #ccc;margin-left: 20px;line-height: 30px;cursor: pointer;}
+.time_box select{width: 140px;height: 30px;border: 1px solid #ccc;padding-left: 10px;font-size: 16px;outline: 0;}
+
+.buy_box{height: 50px;line-height: 50px;background: #f3f2f2;margin-bottom: 30px;}
+.buy_box select{font-size: 16px;color: #ff6b63;border: 0;background: #f3f2f2;height: 50px;padding: 0 5px 0 20px;outline: none;margin-right: 20px;}
+.buy_box span{font-size: 16px;color: #333;}
+.buy_t1{width: 240px;text-align: left;}
+.buy_t2{width: 120px;text-align: center;}
+.buy_t3{width: 120px;text-align: center;}
+.buy_t4{width: 120px;text-align: center;}
+.buy_t5{width: 115px;text-align: center;}
+
+.buy_ul{display: none;}
+.buy_ul.active{display: block;}
+.buy_ul li{border: 1px solid #ccc;margin-bottom: 18px;}
+.buy_ul li .buy_p{height: 50px;line-height: 50px;background: #f3f2f2;font-size: 14px;padding-left: 30px;}
+.buy_time{margin-right: 20px;}
+.buy_info{padding: 30px 0 30px 30px;height: 120px;}
+.buy_box_info{width: 371px;}
+.buy_li_info{line-height: 120px;font-size: 14px;}
+.buy_box_info p{margin: 16px 0;}
+.buy_box_title{font-size: 14px;color: #333;}
+.buy_type{font-size: 14px;color: #666;}
+.buy_area{font-size: 14px;color: #999;}

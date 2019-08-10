@@ -1,0 +1,34 @@
+/*     个人中心右侧     */
+::-webkit-input-placeholder{color:#999;}
+.uc_right{width: 940px;}
+.info_title{height: 60px;line-height: 60px;background: #fafafa;padding-left: 20px;font-size: 18px;color: #333;border: 1px solid #ccc;border-bottom: 0;}
+.fill_box{padding: 44px 20px 10px 60px;background: #fff;border: 1px solid #ccc;border-top: 0;}
+.fill_p{margin-bottom: 22px;}
+.classify_left{font-size: 14px;color: #333;margin-right: 10px;}
+.select select{width: 160px;height: 30px;margin-right: 14px;padding-left: 10px;}
+.title_input{width: 496px;height: 40px;border: 1px solid #999;padding-left: 20px;font-size: 14px;}
+.money_input{width: 200px;height: 40px;border: 1px solid #999;padding-left: 20px;font-size: 14px;}
+.title_text{font-size: 14px;color: #999;padding-left: 10px;}
+.money_text{font-size: 14px;color: #333;padding-left: 10px;}
+.des_textarea{width: 476px;height: 100px;border: 1px solid #999;padding: 14px 20px;font-size: 14px;line-height: 22px;vertical-align: top;}
+
+.file-box{display: inline-block;width: 160px;height: 30px;overflow: hidden;color:#fff;vertical-align: middle;line-height: 30px;font-size: 14px;text-align: center;background: #fd6b63;}
+.file-btn{position: absolute;width: 100%;height: 100%;top: 0;left: 0;outline: none;background-color: transparent;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity: 0;}
+.sure_btn{text-align: center;margin: 40px 0;}
+.sure_btn input{border: 1px solid #fd6b63;background: #fd6b63;color: #fff;cursor: pointer;width: 150px;height: 44px;font-size: 18px;}
+
+.preview{background: #fff;width: 940px;min-height: 120px;margin: 20px 0 40px;border: 1px solid #ccc;}
+.pre_h{height: 60px;line-height: 60px;background: #fafafa;padding: 0 20px;font-size: 18px;}
+.pre_title{width: 510px;text-align: left;}
+.pre_price{width: 130px;text-align: center;}
+.pre_num{width: 130px;text-align: center;}
+.pre_rece{width: 130px;text-align: center;}
+.pre_box{padding: 20px;border-bottom: 1px dashed #ccc;}
+.pre_box:last-child{border-bottom: 0;}
+.list_img{border-radius: 5px;margin-right: 10px;}
+.pre_text{width: 380px;font-size: 14px;}
+.pre_text p{margin: 15px 0;}
+.pre_l{line-height: 120px;font-size: 14px;}
+
+
+

@@ -1,0 +1,17 @@
+/*     个人中心右侧     */
+.uc_right{width: 878px;border: 1px solid #ccc;background: #fff;min-height: 800px;padding: 30px;margin-bottom: 40px;}
+.guide_title{font-size: 16px;color: #333;padding-bottom: 30px;border-bottom: 1px dashed #ccc;}
+.guide_ul li{border-bottom: 1px dashed #e2e2e2;padding-top: 20px;}
+.guide_ul li:last-child{border-bottom: 0;}
+.guide_ul li p{padding-bottom: 20px;color: #666;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+

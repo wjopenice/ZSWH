@@ -1,0 +1,24 @@
+.game_tap{border-bottom: 1px solid #ff6b63;}
+.game_tap .tap_a{padding: 15px 30px;font-size: 16px;color: #333;background: #e6e6e6;text-align: center;margin-right: 2px;font-weight: 600;}
+.game_tap .active{border: 1px solid #ff6b63;border-bottom: 0;background: #F4F4F4;position: relative;left: 0;bottom: -1px;}
+
+.game_ul{padding: 60px 0 0 64px;border: 1px solid #ff6b63;margin-bottom: 40px;border-top: 0;}
+.game_ul li{margin-right: 69px;text-align: center;margin-bottom: 20px;width: 120px;min-height: 202px;}
+.game_ul li img{border-radius: 4px;}
+.game_name{padding: 20px 0;font-size: 16px;color: #333;width: 120px;}
+
+.game_content .game_ul{display: none;min-height: 420px;}
+.game_content .active{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+

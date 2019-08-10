@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>宠爱之家APP后台管理-公众号送养</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/user/rescue.css?v=2018154756" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+    <form action="/user/usersearch" method="get">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">用户手机号</label>
+                <div class="layui-input-block">
+                    <input type="number" name="search" placeholder="请输入用户手机号" id="search_val" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <button type="submit" class="layui-btn layuiadmin-btn-useradmin">
+                    <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>你的名字</span></div></th>
+                    <th class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>联系方式</span></div></th>
+                    <th class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>送养类型</span></div></th>
+                    <th class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>送养对象</span></div></th>
+                    <th class="laytable-cell-1-0-5"><div class="layui-table-cell"><span>宠物品种</span></div></th>
+                    <th class="laytable-cell-1-0-6"><div class="layui-table-cell"><span>宠物性别</span></div></th>
+                    <th class="laytable-cell-1-0-7"><div class="layui-table-cell"><span>宠物年龄</span></div></th>
+                    <th class="laytable-cell-1-0-8"><div class="layui-table-cell"><span>宠物绝育</span></div></th>
+                    <th class="laytable-cell-1-0-9"><div class="layui-table-cell"><span>宠物疫苗</span></div></th>
+                    <th class="laytable-cell-1-0-10"><div class="layui-table-cell"><span>送养原因</span></div></th>
+                    <th class="laytable-cell-1-0-11 layui_th_end"><div class="layui-table-cell"><span>地区</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($page as $key=>$value): ?>
+                    <tr>
+                        <td class="laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['id']?></span></div></td>
+                        <td class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['username']?></span></div></td>
+                        <td class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value['phone']?></span></div></td>
+                        <td class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$value['type_care']?></span></div></td>
+                        <td class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=$value['object_care']?></span></div></td>
+                        <td class="laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=$value['pet_breed']?></span></div></td>
+                        <td class="laytable-cell-1-0-6"><div class="layui-table-cell"><span><?=$value['pet_sex']?></span></div></td>
+                        <td class="laytable-cell-1-0-7"><div class="layui-table-cell"><span><?=$value['pet_age']?></span></div></td>
+                        <td class="laytable-cell-1-0-8"><div class="layui-table-cell"><span><?=$value['pet_sterilization']?></span></div></td>
+                        <td class="laytable-cell-1-0-9"><div class="layui-table-cell"><span><?=$value['pet_vaccine']?></span></div></td>
+                        <td class="laytable-cell-1-0-10"><div class="layui-table-cell"><span><?=$value['rescue_info']?></span></div></td>
+                        <td class="laytable-cell-1-0-11"><div class="layui-table-cell"><span><?=$value['city']?></span></div></td>
+                    </tr>
+                <?php endforeach; ?>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<?=$showstr?>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

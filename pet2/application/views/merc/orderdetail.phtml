@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-首页文章添加</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/merc/orderdetail.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header" style="margin-bottom: 20px;background: #333;color: #fff;font-weight: 600;">商品展示</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品图片</label>
+            <div class="layui-input-inline">
+               <img src="<?=$data['shop_banner']?>" width="200" height="50" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="shop_name" readonly autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$data['shop_name']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品单价</label>
+            <div class="layui-input-inline">
+                <input type="text" name="price" readonly autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$data['shop_price']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品数量</label>
+            <div class="layui-input-inline">
+                <input type="text" name="price" readonly autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$data['shop_num']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">付款金额</label>
+            <div class="layui-input-inline">
+                <input type="text" name="price" readonly autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$data['shop_total_price']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品标签</label>
+            <div class="layui-input-block">
+                <?php $arr = explode(",",$data['pay_type']);?>
+                <input type="checkbox" name="type[]" lay-skin="primary" title="品质" value="品质" readonly
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '品质'){echo 'checked';}}?>
+                 >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="精选" value="精选" readonly
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '精选'){echo 'checked';}}?>
+                >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="有趣" value="有趣" readonly
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '有趣'){echo 'checked';}}?>
+                >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="进口" value="进口" readonly
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '进口'){echo 'checked';}}?>
+                >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">下单时间</label>
+            <div class="layui-input-inline">
+                <input type="text" readonly autocomplete="off" class="layui-input" style="width: 500px;" value="<?=date("Y-m-d H:i:s",$data['pay_time'])?>">
+            </div>
+        </div>
+        <div class="layui-card-header" style="margin-bottom: 20px;background: #333;color: #fff;font-weight: 600;">用户信息</div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">收件人</label>
+            <div class="layui-input-inline">
+                <p style="line-height: 37.99px;width: 500px;"><?=$data['user_name']?></p>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-inline">
+                <p style="line-height: 37.99px;width: 500px;"><?=$data['user_name']?></p>
+            </div>
+        </div>
+        <?php $address = explode(" ",$data['user_location']); ?>
+        <div class="layui-form-item">
+            <label class="layui-form-label">省市区</label>
+            <div class="layui-input-inline">
+                <p style="line-height: 37.99px;width: 500px;"><?=$address[0]?><?=$address[1]?><?=$address[2]?></p>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">详细地址</label>
+            <div class="layui-input-inline">
+                <p style="line-height: 37.99px;width: 500px;"><?=$address[3]?></p>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">下单留言</label>
+            <div class="layui-input-inline">
+                <p style="line-height: 37.99px;width: 500px;"><?=$data['order_info']?></p>
+            </div>
+        </div>
+        <div class="layui-card-header" style="margin-bottom: 20px;background: #333;color: #fff;font-weight: 600;">提交物流信息</div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">订单号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="out_trade_no" autocomplete="off" class="layui-input" style="width: 500px;border: 0;" readonly value="<?=$data['out_trade_no']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">快递公司</label>
+            <div class="layui-input-inline" style="width: 500px;">
+                <select name="express_company" lay-verify="required" lay-search="" >
+                    <option value="">直接选择或搜索快递公司</option>
+                    <option value="EMS快递">EMS快递</option>
+                    <option value="申通快递">申通快递</option>
+                    <option value="顺丰快递">顺丰快递</option>
+                    <option value="圆通快递">圆通快递</option>
+                    <option value="中通快递">中通快递</option>
+                    <option value="韵达快递">韵达快递</option>
+                    <option value="百世汇通快递">百世汇通快递</option>
+                    <option value="天天快递">天天快递</option>
+                    <option value="德邦大件快递">德邦大件快递</option>
+                    <option value="邮政">邮政</option>
+                    <option value="京东快递">京东快递</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">快递单号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="express_order" required placeholder="请输入快递单号" autocomplete="off" class="layui-input" style="width: 500px;" value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="提交发货">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

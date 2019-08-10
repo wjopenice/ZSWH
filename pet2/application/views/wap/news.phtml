@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/public/css/mpettap/sm.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1016610_yupu4u1663h.css">
+    <link rel="stylesheet" href="/public/css/mpettap/reset.css">
+    <link rel="stylesheet" href="/public/css/mpettap/news.css">
+</head>
+<body>
+    <div class="page">
+        <header class="bar bar-nav">
+            <a href="javascript:void(0);" external class="pull-left logo"></a>
+            <span class="icon iconfont icon-icon- pull-right"></span>
+        </header>
+        <div class="content">
+            <!-- banner -->
+            <div class="banner-top"></div>
+            <!-- aboutus -->
+            <div class="news-box">
+                <div class="title-logo">宠爱动态</div>
+                <ul class="news-list">
+                    <?php foreach ($newData as $key=>$value): ?>
+                        <li>
+                            <a href="/wap/detail?id=<?=$value['id']?>" external>
+                            <span class="pic"><img src="http://<?=server('SERVER_NAME')?>/public/upload/<?=json_decode($value['pic'],true)[0]?>"></span>
+                            <div class="item-pos">
+                                <p><?=$value['title']?></p>
+                                <span><?=date("Y/m/d",$value['create_time'])?></span>
+                            </div>
+                            <p class="des"><?=$value['content']?></p>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <?=$showstr?>
+            <!--  关注宠爱  -->
+            <div class="follow">
+                <div class="contact ewm">
+                    <img src="/public/images/mpettap/ewm.jpg" alt="">
+                    <p>宠爱之家官方公众号</p>
+                </div>
+                <div class="contact">
+                    <img src="/public/images/mpettap/wechat.jpg" alt="">
+                    <p>宠爱之家官方微信号</p>
+                </div>
+            </div>
+
+            <!--  address  -->
+            <div class="address">
+                <div class="address-con">
+                    <div class="tit">宠爱之家深圳总部</div>
+                    <p><span class="icon iconfont icon-weizhi tit-icon"></span><span>广东省深圳市南山区兰香一街海王星辰总部大厦13楼</span></p>
+                    <p><span class="icon iconfont icon-dianhua tit-icon"></span><span class="add-t">客服QQ：2705180242</span><span class="icon iconfont icon-youjian tit-icon"></span><span>电子邮箱：2705180242@qq.com</span></p>
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="footer">
+                Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved
+                <a href="http://www.miitbeian.gov.cn" external rel="nofollow">粤ICP备18083935号</a>
+            </div>
+        </div>
+    </div>
+
+    <span class="icon iconfont icon-31huidaodingbu go-top" id="goTop"></span>
+
+    <?php load_view("inc/wapheader");?>
+
+    <script type='text/javascript' src='/public/js/mpettap/test.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/public/js/mpettap/sm.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="/public/js/mpettap/index.js"></script>
+</body>
+</html>

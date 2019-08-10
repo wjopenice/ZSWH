@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-APP更新</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/set/addappupload.css?v=2019117" rel="stylesheet" />
+</head>
+<body>
+    <form class="layui-form" action="/set/addappupload" method="post" enctype="multipart/form-data">
+        <div class="layui-card-header">APP更新添加</div>
+        <div class="layui_body">
+            <div class="layui-form-item">
+                <label class="layui-form-label">APP版本号</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="version_number" placeholder="请输入APP版本号" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">APP版本名字</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="version_name" placeholder="请输入APP版本名字" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">APP更新内容</label>
+                <div class="layui-input-inline">
+                    <textarea name="update_content" id="" placeholder="请输入APP版本号" ></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">更新地址</label>
+                <div class="layui-input-inline">
+                    <input type="file" accept="application/vnd.android.package-archive" name="update_address" class="layui-input layui-pic">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="submit" class="layui-btn" value="立即提交">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

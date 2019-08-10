@@ -1,0 +1,47 @@
+/*  header  */
+.main{width: 1080px;margin-left: -540px;}
+.center{width: 1080px;}
+.nav{float: left;}
+.header{height: 90px;}
+.header .logo {background-image: url(../../../img/media/common/head-logo-hover.png);}
+.nav li a {color: #777;font-size: 15px;}
+.logo{padding-left: 190px;}
+.out-btn{float: right;overflow: hidden;}
+.out-btn li{display: block;float: left;padding-left: 10px;line-height: 40px;}
+.out-btn li span{font-size: 15px;}
+.out-btn li a{background: #5481ff;color: #fff;padding: 3px 10px;border-radius: 2px;font-size: 14px;}
+.out-btn li a:hover {background: #7ea0ff;}
+
+/*    提交信息    */
+.info-box{padding: 30px 0 100px;}
+.info-box .tit{font-size: 17px;font-weight: 600;color: #000;padding-left: 45px;line-height: 24px;background: url(../../../img/media/index/icon_tit.png) no-repeat left center/21px 17px;}
+.info{margin-top: 40px;}
+input[type="radio"] + label::before {content: "\a0";display: inline-block;vertical-align: middle;width: 15px;height: 15px;margin-right: 5px;border-radius: 50%;text-indent: .15em;margin-bottom: 4px;border: 1px solid #CCCCCC;padding: 1px;}
+input[type="radio"]:checked + label::before {background-color: #4A90E2;background-clip: content-box;padding: 2px;}
+input[type="radio"] {position: absolute;clip: rect(0, 0, 0, 0);}
+.radio-inline{padding-left: 0;margin: 30px 0 0 60px;display: inline-block;}
+input[type=radio][disabled]:checked + label::before{background-color:#CCCCCC;background-clip: content-box;padding: 2px;}
+.input-t{height: 28px;display: inline-block;line-height: 28px;}
+.i-text{line-height: 144px;}
+.input-b{border: 1px solid #ccc;height: 28px;border-radius: 4px;padding-left: 10px;width: 220px;}
+#address{width: 592px}
+.form-control{border: 1px solid #ccc;height: 28px;border-radius: 4px;padding-left: 10px;width: 195px;margin-right: 10px;}
+.sex{line-height: 28px;margin-right: 20px;}
+.sex-inline{width: 280px;}
+.textarea-box{width: 100%;}
+.textarea{border: 1px solid #ccc;border-radius: 4px;width: 938px;height: 160px;padding: 10px;}
+.three{width: 400px;height: 150px;}
+.license{width: 100%;}
+.example-pic{width: 220px;vertical-align: center;}
+.input-img{position: absolute;top: 0;left: 100px;width: 220px;height: 144px;opacity: 0;z-index: 9999;}
+.upload{width: 220px;height: 144px;border: 1px dotted #ccc;position: absolute;left: 100px;top: 0;}
+.upload img{width: 100%;height: 100%;}
+.field{width: 220px;height: 150px;display: inline-block;margin-right: 14px;}
+.field-img{left: 0;}
+.radio-filed label ,.sex label{cursor: pointer;}
+.sub-btn{width: 140px;height: 46px;border: 0;background: #5481ff;color: #fff;font-size: 16px;border-radius: 4px;margin-top: 40px;margin-left: 470px;}
+.sub-btn:hover{background: #7ea0ff;}
+/*   body login   */
+.banner{height: 100%;width: 100%;}
+.footer{height: 80px;line-height: 80px;}
+

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 强制让文档的宽度与设备的宽度保持1:1,并且文档最大的宽度比例是1.0,且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <!-- WebApp全屏模式,隐藏地址栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 禁止百度转码显示 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 添加到IOS主屏后的标题 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>宠爱之家-帖子</title>
+    <link rel="stylesheet" href="/public/css/native/font_989957_1f57g23zn59.css">
+    <link rel="stylesheet" href="/public/css/native/public.css">
+    <link rel="stylesheet" href="/public/css/native/share.css">
+    <style>
+        .header-text {float: left;height: 1rem;}
+        .province{line-height: .4rem;float: left;margin: 0 .2rem 0 .2rem;width: 2rem; display: inline-block;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+        .name{font-size: .3rem; color: #F2415C; width: 1.6rem; display: inline-block;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: .4rem;line-height: .4rem;float: left;}
+        .down-app img {width: 1.0rem;height: 1.0rem;float: left;padding: .1rem;}
+        .down-btn {float: right;background: #F2415C;color: #fff;padding: .2rem;border-radius: .1rem; margin: .26rem 0; -webkit-box-shadow: 0 0 7px rgba(89,89,89,.35);box-shadow: 0 0 7px rgba(89,89,89,.35);  }
+        .app-name {font-size: .34rem; color: #F2415C;}
+    </style>
+</head>
+    <body>
+    <!--  share box  -->
+    <div class="share-box">
+        <header class="header" id="header">
+            <!--<div class="head-img"><img src="/public/img/native/comment_head.png" alt=""></div>
+            <div class="header-text">
+                <p class="info-list"><span class="name">狗崽子们</span><span class="province">广东</span><span class="city">深圳</span></p>
+                <p>用户权限</p>
+            </div>-->
+        </header>
+        <div class="detail-box">
+            <p id="detail-body">原标题：爱上中国造，首届宠物新国货大会开启2018年压轴卖货狂欢</p>
+            <!--  模仿朋友圈图片展示  -->
+            <ul class="pic-list" id="picList">
+                <!--<li class="pic-img"><img src="/public/img/native/834.jpg"></li>-->
+            </ul>
+            <!--  点赞评论  -->
+            <div class="comment-box">
+                <div class="comment-fl">
+                    <p class="fabulous"><span class="icon iconfont icon-like icon-msg"></span><span class="click"></span></p>
+                    <p class="comment"><span class="icon iconfont icon-message icon-msg"></span><span class="feedback"></span></p>
+                </div>
+            </div>
+        </div>
+        <!--  评论和赞  -->
+        <div class="f-list">
+            <div class="f-title">
+                <p class="c-num"><span>评论</span><span class="feedback">256</span></p>
+                <p class="f-num"><span>赞</span><span class="click">174</span></p>
+            </div>
+            <ul class="c-list" id="c-list">
+                <li>
+                    <div class="head-img"><img src="/public/img/native/comment_head.png" alt=""></div>
+                    <div class="header-text">
+                        <p class="info-list"><span class="name">狗崽子们</span></p>
+                        <p>用户权限用户权限用户权限用户用户权限用户权限用户权限用户用户权限用户权限用户权限用户用户权限用户权限用户权限用户</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--  下载  -->
+    <div class="down-app">
+        <img src="/public/img/native/logo.png" alt="">
+        <div class="app">
+            <p class="app-name">宠爱之家</p>
+            <p class="app-text">有宠 有爱 有家的APP</p>
+        </div>
+        <a class="down-btn" href="http://<?=$_SERVER['SERVER_NAME']?>/wap/download">点击下载</a>
+    </div>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/picTool.js"></script>
+    <script type="text/javascript">
+        var httpurl = "http://<?=$_SERVER['SERVER_NAME']?>";//图片域名
+        //查询接口
+        $(function(){
+            $.get(httpurl+"/card/cotent",{c_id:<?=$_GET['c_id']?>,u_id:<?=$_GET['u_id']?>},function(msg){
+                let head = [];
+                let detail_box = [];
+                let value_msg = eval("("+msg+")");//将字符串转换成JSON对象
+
+                var url = "http://<?=$_SERVER['SERVER_NAME']?>/public";//图片域名
+                let urlAvatar = url+"/user/"+value_msg[0].avatar;
+                if(value_msg[0].nick_name == ""){
+                    value_msg[0].nick_name = value_msg[0].uid;
+                }
+                if(value_msg[0].lbs == ""){
+                    value_msg[0].lbs = "中国";
+                }
+                head.push('<div class="head-img"><img src="'+ urlAvatar +'" alt=""></div><div class="header-text"><p class="info-list"><span class="name">'+ value_msg[0].nick_name +'</span><span class="province">'+ value_msg[0].lbs +'</span></p><p>'+ value_msg[0].competence +'</p></div>');
+                $("#header").html(head);
+                detail_box.push('<p>'+ value_msg[0].content +'</p>');
+                $("#detail-body").html(detail_box);
+                let value_pic = JSON.parse(value_msg[0].card_pic);//将字符串转换成JSON对象
+                let strpic = "";
+                for(let i =0;i<value_pic.length;i++){
+                    strpic += "<li class='pic-img'><img src='"+url+"/card/"+value_pic[i]+"'></li>";
+                }
+                $("#picList").html(strpic);
+                //相册调用方式
+                $("#picList").createImgWin();
+                $(".feedback").html(value_msg[0].feedbackdata.length);
+                $(".click").html(value_msg[0].click_num);
+                let strfeedback = "";
+                for(let j=0;j<value_msg[0].feedbackdata.length;j++){
+                    strfeedback += "<li><div class='head-img'><img src='"+url+"/user/"+value_msg[0].feedbackdata[j].avatar+"' alt=''></div><div class='header-text'>";
+                    if(value_msg[0].feedbackdata[j].nick_name == ""){
+                        value_msg[0].feedbackdata[j].nick_name = value_msg[0].feedbackdata[j].uid;
+                    }
+                    strfeedback +="<p class='info-list'><span class='name'>"+value_msg[0].feedbackdata[j].nick_name+"</span></p>";
+                    strfeedback +="<p>"+value_msg[0].feedbackdata[j].body+"</p></div></li>";
+                }
+                $("#c-list").html(strfeedback);
+            })
+        },"json");
+    </script>
+</body>
+</html>

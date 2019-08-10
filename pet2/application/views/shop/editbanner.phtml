@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-添加分类</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/shop/addbanner.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/shop/editbanner" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">宠服banner添加</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">banner名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" placeholder="请输入banner名称" autocomplete="off" class="layui-input" value="<?=$userData['name']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图片高宽</label>
+            <div class="layui-input-inline">
+                <select name="size" lay-verify="required" lay-search="">
+                    <option value="690*260" <?php if($userData['size'] == '690*260'){ echo 'selected';}?> >690*260</option>
+                    <option value="340*240" <?php if($userData['size'] == '340*240'){ echo 'selected';}?> >340*240</option>
+                    <option value="340*490" <?php if($userData['size'] == '340*490'){ echo 'selected';}?> >340*490</option>
+                    <option value="340*240" <?php if($userData['size'] == '340*240'){ echo 'selected';}?> >340*240</option>
+                    <option value="440*240" <?php if($userData['size'] == '440*240'){ echo 'selected';}?> >440*240</option>
+                    <option value="240*240" <?php if($userData['size'] == '240*240'){ echo 'selected';}?> >240*240</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图片</label>
+            <div class="layui-input-inline">
+                <input type="file" accept="image/*" name="pic" class="layui-input layui-pic">
+            </div>
+            <img src="<?=$userData['pic']?>" width="200" height="50" />
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">跳转地址</label>
+            <div class="layui-input-inline">
+                <input type="text" name="addr" placeholder="请输入链接" autocomplete="off" class="layui-input" value="<?=$userData['addr']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="<?=$userData['id']?>">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

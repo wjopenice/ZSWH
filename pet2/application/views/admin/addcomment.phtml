@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-添加文章评论</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/addcomment.css?v=2315655613" rel="stylesheet" />
+</head>
+<body>
+    <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+        <form action="" method="get">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">关键词</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="search" placeholder="请输入关键词" id="search_val" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <button type="submit" class="layui-btn layuiadmin-btn-useradmin">
+                        <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="layui-form layui-border-box layui-table-view">
+        <div class="layui-table-box">
+            <div class="layui-table-header">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                    <tr>
+                        <th data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                        <th data-field="title" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>文章标题</span></div></th>
+                        <th data-field="body" class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>评论内容</span></div></th>
+                        <th data-field="register_ip" class="layui-unselect laytable-cell-1-0-5 layui_th_end"><div class="layui-table-cell"><span>操作</span></div></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="layui-table-body layui-table-main">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody id="list_body">
+                    <?php foreach ($arrData as $key=>$value): ?>
+                    <tr>
+                        <td data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value->id?></span></div></td>
+                        <td data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value->title?></span></div></td>
+                        <td data-field="account" class="laytable-cell-1-0-2"><div class="layui-table-cell"><input class="layui-input-s" type="text"></div></td>
+                        <td data-field="register_ip" class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span class="layui-btn layui-btn-xs layui-btn-warm" data-nid="<?=$value->id?>" onclick="feedback(this)">提交</span></div></td>
+                    </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/layui/layui.all.js"></script>
+    <script>
+        let feedback = (tag)=>{
+            let inputNode = tag.parentNode.parentNode.previousSibling.previousSibling.childNodes[0].childNodes[0];
+            let inputValue = inputNode.value;
+            let nid = tag.dataset.nid;
+            let httpRequest;
+            //ie7+ 主流浏览器
+            if(window.XMLHttpRequest){
+                //alert("ie7+ 主流浏览器");
+                httpRequest = new XMLHttpRequest();
+            }else if(window.ActiveXObject){
+                //alert("ie7-");
+                httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            }else{
+                alert("主流浏览器");
+            }
+            httpRequest.open("post","/admin/feedback",true);
+            httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8");
+            httpRequest.send("body="+inputValue+"&nid="+nid);
+            httpRequest.onreadystatechange =()=> {
+                // 信息已经返回，可以开始处理
+                if (httpRequest.readyState == 4) {
+                    // 页面正常，可以开始处理信息
+                    if (httpRequest.status == 200) {
+                        let resdata = eval("("+httpRequest.responseText+")") ;
+                        layer.msg(resdata.msg);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

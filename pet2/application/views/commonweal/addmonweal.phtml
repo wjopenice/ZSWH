@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-公益添加</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/newsadd.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/commonweal/addmonweal" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">发布公益项目</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" placeholder="请输入标题" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否紧急</label>
+            <div class="layui-input-inline lay-input">
+                <input type="radio" name="is_urgent"  value="0">否&nbsp;&nbsp;
+                <input type="radio" name="is_urgent"  value="1">是
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">目标金额</label>
+            <div class="layui-input-inline">
+                <input type="number" name="target_amount" placeholder="请输入目标金额" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">文章描述</label>
+            <div class="layui-input-block">
+                <input type="text" name="remark" placeholder="请输入文章描述" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">列表图片</label>
+            <div class="layui-input-block">
+                <input type="file" name="pic" class="layui-input" style="border: 0;padding: 0;padding-top: 6px;">
+            </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text" id="textarea">
+            <label class="layui-form-label">文章内容</label>
+            <div class="layui-input-block">
+                <textarea name="content" id="editor" style="display: none;"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    layui.use('layedit', function(){
+        var layedit = layui.layedit;
+        layedit.set({
+            uploadImage: {
+                url: '/admin/upload' //接口url
+                ,type: 'post' //默认post
+            },
+        });
+        layedit.build('editor');
+    });
+
+</script>
+</body>
+</html>

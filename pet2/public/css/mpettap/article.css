@@ -1,0 +1,8 @@
+.detail{padding: .8rem 0 0;}
+.newsdtit{text-align: center;font-size: .76rem;line-height: .8rem;color: #333;font-weight: 600;padding: 0 .8rem;}
+.detail .date{font-size: .6rem;line-height: .613333rem;color: #999;text-align: center;padding: .5rem .5rem .8rem;border-bottom: 1px solid #f2f2f2;}
+.detail .date .content-from{margin-left: .4rem;}
+.detail .date .content-from a{color: #999;font-size: .6rem;}
+.content-box{font-size: .62rem;line-height: 1rem;padding: .8rem;}
+.content-box img{width: 100%;height: 100%;margin: .6rem 0;}
+.unauthorized{background: #f7f7f7;font-size: .62rem;padding: .8rem;border-bottom: 1px solid #e6e6e6;color: #666;}

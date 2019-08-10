@@ -1,0 +1,34 @@
+/*   兑换列表   */
+.sub_ul{border-bottom: 2px solid #ccc;}
+.sub_ul .sub_li{width: 140px;}
+.sub_ul .active{background: #fd6b63;}
+.sub_ul .active a{color: #fff;}
+
+/*   兑换列表内容   */
+.ul_box{background: #fff;border-radius: 4px;margin-bottom: 40px;}
+.list_ul{display: none;}
+.list_ul.active{display: block;}
+.list_ul li{height: 120px;padding: 30px 40px;border-bottom: 2px solid #ccc;}
+.list_ul li:last-child{border-bottom: 0;}
+.list_info{width: 610px;font-size: 18px;color: #333;}
+.list_info p{margin: 12px 0;}
+.list_img{margin-right: 40px;}
+.list_money{font-size: 18px;color: #ff0000;line-height: 120px;width: 200px;text-align: center;}
+.look_btn{font-size: 18px;color: #fff;background: #fd6b63;line-height: 120px;display: inline;padding: 6px 38px;border-radius: 4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

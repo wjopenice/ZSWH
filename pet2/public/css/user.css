@@ -1,0 +1,41 @@
+/*     个人中心右侧     */
+.uc_right{width: 878px;border: 1px solid #ccc;background: #fff;min-height: 800px;padding: 30px;margin-bottom: 40px;}
+.user_title{font-size: 18px;font-weight: 600;color: #333;}
+.user_money{padding: 30px;border-bottom: 1px dashed #ccc;}
+.user_name ,.element{font-size: 22px;margin-right: 10px;color: #333;line-height: 50px;}
+.money_text{font-size: 26px;color: #ff0404;margin-right: 4px;line-height: 50px;}
+.element{margin-right: 100px;}
+.user_btn a{background: #f4f4f4;width: 140px;height: 50px;border: 1px solid #ccc;border-radius: 5px;color: #333;margin-right: 30px;text-align: center;line-height: 50px;font-size: 22px;letter-spacing: 4px;}
+.user_detail{padding-top: 30px;}
+.user_time{padding: 30px;line-height: 30px;}
+.time_text ,.order_text{font-size: 16px;}
+.start_time ,.end_time{border: 1px solid #ccc;width: 120px;height: 30px;font-size: 16px;margin: 0 10px;padding-left: 10px;}
+.user_search{width: 210px;height: 30px;font-size: 16px;border: 1px solid #ccc;margin-left: 10px;padding-left: 10px;}
+.time_box{margin-right: 40px;}
+.button{width: 60px;height: 32px;background: #f4f4f4;color: #333;font-size: 16px;border: 1px solid #ccc;margin-left: 20px;line-height: 30px;}
+.user_list{border: 1px solid #e2e2e2;min-height: 510px;}
+.user_head{height: 50px;line-height: 50px;background: #f3f2f2;padding: 0 30px;font-size: 14px;color: #666;}
+.user_head span{text-align: center;}
+.user_t1{width: 276px;}
+.user_t2{width: 136px;}
+.user_t3{width: 136px;}
+.user_t4{width: 136px;}
+.user_t5{width: 132px;}
+.user_ul{padding: 0 30px 0;}
+.user_ul li{border-bottom: 1px dashed #e2e2e2;}
+.user_ul li:last-child{border-bottom: 0;}
+.user_ul li span{text-align: center;padding: 20px 0;font-size: 14px;color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

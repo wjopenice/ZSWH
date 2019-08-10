@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>宠爱之家APP后台管理-APP用户-搜索</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/user/usersearch.css" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+    <div class="layui-form-item">
+        <form action="/user/usersearch" method="get">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">用户手机号</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="search" placeholder="请输入用户手机号" id="search_val" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <button type="submit" class="layui-btn layuiadmin-btn-useradmin">
+                        <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>用户名</span></div></th>
+                    <th data-field="sex" class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span>性别</span></div></th>
+                    <th data-field="mobile_num" class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>手机号</span></div></th>
+                    <th data-field="user_level" data-minwidth="100" class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>用户等级</span></div></th>
+                    <th data-field="register_time" class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span>注册时间</span></div></th>
+                    <th data-field="register_ip" class="layui-unselect laytable-cell-1-0-6"><div class="layui-table-cell"><span>登陆IP</span></div></th>
+                    <th data-field="is_online" class="laytable-cell-1-0-7"><div class="layui-table-cell"><span>联网状态</span></div></th>
+                    <th data-field="lock_status" class="layui-unselect laytable-cell-1-0-8 layui_th_end"><div class="layui-table-cell"><span>锁定状态</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <tr>
+                    <td data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$page->id?></span></div></td>
+                    <td data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$page->account?></span></div></td>
+                    <td data-field="sex" class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$page->sex?></span></div></td>
+                    <td data-field="mobile_num" class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$page->mobile_num?></span></div></td>
+                    <td data-field="user_level" data-minwidth="100" class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=$page->user_level?></span></div></td>
+                    <td data-field="register_time" class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=$page->register_time?></span></div></td>
+                    <td data-field="register_ip" class="layui-unselect laytable-cell-1-0-6"><div class="layui-table-cell"><span><?=$page->register_ip?></span></div></td>
+                    <td data-field="is_online" class="laytable-cell-1-0-7"><div class="layui-table-cell"><span><?php if($page->is_online == '1'){echo "<span style='color: #0c0;'>在线</span>";}else{echo "<span style='color: #666;'>离线</span>";}?></span></div></td>
+                    <td data-field="lock_status" class="layui-unselect laytable-cell-1-0-8">
+                        <div class="layui-table-cell">
+                            <div class="layui-input-block select_check" style="display: inline-block;">
+                                <?php
+                                $ischk = "checked";
+                                $islock = "close";
+                                if($page->lock_status == '0'){
+                                    $islock = "close";$ischk = "";
+                                }else{
+                                    $islock = "open";$ischk = "checked";
+                                }
+                                ?>
+                                <input class="check" type="checkbox" <?=$ischk?> name="<?=$islock?>" lay-skin="switch" lay-filter="switchTest" lay-text="ON|OFF" data-userid="<?=$page->id?>">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    $(function () {
+        //点击切换
+        $(".select_check").click(function(){
+            var id = $(this).find('input').data('userid');
+            var that = $(this);
+            var status = $(this).find('input').attr('name');
+            if(status == 'close'){
+                status = '1';
+                $.get('/user/useredit',{id:id,status:status},(msg)=>{
+                    if(msg.msg == 'ok'){
+                        layer.msg('修改成功', {icon: 6});
+                        that.find('input').attr('checked','checked');
+                        that.find('input').attr('name','open');
+                    }else{
+                        layer.msg('修改失败', {icon: 5});
+                    }
+                },"json")
+            }else{
+                status = '0';
+                $.get('/user/useredit',{id:id,status:status},(msg)=>{
+                    if(msg.msg == 'ok'){
+                        layer.msg('修改成功', {icon: 6});
+                        that.find('input').removeAttr('checked');
+                        that.find('input').attr('name','close');
+                    }else{
+                        layer.msg('修改失败', {icon: 5});
+                    }
+                },"json")
+            }
+        });
+    });
+</script>
+</body>
+</html>

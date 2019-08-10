@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-APP更新</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/set/appupload.css?v=20181167" rel="stylesheet" />
+</head>
+<body>
+<!--    <div class="layui-form layui-card-header layuiadmin-card-header-auto">-->
+<!--        <div>-->
+<!--            <div class="layui-form-item">-->
+<!--                <div class="layui-inline">-->
+<!--                    <button type="button" class="layui-btn layui-btn-normal">-->
+<!--                        <a href="addappupload" class="layui_a"><i class="layui-icon layui-icon-add-circle-fine"></i><span class="layui_a_span">发布新版</span></a>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="layui-form layui-border-box layui-table-view">
+        <div class="layui-table-box">
+            <div class="layui-table-header">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                    <tr>
+                        <th class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>版本号</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span>版本名字</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-3"><div class="layui-table-cell"><span>更新地址</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-4"><div class="layui-table-cell"><span>是否强制更新</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span>APP大小</span></div></th>
+                        <th class="layui-unselect laytable-cell-1-0-6"><div class="layui-table-cell"><span>操作</span></div></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="layui-table-body layui-table-main">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody id="list_body">
+                    <?php foreach($arrData as $key=>$value): ?>
+                        <tr>
+                            <td class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['id']?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['version_number']?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value['version_name']?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$value['update_address']?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=($value['is_forced_update']=='0')?"不强制更新":"强制更新"?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=$value['package_size']?></span></div></td>
+                            <td class="layui-unselect laytable-cell-1-0-6"><div class="layui-table-cell"><span onclick="window.location.href='/set/appeditupload?id=<?=$value['id']?>'" style="color: #00a0e9;">修改</span></div></td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

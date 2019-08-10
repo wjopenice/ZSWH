@@ -1,0 +1,49 @@
+/*     官网居中       */
+.center{width: 1300px;margin: 0 auto;}
+html{min-width: 1300px;margin: 0 auto;overflow-y: auto;}
+body{overflow: hidden;-webkit-overflow-scrolling: touch;}
+.clearfix, .zoom {zoom: 1;overflow: hidden;}
+.fr{float: right;}
+.fl{float: left;}
+.pr{position: relative;}
+.hide{display: none;}
+.show{display: block;}
+
+/*    公共头部    */
+.header{position: relative;}
+.nav-bar{position: absolute;top: 0;left: 0;width: 100%;z-index: 999;height: 90px;}
+.logo{display: block;float: left;line-height: 40px;color: rgba(255,255,255,1);padding-left: 168px;text-indent: -9999px;background: url(../../img/media/common/logo.png) no-repeat left top/171px 39px;}
+.header .main{top: 26px;z-index: 100;}
+.main{width: 1300px;position: absolute;left: 50%;margin-left: -650px;}
+.nav {float: right;font-size: 0;}
+.nav li{position: relative;display: inline-block;margin-left: 60px;}
+.nav li:first-of-type {margin-left: 0;}
+.nav li a{display: block;font-size: 18px;color: rgba(255,255,255,1);line-height: 40px;}
+.nav li.cur::after, .nav li:hover:after{content: '';position: absolute;bottom: -1px;left: 50%;margin-left: -9px;width: 18px;height: 3px;background: rgba(255,255,255,1);border-radius: 2px;}
+
+/*   联系我们   */
+.contact-us{background-color: #f8f8f8;height: 220px;margin-top: 120px;}
+.contact-us .center>div {display: inline-block;vertical-align: top;}
+.contact-us .ewm {width: 220px;text-align: center;font-size: 14px;line-height: 24px;color: #333;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: 600;}
+.contact-us .ewm img {display: block;width: 140px;height: 140px;margin: 28px auto 10px;}
+.contact-us .adress .tit{font-size: 16px;color: #333;line-height: 20px;padding: 86px 0 14px;}
+.contact-us .adress p {padding-left: 20px;position: relative;}
+.contact-us .adress p,.contact_us .adress p a {font-size: 14px;line-height: 24px;color: #999;}
+.contact-us .adress .ad1{margin-top: -7px;left: 0;background: url(../../img/media/index/contact.png) no-repeat 0 -10px;}
+.contact-us .adress .phone{padding-left: 20px;margin: -7px 0 0 16px;left: 0;background: url(../../img/media/index/contact.png) no-repeat 0 -31px;}
+.contact-us .adress .email{padding-left: 20px;margin: -7px 0 0 16px;left: 0;background: url(../../img/media/index/contact.png) no-repeat 0 5px;}
+
+/*   回到顶部   */
+.go-top{position: fixed;bottom: 90px;right: 68px;width: 56px;height: 56px;background: url(../../img/media/index/backtop.png) no-repeat 0 -80px;text-indent: -9999px;cursor: pointer;display: none;box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);border-radius: 100%;}
+.go-top:hover {background-position: 0 0;}
+/*   底部   */
+.footer {height: 40px;line-height: 40px;background-color: #e7e7e7;font-size: 12px;color: #959595;text-align: center;}
+.footer a {display: inline;margin-left: 40px;padding-left: 26px;background: url(../../img/media/index/batb.png) no-repeat left center/18px 18px;font-size: 12px;color: #959595;}
+
+/*   向上滑动导航   */
+.nav-bar.fixed{background: #fff;position: fixed;-webkit-box-shadow: 0 0 25px rgba(89,89,89,.35);box-shadow: 0 0 25px rgba(89,89,89,.35);}
+.fixed .nav li a {color:#333;}
+.fixed .nav li.cur::after, .fixed .nav li:hover:after {background: #5481ff;}
+.header .fixed .logo {background-image: url(../../img/media/common/head-logo-hover.png);}
+
+

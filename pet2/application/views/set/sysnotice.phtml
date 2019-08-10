@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玩转盒子APP后台管理-系统通知</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/set/sysnotice.css" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+    <form action="" method="get">
+        <div class="layui-form-item">
+            <div class="layui-inline" style="margin-left: 10px;">
+                <button type="button" class="layui-btn layui-btn-normal">
+                    <a href="addsysnotice" class="layui_a"><i class="layui-icon layui-icon-add-circle-fine"></i><span class="layui_a_span">新增推送</span></a>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>推送标题</span></div></th>
+                    <th class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>推送图标</span></div></th>
+                    <th class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>推送时间</span></div></th>
+                    <th class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>推送内容</span></div></th>
+                    <th class="laytable-cell-1-0-5 layui_th_end"><div class="layui-table-cell"><span>操作</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($userData as $k=>$v): ?>
+                <tr>
+                    <td class="laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$v['id']?></span></div></td>
+                    <td class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$v['title']?></span></div></td>
+                    <td class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><img class="layui-table-img" src="<?=$v['icon']?>""></span></div></td>
+                    <td class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$v['create_time'])?></span></div></td>
+                    <td class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=$v['content']?></span></div></td>
+                    <td class="laytable-cell-1-0-5"><div class="layui-table-cell">
+                            <span class="layui-btn layui-btn-xs layui-btn-danger" onclick="window.location.href='/set/delsysnotice?id=<?=$v['id']?>'">删除</span></div></td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<?=$showstr?>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+[
+  {
+    "pid": 0,
+    "title": "主页",
+    "icon":"home",
+    "data":[
+      {"id":1,"url":"/user/administrators","title":"后台管理员"},
+      {"id":2,"url":"/admin/banner","title":"首页Banner"},
+      {"id":3,"url":"/admin/newslist","title":"APP首页文章"},
+      {"id":4,"url":"/admin/addcomment","title":"添加文章评论"}
+    ]
+  },
+  {
+    "pid": 1,
+    "title": "用户管理",
+    "icon":"user",
+    "data":[
+      {"id":1,"url":"/user/userlist","title":"APP用户"},
+      {"id":2,"url":"/user/userblack","title":"用户锁定"},
+      {"id":3,"url":"/user/userbp","title":"积分记录"}
+    ]
+  },
+  {
+    "pid": 2,
+    "title": "帖子管理",
+    "icon":"form",
+    "data":[
+      {"id":1,"url":"/card/classify","title":"帖子分类"},
+      {"id":2,"url":"/card/index","title":"帖子列表"}
+    ]
+  },
+  {
+    "pid": 3,
+    "title": "救助站管理",
+    "icon":"util",
+    "data":[
+      {"id":1,"url":"/user/verify","title":"救助站列表"},
+      {"id":2,"url":"/user/verifystatus","title":"已审核通过"},
+      {"id":3,"url":"/user/rescue","title":"公众号送养"},
+      {"id":4,"url":"/user/adoption","title":"公众号领养"}
+    ]
+  },
+  {
+    "pid": 4,
+    "title": "公益管理",
+    "icon":"rmb",
+    "data":[
+      {"id":1,"url":"/commonweal/monweallist","title":"公益列表"},
+      {"id":2,"url":"/commonweal/stateorder","title":"流水账单"}
+    ]
+  },
+  {
+    "pid": 5,
+    "title": "寻宠管理",
+    "icon":"rmb",
+    "data":[
+      {"id":1,"url":"/map/list","title":"地图列表"},
+      {"id":2,"url":"/map/type","title":"分类列表"},
+      {"id":3,"url":"/map/range","title":"显示范围"}
+    ]
+  },
+  {
+    "pid": 6,
+    "title": "系统设置",
+    "icon":"set",
+    "data":[
+      {"id":1,"url":"/set/index","title":"词语过滤"},
+      {"id":2,"url":"/set/appupload","title":"Android更新"},
+      {"id":2,"url":"/set/iosupload","title":"IOS更新"},
+      {"id":3,"url":"/set/sysnotice","title":"系统通知"},
+      {"id":3,"url":"/set/debug","title":"意见反馈"}
+    ]
+  },
+  {
+    "pid": 7,
+    "title": "宠服管理",
+    "icon":"cart",
+    "data":[
+      {"id":1,"url":"/shop/banner","title":"宠服banner"},
+      {"id":2,"url":"/merc/shopbanner","title":"商城banner"},
+      {"id":3,"url":"/merc/shoplist","title":"商品列表"},
+      {"id":4,"url":"/merc/shoplistbot","title":"下架列表"},
+      {"id":5,"url":"/merc/orderlist","title":"订单列表"},
+      {"id":6,"url":"/merc/orderexpress","title":"已发货订单"},
+      {"id":7,"url":"/merc/returnapply","title":"退货申请"},
+      {"id":8,"url":"/merc/userlist","title":"用户地址"}
+    ]
+  }
+]

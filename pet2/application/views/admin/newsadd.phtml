@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-首页文章添加</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/newsadd.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/admin/newsadd" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">文章添加</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">作者</label>
+            <div class="layui-input-inline">
+                <input type="text" name="author" placeholder="请输入作者" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">点赞数</label>
+            <div class="layui-input-inline">
+                <input type="number" name="click" placeholder="请输入点赞数" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">优先级</label>
+            <div class="layui-input-inline">
+                <input type="number" placeholder="请输入优先级" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">越高排序越靠前</div>
+        </div>-->
+        <div class="layui-form-item">
+            <label class="layui-form-label">展示资源</label>
+            <div class="layui-tab layui-tab-card layui_tab_img">
+                <ul class="layui-tab-title" style="padding: 0;">
+                    <li class="layui-this" onclick="show(1)">首页N格</li>
+                    <li onclick="show(2)">首页单格</li>
+                    <li onclick="show(3)">首页视频</li>
+                </ul>
+                <input id="newstype" type="hidden" name="type" value="0">
+                <div class="layui-tab-content layui_content">
+                    <div class="layui-tab-item layui-show" id="item1">
+                        <span class="avatarspan">
+                            <img class="avatar" src="/public/img/index/file.png">
+                            <input class="avatarinput" type="file" name="filename[]" value="">
+                        </span>
+                        <span class="avatarspan">
+                            <img class="avatar" src="/public/img/index/file.png">
+                            <input class="avatarinput" type="file" name="filename[]" value="">
+                        </span>
+                        <span class="avatarspan">
+                            <img class="avatar" src="/public/img/index/file.png">
+                            <input class="avatarinput" type="file" name="filename[]" value="">
+                        </span>
+                    </div>
+                    <div class="layui-tab-item" id="item2">
+                        <div class="layui_item_il">
+                            <span class="avatarspan">
+                                <img class="avatar" src="/public/img/index/file.png">
+                                <input class="avatarinput" type="file" name="filename[]" value="" disabled>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="layui-tab-item" id="item3">
+                        <div class="layui_item_il">
+                            <span class="avatarspan">
+                                <img class="avatar" src="/public/img/index/vedio.png">
+                                <input class="avatarinput" type="file" name="filename[]" value="" disabled>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text" id="textarea">
+            <label class="layui-form-label">文章内容</label>
+            <div class="layui-input-block">
+                <textarea name="content" id="editor" style="display: none;"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    layui.use('layedit', function(){
+        var layedit = layui.layedit;
+        layedit.set({
+            uploadImage: {
+                url: '/admin/upload' //接口url
+                ,type: 'post' //默认post
+            },
+        });
+        layedit.build('editor');
+        /*layedit.build('editor',{
+            tool: ['strong','italic','underline','del','left','center','right','link','unlink','face','image','code','video'],
+            uploadImage: {url: '/admin/upload', type: 'post'}
+        });*/
+    });
+    //video
+    /*var xhrOnProgress=function(fun) {
+        console.log("xhrOnProgress")
+        xhrOnProgress.onprogress = fun; //绑定监听
+        //使用闭包实现监听绑
+        return function() {
+            //通过$.ajaxSettings.xhr();获得XMLHttpRequest对象
+            var xhr = $.ajaxSettings.xhr();
+            //判断监听函数是否为函数
+            if (typeof xhrOnProgress.onprogress !== 'function')
+                return xhr;
+            //如果有监听函数并且xhr对象支持绑定时就把监听函数绑定上去
+            if (xhrOnProgress.onprogress && xhr.upload) {
+                xhr.upload.onprogress = xhrOnProgress.onprogress;
+            }
+            return xhr;
+        }
+    };*/
+
+
+    function show(tag) {
+        switch (tag){
+            case 1:
+                $("#newstype").val(0);
+                $("#textarea").css('display','block');
+                $("#item1 input").removeAttr("disabled");
+                $("#item2 input").attr("disabled","disabled");
+                $("#item3 input").attr("disabled","disabled");
+                break;
+            case 2:
+                $("#newstype").val(1);
+                $("#textarea").css('display','block');
+                $("#item2 input").removeAttr("disabled");
+                $("#item1 input").attr("disabled","disabled");
+                $("#item3 input").attr("disabled","disabled");
+                break;
+            case 3:
+                $("#newstype").val(2);
+                $("#textarea").css('display','none');
+                $("#item3 input").removeAttr("disabled");
+                $("#item1 input").attr("disabled","disabled");
+                $("#item2 input").attr("disabled","disabled");
+                break;
+        }
+    }
+</script>
+</body>
+</html>

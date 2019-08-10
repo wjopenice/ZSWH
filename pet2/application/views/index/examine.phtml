@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="宠爱宠物救助站审核信息，宠爱宠物救助站审核，宠物救助站信息审核">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/rescueinfo/examine.css">
+</head>
+<body>
+<div class="header">
+    <!--  header  -->
+    <div class="nav-bar">
+        <div class="main">
+            <a href="http://www.pettap.cn/" class="logo">宠爱之家</a>
+            <ul class="nav">
+                <!--<li class=""><a href="../index.html">首页</a></li>
+                <li class="head-about"><a href="../news.html">宠爱动态</a></li>
+                <li class="head-about cur"><a href="../rescue.html">宠爱救助站</a></li>
+                <li class="head-about"><a href="javascript:alert('程序小哥哥正在努力加紧中！');">宠爱商城</a></li>-->
+                <li class="head-about"><a href="javascript:void(0);">加入宠爱之家官方救助平台</a></li>
+                <!--<li class="head-about"><a href="javascript:void(0);">加入宠爱</a></li>-->
+            </ul>
+            <ul class="out-btn">
+                <li><span>欢迎&nbsp;</span><span><?=$_COOKIE['mobile_num']?></span></li>
+                <li>|</li>
+                <li><a class="btn" href="/index/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--  speed  -->
+<div class="speed-box center">
+    <?php if($status == '0'): ?>
+    <div class="success">
+        <span class="success-icon"></span>
+        <span class="success-text">您的救助站信息已提交宠爱之家平台，预计审核时间为3天左右，最长审核时间为7个工作日内，在此期间请您耐心等待。</span>
+    </div>
+    <?php else: ?>
+    <div class="success suss">
+        <span class="success-icon"></span>
+        <span class="success-text">您的救助站信息已提交宠爱之家平台，已经通过人工审核啦...请等待宠爱之家平台商务人员跟您取得联系请确保您提交的电话保持开通。</span>
+    </div>
+    <?php endif; ?>
+    <div class="speed-title">
+        <span>当前审核进度：</span><a href="/index/rescueinfo2?mobile_num=<?=$_COOKIE['mobile_num']?>" class="speed-c">当前审核进度</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>重新提交信息 ：</span><a href="/index/rescueedit?mobile_num=<?=$_COOKIE['mobile_num']?>" class="speed-c">返回修改信息</a>
+    </div>
+</div>
+
+<!--  footer  -->
+<div class="footer">
+    <div class="center">
+        <p><a href="javascript:void(0);">Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved</a></p>
+    </div>
+</div>
+
+</body>
+</html>

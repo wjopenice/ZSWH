@@ -1,0 +1,38 @@
+body{overflow: auto;-webkit-overflow-scrolling : touch;}
+.bar-nav{height: 2.4rem;padding: 0 .5rem;}
+.bar .icon{float: right;margin-top: .4rem;}
+.icon-tuichu{cursor: pointer;}
+.content{overflow-x: hidden;}
+.logo{height: 2.4rem;}
+.in-title{line-height: 2.2rem;}
+/*  info  */
+.info-box{padding: .5rem;}
+.info{margin-top: .6rem;font-size: .7rem;}
+input::-webkit-input-placeholder {font-size: .68rem;color: #999;}
+input[type="radio"] + label::before {content: "\a0";display: inline-block;vertical-align: middle;width: 15px;height: 15px;margin-right: 5px;border-radius: 50%;text-indent: .15em;margin-bottom: 4px;border: 1px solid #CCCCCC;padding: 1px;}
+input[type="radio"]:checked + label::before {background-color: #4A90E2;background-clip: content-box;}
+.clearfix{overflow: hidden;}
+input,textarea{outline: none;-webkit-appearance: none;appearance:button;-moz-appearance:button;-webkit-appearance:button;}
+input[type="radio"] {position: absolute;clip: rect(0, 0, 0, 0);}
+.radio-inline{padding-left: 0;margin: .3rem 0 .3rem 6%;display: inline-block;width: 94%;}
+.radio-filed{width: 30%;float: left;}
+input[type=radio][disabled]:checked + label::before{background-color:#CCCCCC;background-clip: content-box;}
+.input-t{height: 1.8rem;display: inline-block;line-height: 1.9rem;float: left;}
+.input-b{border: 1px solid #e6e6e6;height: 1.8rem;border-radius: .2rem;padding-left: .4rem;width: 75%;float: left;font-size: .68rem;color: #666;}
+#address{width: 75%;}
+.sex{line-height: 1.8rem;width: 35%;float: left;}
+.textarea-box{width: 100%;}
+.textarea{border: 1px solid #e6e6e6;border-radius: .2rem;width: 90%;height: 5.2rem;padding: .4rem;font-size: .68rem;color: #666;margin-bottom: .3rem;}
+
+.pr{position: relative;}
+.i-text{display: block;width: 100%;line-height: 2.2rem;}
+.three{width: 94%;}
+.license{margin: 0 0 0 6%;}
+.input-img{position: absolute;top: 0;left: 0;width: 100%;height: 10rem;opacity: 0;z-index: 9999;}
+.upload{width: 100%;height: 10rem;border: 1px dotted #e6e6e6;position: absolute;left: 0;top: 0;border-radius: .2rem;}
+.upload img{width: 100%;height: 100%;}
+.field{width: 94%;height: 10rem;display: inline-block;}
+.field-img{left: 0;}
+.radio-filed label ,.sex label{cursor: pointer;}
+.btn-b{text-align: center;}
+.sub-btn{width: 50%;height: 2.8rem;border: 0;background: #f6aa24;color: #fff;font-size: .74rem;border-radius: .2rem;margin: 2rem 0;font-weight: 600;box-shadow: 2px 2px 4px #5f5f5f;}

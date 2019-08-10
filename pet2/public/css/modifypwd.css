@@ -1,0 +1,38 @@
+/*     个人中心右侧     */
+.uc_right{width: 878px;border: 1px solid #ccc;background: #fff;min-height: 581px;padding: 30px 30px 0;margin-bottom: 40px;}
+
+.buy_title span{font-size: 16px;color: #333;text-align: center;}
+
+.user_time{line-height: 30px;}
+.time_text ,.order_text{font-size: 16px;}
+.time_box{margin-right: 40px;}
+.user_search{width: 280px;height: 30px;font-size: 16px;border: 1px solid #ccc;margin-left: 10px;padding-left: 10px;}
+.pwd_name{margin-left: 20px;color: #ff6b63;}
+.user_time p{margin: 20px;}
+.buy_title{border-bottom: 1px dashed #ccc;padding-bottom: 30px;}
+.uc_right p{margin: 20px;}
+
+.sub_form_box input{width: 292px;height: 40px;line-height: 40px;border: 1px solid #ff6b63;background: #ff6b63;color: #fff;font-size: 16px;cursor: pointer;margin: 50px 109px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

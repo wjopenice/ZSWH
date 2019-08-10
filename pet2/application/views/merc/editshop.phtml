@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-首页文章添加</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/merc/addshop.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">商品添加</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">轮播展示</label>
+            <?php $arr_banner = json_decode($shop['shop_banner'],true); ?>
+            <div class="layui-input-inline">
+                <input type="file" name="shop_banner1" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['shop_banner1']?>" width="100" height="50" />
+                <input type="hidden" name="b1" value="<?=$arr_banner['shop_banner1']?>">
+                <input type="file" name="shop_banner2" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['shop_banner2']?>" width="100" height="50" />
+                <input type="hidden" name="b2" value="<?=$arr_banner['shop_banner2']?>">
+                <input type="file" name="shop_banner3" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['shop_banner3']?>" width="100" height="50" />
+                <input type="hidden" name="b3" value="<?=$arr_banner['shop_banner3']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="shop_name" placeholder="请输入商品名称" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['shop_name']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品库存</label>
+            <div class="layui-input-inline">
+                <input type="number" name="inventory" placeholder="请输入商品库存" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['inventory']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品品牌</label>
+            <div class="layui-input-inline">
+                <input type="text" name="brand" placeholder="请输入商品品牌" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['brand']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">使用对象</label>
+            <div class="layui-input-inline">
+                <input type="text" name="shop_object" placeholder="请输入使用对象" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['shop_object']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">使用阶段</label>
+            <div class="layui-input-inline">
+                <input type="text" name="shop_stage" placeholder="请输入使用阶段" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['shop_stage']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品重量</label>
+            <div class="layui-input-inline">
+                <input type="number" name="weight" placeholder="请输入商品重量" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['weight']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">保质期</label>
+            <div class="layui-input-inline">
+                <input type="number" name="shelf_life" placeholder="请输入保质期" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['shelf_life']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品金额</label>
+            <div class="layui-input-inline">
+                <input type="text" name="price" placeholder="请输入商品金额" autocomplete="off" class="layui-input" style="width: 500px;" value="<?=$shop['price']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">详情图片</label>
+            <div class="layui-input-inline">
+                <?php $arr_banner = json_decode($shop['pic'],true); ?>
+                <input type="file" name="pic1" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['pic1']?>" width="100" height="50" />
+                <input type="hidden" name="p1" value="<?=$arr_banner['pic1']?>">
+                <input type="file" name="pic2" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['pic2']?>" width="100" height="50" />
+                <input type="hidden" name="p2" value="<?=$arr_banner['pic2']?>">
+                <input type="file" name="pic3" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['pic3']?>" width="100" height="50" />
+                <input type="hidden" name="p3" value="<?=$arr_banner['pic3']?>">
+                <input type="file" name="pic4" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['pic4']?>" width="100" height="50" />
+                <input type="hidden" name="p4" value="<?=$arr_banner['pic4']?>">
+                <input type="file" name="pic5" autocomplete="off" class="layui-input">
+                <img src="<?=$arr_banner['pic5']?>" width="100" height="50" />
+                <input type="hidden" name="p5" value="<?=$arr_banner['pic5']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品标签</label>
+            <div class="layui-input-block">
+                <?php $arr = explode(",",$shop['type']);?>
+                <input type="checkbox" name="type[]" lay-skin="primary" title="品质" value="品质"
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '品质'){echo 'checked';}}?>
+                >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="精选" value="精选"
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '精选'){echo 'checked';}}?>
+                >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="有趣" value="有趣"
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '有趣'){echo 'checked';}}?>
+                >
+                <input type="checkbox" name="type[]" lay-skin="primary" title="进口" value="进口"
+                    <?php for($i=0;$i<count($arr);$i++){if($arr[$i] == '进口'){echo 'checked';}}?>
+                >
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="<?=$shop['id']?>">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

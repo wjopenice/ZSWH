@@ -1,0 +1,37 @@
+/*    您购买商品信息    */
+::-webkit-input-placeholder{color:#333;}
+.seller_title{margin-bottom: 30px;font-size: 28px;color: #333;}
+.info_box{border: 1px solid #ccc;padding: 30px;}
+.info_box i{width: 20px;height: 20px;background: url("../../public/images/details/star.png") no-repeat center center;background-size: 100%;margin: 0 10px -3px 0;}
+.title{width: 1108px;font-size: 16px;margin-bottom: 10px;color: #333;}
+
+.public_title{font-size: 28px;margin: 30px 0;border-bottom: 1px solid #ccc;padding-bottom: 30px;color: #333;}
+.account ,.amount ,.pay_box{padding: 0 80px 30px;}
+.account span{font-size: 22px;margin-right: 10px;color: #333;}
+.account input{width: 260px;height: 40px;border: 1px solid #ccc;font-size: 18px;line-height: 40px;padding-left: 10px;color: #333;}
+.iphone{margin-bottom: 30px;}
+.qq span{margin-right: 12px;}
+.pay{font-size: 22px;color: #333;}
+.money{font-size: 28px;color: #ff1c1c;}
+.sub_btn{padding: 12px 55px;background: #fd6b63;color: #fff;font-size: 18px;border-radius: 4px;margin: 40px 142px;}
+
+.sure{font-size: 16px;color: #999;}
+.pay_m{color: #ff1c1c;}
+.un_select{width: 24px;height: 24px;display: inline-block;background: url("../../public/images/order/un_select.png") no-repeat center center;background-size: 100%;margin: 28px 28px 28px 0;}
+.active .un_select{background: url("../../public/images/order/select.png") no-repeat center center;background-size: 100%;}
+.alipay{border: 1px solid #ccc;padding: 14px 50px;}
+.alipay i{width: 50px;height: 50px;display: inline-block;background: url("../../public/images/order/alipay.png") no-repeat center center;vertical-align: middle;margin-right: 20px;}
+.alipay span{vertical-align: middle;font-size: 22px;}
+.active .alipay{border: 1px solid #fd6b63;}
+.pay_box li{margin-right: 100px;cursor: pointer;}
+.wxpay{border: 1px solid #ccc;padding: 14px 61px;}
+.wxpay i{width: 50px;height: 50px;display: inline-block;background: url("../../public/images/order/wxpay.png") no-repeat center center;vertical-align: middle;margin-right: 20px;}
+.wxpay span{vertical-align: middle;font-size: 22px;}
+.active .wxpay{border: 1px solid #fd6b63;}
+.pay_btn{background: #fd6b63;color: #fff;font-size: 18px;border-radius: 4px;width: 272px;text-align: center;padding: 12px 0;margin: 40px 356px;}
+.receive_btn{margin: 40px 256px;}
+.complete{padding: 60px 454px;}
+.success_reset{margin-right: 20px;}
+.complete_reset{font-size: 22px;margin-top: 6px;}
+
+

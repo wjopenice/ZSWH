@@ -1,0 +1,17 @@
+<?php
+$type = isset($_GET['type'])?$_GET['type']:"index";
+?>
+<style>.cur{border-bottom: solid 1px #F2415C;}</style>
+<!-- 右侧滑动 -->
+<div class="panel panel-right panel-cover theme-dark" id='panel-js-demo'>
+    <div class="content-block">
+        <p class="sides <?php if($type == 'index'){ echo 'cur';}?>" onclick="window.location.href='/wap/index?type=index'">首页</p>
+        <p class="sides <?php if($type == 'waplogin'){ echo 'cur';}?>" onclick="window.location.href='/login/waplogin?type=waplogin'">加入平台</p>
+        <p class="sides <?php if($type == 'introduce'){ echo 'cur';}?>" onclick="window.location.href='/wap/introduce?type=introduce'">宠爱介绍</p>
+        <p class="sides <?php if($type == 'news'){ echo 'cur';}?>" onclick="window.location.href='/wap/news?type=news'">宠爱动态</p>
+        <!--<p class="sides" onclick="window.location.href='https://shop65840407.taobao.com/?spm=a230r.7195193.1997079397.39.af063f43I3lvmc'">宠爱商城</p>-->
+        <p class="sides" onclick="window.location.href='http://www.pettap.cn/native/game'">休闲游戏</p>
+        <p class="sides <?php if($type == 'about'){ echo 'cur';}?>" onclick="window.location.href='/wap/about?type=about'">关于宠爱</p>
+        <p class="sides-btn"><a href="javascript:void(0);" external class="close-panel">关闭</a></p>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 强制让文档的宽度与设备的宽度保持1:1,并且文档最大的宽度比例是1.0,且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <!-- WebApp全屏模式,隐藏地址栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 禁止百度转码显示 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明） -->
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
+    <!-- 添加到IOS主屏后的标题 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>动态详情</title>
+    <link rel="stylesheet" href="/public/css/native/public.css">
+    <link rel="stylesheet" href="/public/css/native/content.css">
+</head>
+<body>
+<!-- 动态detail -->
+<div class="dynamic-box">
+    <!-- 动态title -->
+    <h4 class="dynamic-title"><?=$card->title?></h4>
+    <div class="sup-box"><span class="author"><?=$card->author?></span><span><?php echo date("Y-m-d",$card->create_time)?></span></div>
+    <div class="detail-box">
+        <?php if($card->type != 2): ?>
+            <?=$card->content?>
+        <?php else: ?>
+            <video id="my-video" class="video-js" controls preload="auto" width="100%" height="100%" poster="/public/img/media/index/video-bg.png" data-setup="{}">
+                <source src="/public/upload/<?=json_decode($card->pic,true)[0] ?>" type="video/mp4">
+            </video>
+        <?php endif; ?>
+    </div>
+</div>
+</body>
+</html>

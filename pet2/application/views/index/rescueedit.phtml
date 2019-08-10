@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="宠爱宠物救助站入驻信息，宠爱宠物救助站合作，宠物救助站信息">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/rescueinfo/index.css">
+</head>
+<body>
+<div class="header">
+    <!--  header  -->
+    <div class="nav-bar">
+        <div class="main">
+            <a href="http://www.pettap.cn/" class="logo">宠爱之家</a>
+            <ul class="nav">
+                <!--<li class=""><a href="../index.html">首页</a></li>
+                <li class="head-about"><a href="../news.html">宠爱动态</a></li>
+                <li class="head-about cur"><a href="../rescue.html">宠爱救助站</a></li>
+                <li class="head-about"><a href="javascript:alert('程序小哥哥正在努力加紧中！');">宠爱商城</a></li>-->
+                <li class="head-about"><a href="javascript:void(0);">加入宠爱之家官方救助平台</a></li>
+                <!--<li class="head-about"><a href="javascript:void(0);">加入宠爱</a></li>-->
+            </ul>
+            <ul class="out-btn">
+                <li><span>欢迎&nbsp;</span><span><?=$_COOKIE['mobile_num']?></span></li>
+                <li>|</li>
+                <li><a class="btn" href="/index/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--  swiper  -->
+<div class="swiper-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/public/img/media/rescueinfo/banner1.jpg" width="100%" height="180" alt=""></div>
+            <div class="swiper-slide"><img src="/public/img/media/rescueinfo/banner2.jpg" width="100%" height="180" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <!--<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>-->
+    </div>
+</div>
+<!--  提交信息  -->
+<div class="info-box center">
+    <div class="tit">用户提交信息</div>
+    <input type="hidden" id="u_m_id" name="id" value="<?=$oneData->id?>">
+    <div class="one info">
+        <div>一、是否是经营性救助站(必填)</div>
+        <div class="clearfix">
+            <div class="radio-inline fl radio-filed">
+                <input type="radio" name="commercial" value="经营性" <?php if($oneData->commercial == '经营性'){ echo 'checked'; } ?> >
+                <label for="">经营性</label>
+            </div>
+            <div class="radio-inline fl radio-filed">
+                <input type="radio" name="commercial" value="非经营性" <?php if($oneData->commercial == '非经营性'){ echo 'checked'; } ?> >
+                <label for="">非经营性</label>
+            </div>
+        </div>
+    </div>
+    <div class="two info">
+        <div>二、信息输入(必填)</div>
+        <div class="clearfix">
+            <div class="radio-inline fl clearfix">
+                <span class="input-t fl">姓名：</span>
+                <input type="text" class="input-b fl" id="uname" placeholder="请输入姓名" value="<?=$oneData->real_name?>">
+            </div>
+            <div class="radio-inline fl clearfix">
+                <span class="input-t fl">手机号：</span>
+                <input type="text" class="input-b fl" id="mobile" placeholder="请输入手机号码" value="<?=$oneData->mobile_num?>" readonly>
+            </div>
+            <div class="radio-inline fl clearfix">
+                <span class="input-t fl">身份证号：</span>
+                <input type="text" class="input-b fl" id="card" placeholder="请输入身份证号码" value="<?=$oneData->id_card?>">
+            </div>
+            <div class="radio-inline fl clearfix sex-inline">
+                <span class="input-t fl">性别：</span>
+                <div class="fl sex">
+                    <input type="radio" name="sex" value="男" <?php if($oneData->sex == '男'){ echo 'checked'; } ?> >
+                    <label for="">男</label>
+                </div>
+                <div class="fl sex">
+                    <input type="radio" name="sex" value="女" <?php if($oneData->sex == '女'){ echo 'checked'; } ?> >
+                    <label for="">女</label>
+                </div>
+            </div>
+            <div class="radio-inline fl clearfix">
+                <span class="input-t fl">所在地：</span>
+                <div class="form-inline fl">
+                    <input type="text" class="input-b fl" id="address" placeholder="请输入详细地址如：XXX省XXX市XXX区XXX街XXX号" value="<?=$oneData->address?>">
+                </div>
+            </div>
+
+            <div class="radio-inline fl clearfix textarea-box">
+                <span class="input-t fl">说明：</span>
+                <textarea class="textarea" id="info" placeholder="组织&#10团体介绍&#10经营&#10服务范围"><?=$oneData->info?></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="th info">
+        <div>三、上传图片(必填)</div>
+        <div class="radio-inline clearfix pr three">
+            <span class="input-t fl i-text">身份证正面：</span>
+            <input type="file" accept="image/*" class="input-img" onchange="selectFile(this,event,'idcard')">
+            <div class="upload"><img class="book-pic" src="/public<?=$oneData->idcard?>" alt=""></div>
+            <input type="hidden" id="idcard" name="idcard" value="<?=$oneData->idcard?>">
+        </div>
+        <div class="radio-inline clearfix">
+            <span class="input-t fl i-text">示例图：</span>
+            <img class="example-pic fl" src="/public/img/media/rescueinfo/sfz1.jpg" alt="">
+        </div>
+        <div class="radio-inline clearfix pr three">
+            <span class="input-t fl i-text">身份证反面：</span>
+            <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'reidcard')">
+            <div class="upload"><img class="book-pic" src="/public<?=$oneData->reidcard?>" alt=""></div>
+            <input type="hidden" id="reidcard" name="reidcard" value="<?=$oneData->reidcard?>">
+        </div>
+        <div class="radio-inline clearfix">
+            <span class="input-t fl i-text">示例图：</span>
+            <img class="example-pic fl" src="/public/img/media/rescueinfo/sfz2.jpg" alt="">
+        </div>
+        <div class="radio-inline clearfix pr three">
+            <span class="input-t fl i-text">手持身份证：</span>
+            <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'handidcard')">
+            <div class="upload"><img class="book-pic" src="/public<?=$oneData->handidcard?>" alt=""></div>
+            <input type="hidden" id="handidcard" name="handidcard" value="<?=$oneData->handidcard?>">
+        </div>
+        <div class="radio-inline clearfix">
+            <span class="input-t fl i-text">示例图：</span>
+            <img class="example-pic fl" src="/public/img/media/rescueinfo/sfz3.jpg" alt="">
+        </div>
+
+        <?php if($oneData->commercial == '非经营性'): ?>
+            <div class="radio-inline clearfix pr three license" id="license" style="display: none;">
+                <span class="input-t fl i-text">营业执照图：</span>
+                <input type="file" accept="image/*" class="input-img" onchange="selectFile(this,event,'permit')" disabled="disabled">
+                <div class="upload"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                <input type="hidden" id="permit" name="permit" value="" disabled="disabled">
+            </div>
+        <?php else: ?>
+            <div class="radio-inline clearfix pr three license" id="license">
+                <span class="input-t fl i-text">营业执照图：</span>
+                <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'permit')">
+                <div class="upload"><img class="book-pic" src="/public<?=$oneData->permit?>" alt=""></div>
+                <input type="hidden" id="permit" name="permit" value="<?=$oneData->permit?>">
+            </div>
+        <?php endif; ?>
+        <div class="radio-inline clearfix three license">
+            <span class="input-t fl i-text">场地照片图：</span>
+            <div class="pr field">
+                <input type="file"  accept="image/*" class="input-img field-img" onchange="selectFile(this,event,'field1')">
+                <div class="upload field-img"><img class="book-pic" src="/public<?=$oneData->field1?>" alt=""></div>
+                <input type="hidden" id="field1" name="field1" value="<?=$oneData->field1?>">
+            </div>
+            <div class="pr field">
+                <input type="file"  accept="image/*" class="input-img field-img" onchange="selectFile(this,event,'field2')">
+                <div class="upload field-img"><img class="book-pic" src="/public<?=$oneData->field2?>" alt=""></div>
+                <input type="hidden" id="field2" name="field2" value="<?=$oneData->field2?>">
+            </div>
+            <div class="pr field">
+                <input type="file"  accept="image/*" class="input-img field-img" onchange="selectFile(this,event,'field3')">
+                <div class="upload field-img"><img class="book-pic" src="/public<?=$oneData->field3?>" alt=""></div>
+                <input type="hidden" id="field3" name="field3" value="<?=$oneData->field3?>">
+            </div>
+            <div class="pr field">
+                <input type="file"  accept="image/*" class="input-img field-img" onchange="selectFile(this,event,'field4')">
+                <div class="upload field-img"><img class="book-pic" src="/public<?=$oneData->field4?>" alt=""></div>
+                <input type="hidden" id="field4" name="field4" value="<?=$oneData->field4?>">
+            </div>
+        </div>
+    </div>
+    <button class="sub-btn" id="sbtn">提交</button>
+</div>
+
+<!--  回到顶部  -->
+<a class="go-top">返回顶部</a>
+
+<!--  footer  -->
+<div class="footer">
+    <div class="center">
+        <p><a href="javascript:void(0);">Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved</a></p>
+    </div>
+</div>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/swiper.min.js"></script>
+<script src="/public/js/ajaxfileupload.js"></script>
+<script src="/public/js/media.js"></script>
+<script>
+    //读取图片和提交后端
+    let form = new FormData();//通过HTML表单创建FormData对象
+    let upload;
+    let inputhidden;
+    function selectFile(tag,e,type){
+        var that = $(tag);
+        let files = e.currentTarget.files;
+        if(files.length == 0){
+            return;
+        }
+        let file = files[0];
+        //把上传的图片显示出来
+        let reader = new FileReader();
+        // 将文件以Data URL形式进行读入页面
+        reader.readAsBinaryString(file);
+        /* reader.onload = function(f){
+             //var index = $(tag).index();
+             upload = $(tag).next("div");
+             let src = "data:" + file.type + ";base64," + window.btoa(this.result);
+         };*/
+        form.append('file',file);
+        //提交
+        let httpRequest;
+        //ie7+ 主流浏览器
+        if(window.XMLHttpRequest){
+            //alert("ie7+ 主流浏览器");
+            httpRequest = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            //alert("ie7-");
+            httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }else{
+            alert("主流浏览器");
+        }
+        httpRequest.open("post","/index/upload",true);
+        //httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8");
+        httpRequest.send(form);
+        httpRequest.onreadystatechange =()=> {
+            // 信息已经返回，可以开始处理
+            if (httpRequest.readyState == 4) {
+                // 页面正常，可以开始处理信息
+                if (httpRequest.status == 200) {
+                    let resdata = eval("("+httpRequest.responseText+")");
+
+                    if(resdata.msg == "ok"){
+                        upload = $(tag).next("div");
+                        upload.html("<img class='book-pic' src ='/public"+resdata.data+"'/>");
+                        $("#"+type).val(resdata.data);
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    $(function(){
+        //轮播
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 4000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+
+        //是否是经营性救助站选中
+        $(".radio-filed").click(function () {
+            $(".radio-filed").find('input').removeAttr('checked');
+            $(this).find('input').attr('checked', 'checked');
+            var filedVal = $(this).find('input').val();
+            if(filedVal == '非经营性'){
+                $("#license").hide();
+                $("#license").find('input').attr('disabled','disabled');
+            }else{
+                $("#license").show();
+                $("#license").find('input').removeAttr('disabled');
+            }
+        });
+
+        //男女选中
+        $(".sex").click(function () {
+            $(".sex").find('input').removeAttr('checked');
+            $(this).find('input').attr('checked', 'checked');
+        });
+
+        //提交
+
+        $("#sbtn").click(function(){
+            var jsonData = {
+                id:$("#u_m_id").val(),
+                commercial:$('input[name="commercial"]:checked').val(),//经营性质
+                sex:$('input[name="sex"]:checked').val(),//男女
+                real_name:$('#uname').val(),//名字
+                id_card:$('#card').val(),//身份证
+                mobile_num:$('#mobile').val(),//手机号
+                location_province:$("#province1 option:selected").text(),//省
+                location_city:$("#city1 option:selected").text(),//市
+                location_area:$("#district1 option:selected").text(),//区
+                address:$("#address").val(),//详细地址
+                info:$('#info').val(),//说明
+                idcard:$('#idcard').val(),//身份证正面图
+                reidcard:$('#reidcard').val(),//身份证反面图
+                handidcard:$('#handidcard').val(),//手持身份证
+                permit:$('#permit').val(),//营业执照
+                field1:$('#field1').val(),//场地图1
+                field2:$('#field2').val(),//场地图2
+                field3:$('#field3').val(),//场地图3
+                field4:$('#field4').val(),//场地图4
+                status:'0',
+                is_permit:($('input[name="commercial"]:checked').val() == "非经营性") ? '1':'2'
+            };
+            $.post("/index/edituserdata",jsonData,function(msg){
+                let resdata = eval("("+msg+")");
+                if(resdata.msg == "ok"){
+                    alert("提交成功");
+                    window.location.href="/index/ajaxmobilenum";
+                }else{
+                    alert("提交失败");
+                }
+            })
+        });
+
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/*  添加列表样式  */
+.avatarspan{position: relative;}
+.avatar{width: 114px;height: 40px;}
+.avatarinput{width: 114px;height: 40px;position: absolute;left: 50%;margin-left: -45px;top: 0;opacity: 0;z-index: 9999;}
+.layui_body{padding: 15px;}
+.layui_tab_img{margin-left: 110px;box-shadow: none;border-radius: 0;}
+.layui_content{height: 38px;}
+.layui_item_il{display: inline-block;}

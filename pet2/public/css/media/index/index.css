@@ -1,0 +1,51 @@
+/*    banner    */
+.big-next ,.big-prev{position: absolute;right: 50px;top: 50%;z-index: 10;width: 67px;height: 134px;margin-top: -67px;cursor: pointer;background-image: url(../../../img/media/common/ico_arrow_r.png);background-size: 100%;}
+.big-prev{left: 50px;right: auto;background-image: url(../../../img/media/common/ico_arrow_l.png);background-size: 100%;}
+.swiper-pagination-bullet{width: 40px;height: 3px;border-radius: 2px;background: #6c78a4;}
+.headSwiper .swiper-pagination-bullet-active{background: #5481ff;}
+
+/*    宠爱新闻    */
+.news-tab {padding: 70px 0 60px;}
+.news-trends {width: 796px;}
+.news-trends .tit ,.community .tit{font-size: 20px;font-weight: 600;color: #000;padding-left: 45px;line-height: 24px;background: url(../../../img/media/index/icon_tit.png) no-repeat left center/21px 17px;}
+.news-trends .tit .fr{text-align: center;font-weight: 100;vertical-align: top;padding: 0 6px;font-size: 12px;color: #999;line-height: 22px;border: 1px solid #e5e5e5;}
+.news-trends ul {margin-top: 8px;float: left;width: 100%;}
+.news-trends ul li {overflow: hidden;height: 85px;margin-bottom: 8px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0 4px;}
+.news-trends ul li:nth-child(odd){background-color: #f3f3f3;border-radius: 10px;}
+.news-trends ul li .date {float: left;width: 84px;height: 85px;font-size: 14px;color: #666;line-height: 24px;}
+.news-trends ul li .date span {display: block;font-size: 22px;color: #000;padding-top: 20%;}
+.news-trends .content {padding-top: 8px;line-height: 24px;}
+.news-trends .content p {font-size: 16px;color: #333;font-weight: 900;overflow: hidden;-o-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 1px;}
+.news-trends .content span {max-height: 45px;font-size: 14px;color: #666;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.andriod-down ,.ios-down {width: 312px;height: 480px;border-radius: 10px;overflow: hidden;border: 1px solid #f1f1f1;cursor: pointer;}
+.andriod-down{margin-left: 58px;}
+.news-trends .tit .fr:hover {color: #5481ff;border-color: #5481ff;}
+.news-trends ul li:hover {background-color: #f3f3f3;border-radius: 10px;}
+.news-trends ul li:hover .content p {color: #5481ff;}
+
+.rescue{position: absolute;top: 0;width: 248px;text-align: center;font-size: 14px;color: #fff;height: 286px;border-radius: 10px;background: rgba(72, 142, 231,.9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);}
+.r-shop{width: 216px;background: rgba(251, 192, 98,.9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);}
+.r-hospital{width: 476px;height: 159px;background: rgba(78, 168, 109,.9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);}
+.rescue-title{font-size: 16px;margin-top: 20px;font-weight: 600;}
+.rescue-text{text-align: left;padding: 10px;line-height: 16px;}
+
+/*   应用下载蒙版   */
+.down-mask{position: absolute;top: 0;width: 312px;height: 480px;border-radius: 10px;overflow: hidden;background: rgba(0,0,0,.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);text-align: center;}
+.down-mask-t{color: #fff;font-size: 16px;font-weight: 600;padding: 10px 0;margin-top: 135px;}
+.down-mask-t-img{border-radius: 4px;}
+.down-btn{display: block;padding: 8px 0;color: #fff;border: 1px solid #fff;width: 136px;border-radius: 4px;margin: 10px 88px;font-size: 14px;}
+.down-btn:hover{border: 1px solid #5481ff;background: #5481ff;}
+
+/*   宠爱家园   */
+.staff-mien{margin-bottom: 100px;}
+.news-tab .tit {font-size: 20px;font-weight: 600;color: #000;padding-left: 45px;line-height: 24px;margin-bottom: 14px;background: url(../../../img/media/index/icon_tit.png) no-repeat left center/21px 17px;}
+.staff-l{width: 960px;height: 480px;border-radius: 10px;overflow: hidden;}
+.video-js .vjs-big-play-button{top: 50%;left: 50%;margin-left: -60px;margin-top: -30px;font-size: 30px;line-height: 58px;height: 60px;width: 120px;border-radius: 10px;}
+.vjs-poster{background-size: 100%;}
+.staff-r{width: 476px;overflow: hidden;margin-top: 8px;}
+.community{height: 497px;}
+.top-l {width: 248px;height: 286px;border-radius: 10px;background: url("../../../img/media/index/rescue.png") no-repeat;background-size: 100% 100%;}
+.top-r {width: 216px;height: 286px;border-radius: 10px;background: url("../../../img/media/index/shop.png") no-repeat;background-size: 100% 100%;}
+.bottom{width: 476px;height: 159px;border-radius: 10px;margin-top: 12px;background: url("../../../img/media/index/hospital.png") no-repeat;background-size: 100% 180%;}
+
+

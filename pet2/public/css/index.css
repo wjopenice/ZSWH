@@ -1,0 +1,70 @@
+/*     性价比推荐     */
+.broadcast_ul li{width: 285px;height: 420px;background: #fff;margin-right: 20px;}
+.broadcast_ul li:last-child{margin-right: 0;border-top: 1px solid #2196f3;}
+.broadcast_ul li:nth-child(1){border-top: 1px solid #ff6b63;}
+.broadcast_ul li:nth-child(2){border-top: 1px solid #ffac13;}
+.broadcast_ul li:nth-child(3){border-top: 1px solid #83c44e;}
+.slide-box{height: 400px;}
+.swiper-slide{text-align: center;}
+.swiper-slide img{display: inline-block;border-radius: 4px;}
+.swiper-pagination-bullet{border: 2px solid #252424;background: #252424;width: 6px;height: 6px;}
+.swiper-pagination-bullet-active{background: rgba(255, 255, 255, 0.1);border: 2px solid #ff6b63;}
+.swiper-wrapper{height: 340px;}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{background-image:url("../../public/images/banner/pev.png");display: none;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image:url("../../public/images/banner/next.png");display: none;}
+.broadcast_ul li:hover .swiper-button-prev{display: inline-block;}
+.broadcast_ul li:hover .swiper-button-next{display: inline-block;}
+.s_name1{color: #ffac13;}
+.s_name2{color: #83c44e;}
+.s_name3{color: #2196f3;}
+
+/*      banner      */
+.s_banner{margin: 20px 0;}
+.s_banner {height: 400px;width: 100%;overflow: hidden;}
+.slide-box .slide-content li { height: 500px;width: 100%;overflow: hidden;}
+.slide-box .slide-content li a{ display: block; height: 100%;}
+.slide-box .slide-triggers {position: absolute;width: 100%;text-align: center;left: 0;right: 0;bottom: 10px;z-index: 3;}
+.slide-box .slide-triggers li{display: inline-block;border: 2px solid #4e4e4e;width: 8px;height: 8px;margin: 0 4px;background:#4e4e4e;border-radius: 50%;overflow: hidden;cursor: pointer; *display:inline;*zoom:1;}
+.slide-box .slide-triggers .cur {background: rgba(255, 255, 255, 0.1);border: 2px solid #ff6b63;cursor: default;}
+
+/*     热门游戏、我要购买、我要卖出     */
+.hot_box{margin-bottom: 40px;}
+.hot_left{width: 874px;background: #fff;min-height: 682px;}
+.hot_ul{padding: 40px 0 0 42px;}
+.hot_ul li{text-align: center;width: 126px;margin-right: 40px;margin-bottom: 40px;}
+.hot_ul li img{display: inline-block;border-radius: 4px;}
+.hot_ul li img:hover {-webkit-transform: scale(1.1);}
+.hot_ul li p{font-size: 16px;color: #333;margin-top: 10px;width: 120px;}
+
+.service_ul{margin-bottom: 20px;}
+.service_ul li{width: 98px;height: 140px;background: #fff;margin-right: 3px;text-align: center;}
+.service_ul li:last-child{margin-right: 0;}
+.service_ul li i{width: 50px;height: 50px;display: inline-block;margin-top: 27px;}
+.service_ul li a{display: block;}
+.service_ul li p{font-size: 16px;color: #666;margin-top: 10px;}
+.guide_li i{background:url("../images/index/guide_icon.png") no-repeat center center;}
+.release_li i{background:url("../images/index/release_icon.png") no-repeat center center;}
+.server_li i{background:url("../images/index/common_icon2.png") no-repeat center center;}
+
+
+/*     商品推荐     */
+.recommend{margin: 40px 0;}
+.text_c{height: 300px;line-height: 300px;}
+.recommend_ul .li_a{display: block;}
+.text_c img{vertical-align: middle;}
+.re_text{font-size: 16px;color: #333;padding: 12px 20px 0 20px;}
+.re_money{font-size: 16px;color: #e40c0c;padding: 12px 20px 0 20px;}
+.re_stock{font-size: 15px;color: #666;padding: 12px 20px 0 20px;}
+.ex_a{position: absolute;bottom: 0;left: 0;background: #ff6b63;width: 100%;height: 72px;line-height: 72px;color: #fff;font-size: 16px;text-align: center;display: none;}
+.recommend_ul li:hover .ex_a{display: block;}
+
+
+
+
+
+
+
+
+
+

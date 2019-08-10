@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="宠爱动态详情，宠爱动态，宠爱宠物详情">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-<?=$oneData['title']?></title>
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/detail/index.css?v=2018113">
+</head>
+<body>
+    <div class="header about-top news-top">
+        <?php load_view("inc/header");?>
+    </div>
+    <!--  detail  -->
+    <div class="detail-box center">
+        <div class="tit"><a href="/index/index">宠爱之家</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index/news">新闻动态</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;文章详情</div>
+        <h1 class="newsdtit"><?=$oneData['title']?></h1>
+        <div class="dete">发布日期：<a><?=date("Y-m-d",$oneData['create_time'])?></a><span class="content_from">作者：<a><?=$oneData['author']?></a></span><span class="content_from">来源：<a href="/index/index">宠爱之家官网</a></span></div>
+        <div class="detail-body">
+            <?=htmlspecialchars_decode($oneData['content'])?>
+        </div>
+        <div class="unauthorized">
+            <p>以上内容均为宠爱之家原创稿件，未经授权，谢绝转载，如需转载请联系本站并保留以上全部内容。更多精彩，尽在宠爱之家！注：文章所有图片均来自于网络</p>
+        </div>
+    </div>
+
+    <?php load_view("inc/footer");?>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/media.js"></script>
+</body>
+</html>

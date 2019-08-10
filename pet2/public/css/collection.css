@@ -1,0 +1,42 @@
+/*     个人中心右侧     */
+.uc_right{width: 878px;border: 1px solid #ccc;background: #fff;min-height: 800px;padding: 30px 30px 0;margin-bottom: 40px;}
+
+.buy_title span{font-size: 16px;color: #333;text-align: center;}
+
+.user_time{padding: 30px 0;line-height: 30px;}
+.time_text ,.order_text{font-size: 16px;}
+.time_box{margin-right: 40px;}
+.user_search{width: 280px;height: 30px;font-size: 16px;border: 1px solid #ccc;margin-left: 10px;padding-left: 10px;}
+.button{width: 80px;height: 32px;background: #f4f4f4;color: #333;font-size: 16px;border: 1px solid #ccc;margin-left: 20px;line-height: 30px;cursor: pointer;}
+.time_box select{width: 140px;height: 30px;border: 1px solid #ccc;padding-left: 10px;font-size: 16px;outline: 0;}
+
+.collection_box{border: 1px solid #ccc;}
+.collection_title{padding: 0 30px;height: 50px;line-height: 50px;background: #f3f2f2;font-size: 16px;color: #333;}
+.check_i{width: 14px;height: 14px;background: url("../../public/images/collection/un_check.png") no-repeat center center;margin: 18px 6px 0 0;}
+.check_i.active{background: url("../../public/images/collection/check.png") no-repeat center center;}
+.delete{margin: 0 40px 0 10px;border: 1px solid #ccc;padding: 0 2px;cursor: pointer;}
+.col_d{width: 214px;text-align: left;}
+.col_d1{width: 120px;text-align: center;}
+.col_d2{width: 110px;text-align: center;}
+.col_d3{width: 110px;text-align: center;}
+.col_d4{width: 120px;text-align: center;}
+.col_ul{padding: 0 30px;}
+.col_ul li{border-bottom: 1px dashed #ccc;padding: 30px 0;height: 100px;font-size: 14px;color: #333;}
+.col_ul li:last-child{border-bottom: 0;}
+.check_info{width: 14px;height: 14px;background: url("../../public/images/collection/un_check.png") no-repeat center center;margin: 42px 30px 0 0;}
+.check_info.active{background: url("../../public/images/collection/check.png") no-repeat center center;}
+.col_box{width: 310px;}
+.col_box p{margin: 10px 0;}
+.buy_type{color: #666;}
+.buy_area{color: #999;}
+.buy_li_info{line-height: 100px;}
+.col_d4 p{margin: 20px 0;cursor: pointer;}
+.at_once{color: #ff6b63;}
+.de_btn{color: #999;}
+
+
+
+
+
+
+

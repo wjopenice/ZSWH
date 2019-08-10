@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>宠爱之家-申请加入平台</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/public/css/mpettap/sm.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1016610_yupu4u1663h.css">
+    <link rel="stylesheet" href="/public/css/mpettap/reset.css">
+    <link rel="stylesheet" href="/public/css/mpettap/login.css">
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="popup-s">
+                <h4>动态登录</h4>
+                <div class="input-box"><input class="input-text" id="number" type="number" placeholder="手机号码" oninput="if(value.length>11)value=value.slice(0,11)"></div>
+                <div class="input-box code-box"><input id="code" class="input-text code fl" type="number" placeholder="验证码" oninput="if(value.length>6)value=value.slice(0,5)"><input class="input-text code-btn fl" type="button" onclick="time()" value="获取验证码(60)"></div>
+                <div class="input-box l-btn"><input class="login-btn" type="button" value="立即登录" onclick="send()" ></div>
+            </div>
+            <p class="wel">欢迎救助站和宠物医院入驻宠爱之家平台</p>
+        </div>
+    </div>
+
+
+    <script type='text/javascript' src='/public/js/mpettap/test.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/public/js/mpettap/sm.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="/public/js/mpettap/index.js"></script>
+    <script>
+        //倒计时
+        function time() {
+            let len = $("#number").val().length;
+            if(len == 11){
+                $(".code-btn").addClass("on");
+                var time = 59;
+                $(".code-btn").attr("disabled", true);
+                var timer = setInterval(function() {
+                    if (time == 0) {
+                        clearInterval(timer);
+                        $(".code-btn").attr("disabled", false);
+                        $(".code-btn").val("再次获取");
+                        $(".code-btn").removeClass("on");
+                    } else {
+                        $('.code-btn').val("获取验证码(" + time + ")");
+                        time--;
+                    }
+                }, 1000);
+                $.post("/login/sendvcode",{mobile_num:$("#number").val()},function (msg) {},"json");
+            }else{
+                alert("请先输入手机号");
+            }
+        }
+        //登录
+        function send() {
+            let phone = $("#number").val();
+            let dynamic_code = $("#code").val();
+            $.post("/login/ajaxsms",{phone:phone,dynamic_code:dynamic_code},function (msg) {
+                if(msg.code == 0){
+                    window.location.href = "/wap/ajaxmobilenum?type=<?=$type?>";
+                }else{
+                    alert(msg.message);
+                }
+            },"json");
+        }
+    </script>
+</body>
+</html>

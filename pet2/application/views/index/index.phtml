@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="/public/css/media/video-js.min.css">
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/index/index.css">
+</head>
+<body>
+    <!--  swiper bar  -->
+    <div class="header">
+        <!--  swiper  -->
+        <div class="big-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/public/img/media/index/1.png" style="width: 100%;height: 100%;" alt=""></div>
+                    <div class="swiper-slide"><img src="/public/img/media/index/5.png" style="width: 100%;height: 100%;" alt=""></div>
+                    <div class="swiper-slide"><img src="/public/img/media/index/4.png" style="width: 100%;height: 100%;" alt=""></div>
+                    <div class="swiper-slide"><img src="/public/img/media/index/2.png" style="width: 100%;height: 100%;" alt=""></div>
+                    <!--<div class="swiper-slide"><img src="images/index/3.png" style="width: 100%;height: 100%;" alt=""></div>-->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="big-next swiper-button-next"></div>
+                <div class="big-prev swiper-button-prev"></div>
+            </div>
+        </div>
+        <?php load_view("inc/header");?>
+    </div>
+    <!--  news  -->
+    <div class="news-tab center clearfix">
+
+        <!--<div class="fl andriod-down pr">
+            <img src="images/index/andriod.png" alt="">
+            <div class="down-mask hide">
+                <p class="down-mask-t">IOS下载</p>
+                <img src="images/index/ewm.png" alt="">
+                <a class="down-btn" href="javascript:void(0);">点击下载</a>
+            </div>
+        </div>-->
+        <div class="tit">宠爱家园</div>
+        <div class="staff-l video-box fl">
+            <video id="my-video" class="video-js" controls preload="auto" width="960" height="480" poster="/public/img/media/index/video-bg.png" data-setup="{}">
+                <source src="/public/img/media/video/chongaizhijia.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="fr ios-down pr">
+            <img src="/public/img/media/index/ios.png" alt="">
+            <div class="down-mask">
+                <p class="down-mask-t">Android下载</p>
+                <img class="down-mask-t-img" src="/native/phpqrcode" width="140" height="140" alt="" onclick="this.src='/native/phpqrcode?data='+Math.random();">
+                <a class="down-btn" href="<?=$filename?>">点击下载</a>
+            </div>
+        </div>
+    </div>
+    <!--  family  -->
+    <div class="staff-mien center clearfix">
+        <div class="news-trends fl">
+            <div class="tit">宠爱新闻<a href="/index/news?type=news" class="fr">查看更多</a></div>
+            <ul>
+                <?php foreach ($newData as $key=>$value): ?>
+                <li>
+                    <a href="/index/detail?type=news&id=<?=$value['id']?>" target="_blank">
+                        <div class="date"><span><?=date("m-d",$value['create_time'])?></span><?=date("Y",$value['create_time'])?></div>
+                        <div class="content">
+                            <p><?=$value['title']?></p>
+                            <span><?=$value['content']?></span>
+                        </div>
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="community fr">
+            <div class="tit">宠爱社区</div>
+            <div class="staff-r">
+                <div class="top clearfix">
+                    <div class="top-l fl pr">
+                        <div class="rescue">
+                            <p class="rescue-title">爱心观察员</p>
+                            <p class="rescue-text">想知道救助过的小动物们后续？尽请期待：</p>
+                        </div>
+                    </div>
+                    <div class="top-r fr pr">
+                        <div class="rescue r-shop">
+                            <p class="rescue-title">宠爱游戏</p>
+                            <p class="rescue-text">想给萌宠最好的游戏？尽请期待：</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom pr">
+                    <div class="rescue r-hospital">
+                        <p class="rescue-title">萌宠医院</p>
+                        <p class="rescue-text">宠爱之家合作医院，爱宠生病不要慌！尽请期待：</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php load_view("inc/footer");?>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/swiper.min.js"></script>
+    <script src="/public/js/video.min.js"></script>
+    <script src="/public/js/media.js"></script>
+    <script>
+        //swiper
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.big-next',
+                prevEl: '.big-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },//可选选项，自动滑动
+            speed: 600,
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+        //video
+        var myPlayer = videojs('my-video');
+        videojs("my-video").ready(function(){
+            var myPlayer = this;
+            //myPlayer.play();
+        });
+    </script>
+</body>
+</html>

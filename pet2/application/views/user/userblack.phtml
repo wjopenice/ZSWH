@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>宠爱之家APP后台管理-黑名单</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/user/userblack.css?=20121331" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>用户名</span></div></th>
+                    <th class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>性别</span></div></th>
+                    <th class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>手机号</span></div></th>
+                    <th class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>用户等级</span></div></th>
+                    <th class="laytable-cell-1-0-5"><div class="layui-table-cell"><span>用户类型</span></div></th>
+                    <th class="laytable-cell-1-0-6"><div class="layui-table-cell"><span>注册时间</span></div></th>
+                    <th class="laytable-cell-1-0-7"><div class="layui-table-cell"><span>登陆IP</span></div></th>
+                    <th class="laytable-cell-1-0-8"><div class="layui-table-cell"><span>联网状态</span></div></th>
+                    <th class="laytable-cell-1-0-9"><div class="layui-table-cell"><span>年龄</span></div></th>
+                    <th class="laytable-cell-1-0-10"><div class="layui-table-cell"><span>宠龄</span></div></th>
+                    <th class="laytable-cell-1-0-11 layui_th_end"><div class="layui-table-cell"><span>操作</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($page as $key=>$value): ?>
+                    <tr>
+                        <td class="laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value->id?></span></div></td>
+                        <td class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value->account?></span></div></td>
+                        <td class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value->sex?></span></div></td>
+                        <td class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$value->mobile_num?></span></div></td>
+                        <td class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=$value->user_level?></span></div></td>
+                        <td class="laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=$value->competence?></span></div></td>
+                        <td class="laytable-cell-1-0-6"><div class="layui-table-cell"><span><?=$value->register_time?></span></div></td>
+                        <td class="laytable-cell-1-0-7"><div class="layui-table-cell"><span><?=$value->register_ip?></span></div></td>
+                        <td class="laytable-cell-1-0-8"><div class="layui-table-cell"><span><?php if($value->is_online == '1'){echo "<span style='color: #0c0;'>在线</span>";}else{echo "<span style='color: #666;'>离线</span>";}?></span></div></td>
+                        <td class="laytable-cell-1-0-9"><div class="layui-table-cell"><span>23</span></div></td>
+                        <td class="laytable-cell-1-0-10"><div class="layui-table-cell"><span>1</span></div></td>
+                        <td class="laytable-cell-1-0-11"><div class="layui-table-cell"><span data-id="<?=$value->id?>" data-status="1" class="layui-btn layui-btn-xs layui-btn-danger" onclick="del(this)">删 除</span></div></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script src="/public/layui/lay/modules/layer.js"></script>
+<script>
+let del = (tag)=>{
+    console.log($(tag).data('id'))
+    let id = $(tag).data('id');
+    let status = $(tag).data('status');
+   $.get("/user/userdel",{id:id,status:status},(msg)=>{
+         if(msg.msg == 'ok'){
+             window.location.href = "/user/userblack";
+         }else{
+             layer.msg('删除失败', {icon: 5});
+         }
+   },"json");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-词语过滤</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/set/index.css?v=2018122114" rel="stylesheet" />
+</head>
+<body>
+    <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+        <form action="/set/search" method="get">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">关键词</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="search" placeholder="请输入关键词" id="search_val" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <button type="submit" class="layui-btn layuiadmin-btn-useradmin">
+                        <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                    </button>
+                </div>
+                <div class="layui-inline">
+                    <button type="button" class="layui-btn layui-btn-normal">
+                        <a href="addindex" class="layui_a"><i class="layui-icon layui-icon-add-circle-fine"></i><span class="layui_a_span">新增词语</span></a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="layui-form layui-border-box layui-table-view">
+        <div class="layui-table-box">
+            <div class="layui-table-header">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                    <tr>
+                        <th data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                        <th data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>不良词语</span></div></th>
+                        <th data-field="register_ip" class="layui-unselect laytable-cell-1-0-2 layui_th_end"><div class="layui-table-cell"><span>操作</span></div></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="layui-table-body layui-table-main">
+                <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody id="list_body">
+                    <?php foreach ($page as $key=>$value): ?>
+                    <tr>
+                        <td data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['id']?></span></div></td>
+                        <td data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['word']?></span></div></td>
+                        <td data-field="register_ip" class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span class="layui-btn layui-btn-xs layui-btn-danger"  data-id="<?=$value['id']?>" onclick="del(this)">删除</span></div></td>
+                    </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <?=$showstr?>
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/layui/layui.all.js"></script>
+    <script>
+        let del = (tag)=>{
+            let id = $(tag).data('id');
+            $.get("/set/delindex",{id:id},(msg)=>{
+                if(msg.msg == 'ok'){
+                    window.location.href = "/set/index";
+                }else{
+                    layer.msg('删除失败', {icon: 5});
+                }
+            },"json");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-添加分类</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/map/addtype.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/user/addlistuser" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">分类添加</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">id</label>
+            <div class="layui-input-inline">
+                <input type="text" name="id" placeholder="id" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">uid</label>
+            <div class="layui-input-inline">
+                <input type="text" name="uid" placeholder="account" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">account</label>
+            <div class="layui-input-inline">
+                <input type="text" name="account" placeholder="account" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">password</label>
+            <div class="layui-input-inline">
+                <input type="text" name="password" placeholder="password" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">mobile_num*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="mobile_num" placeholder="mobile_num" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">pet_cur*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pet_cur" placeholder="pet_cur" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">price*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="price" placeholder="price" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">user_age*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="user_age" placeholder="user_age" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">sex</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sex" placeholder="sex" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">nick_name</label>
+            <div class="layui-input-inline">
+                <input type="text" name="nick_name" placeholder="nick_name" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">real_name</label>
+            <div class="layui-input-inline">
+                <input type="text" name="real_name" placeholder="real_name" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">id_card</label>
+            <div class="layui-input-inline">
+                <input type="text" name="id_card" placeholder="id_card" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">user_level*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="user_level" placeholder="user_level" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">user_exp*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="user_exp" placeholder="user_exp" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">membership_points*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="membership_points" placeholder="membership_points" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">lock_status</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lock_status" placeholder="lock_status" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">register_time*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="register_time" placeholder="register_time" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">register_ip</label>
+            <div class="layui-input-inline">
+                <input type="text" name="register_ip" placeholder="register_ip" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">last_activity_date*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="last_activity_date" placeholder="last_activity_date" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">is_online</label>
+            <div class="layui-input-inline">
+                <input type="text" name="is_online" placeholder="is_online" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">avatar</label>
+            <div class="layui-input-inline">
+                <input type="text" name="avatar" placeholder="avatar" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">access_token</label>
+            <div class="layui-input-inline">
+                <input type="text" name="access_token" placeholder="access_token" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">competence</label>
+            <div class="layui-input-inline">
+                <input type="text" name="competence" placeholder="competence" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">u_sign</label>
+            <div class="layui-input-inline">
+                <input type="text" name="u_sign" placeholder="u_sign" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">my_pet</label>
+            <div class="layui-input-inline">
+                <input type="text" name="my_pet" placeholder="my_pet" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">pet_breed</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pet_breed" placeholder="pet_breed" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">pet_age*</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pet_age" placeholder="pet_age" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">sina</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sina" placeholder="sina" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">qq</label>
+            <div class="layui-input-inline">
+                <input type="text" name="qq" placeholder="qq" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width: 200px;">wechat</label>
+            <div class="layui-input-inline">
+                <input type="text" name="wechat" placeholder="wechat" class="layui-input" style="width: 600px;">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

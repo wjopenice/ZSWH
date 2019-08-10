@@ -1,0 +1,41 @@
+/*     交易我要买我要卖title     */
+.trade_box{margin: 20px 0 40px;}
+.hot_right{min-height: 400px;}
+.hot_game{background: #fff;}
+.notice{min-height: 212px;}
+
+/*        热门推荐分类        */
+.classify_box{margin-bottom: 10px;display: inline-block;position: absolute;right: 60px;top: 0;}
+.classify_box a{margin-right: 24px;color: #333;}
+.classify_box .active{color: #ff6b63;}
+
+.hot_recommend{margin-bottom: 20px;}
+.classify_ul li{width: 285px;height: 360px;background: #fff;margin-right: 20px;margin-bottom: 20px;text-align: center;}
+.classify_ul li:nth-child(4){margin-right: 0;}
+.classify_ul li:nth-child(8){margin-right: 0;}
+.classify_ul li img{display: inline-block;margin: 40px 0 26px;}
+.s_exp{font-weight: 600;color: #ff0000;width: 240px;margin-top: 24px;}
+.s_title{width: 240px;}
+.s_text{width: 240px;}
+.s_text1{width: 240px;}
+.classify_content .classify_ul{display: none;}
+.classify_content .active{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

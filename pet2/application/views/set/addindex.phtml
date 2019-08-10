@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-添加词语</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/set/addindex.css" rel="stylesheet" />
+</head>
+<body>
+    <form class="layui-form" action="addindex" method="post" enctype="multipart/form-data">
+        <div class="layui-card-header">添加词语</div>
+        <div class="layui_body">
+            <div class="layui-form-item">
+                <label class="layui-form-label">词语名称</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="word" placeholder="请输入不良词语名称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="submit" class="layui-btn" value="立即提交">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

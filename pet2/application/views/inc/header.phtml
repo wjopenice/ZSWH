@@ -1,0 +1,18 @@
+<?php
+$type = isset($_GET['type'])?$_GET['type']:"index";
+?>
+<!--  header  -->
+<div class="nav-bar">
+    <div class="main">
+        <a href="http://www.pettap.cn" class="logo">宠爱之家</a>
+        <ul class="nav">
+            <li class="head-about <?php if($type == 'index'){ echo 'cur';}?>"><a href="/index/index?type=index">首页</a></li>
+            <li class="head-about <?php if($type == 'news'){ echo 'cur';}?>""><a href="/index/news?type=news">宠爱动态</a></li>
+            <li class="head-about <?php if($type == 'rescue'){ echo 'cur';}?>""><a href="/index/rescue?type=rescue">宠爱救助站</a></li>
+            <!--<li class="head-about"><a href="https://shop65840407.taobao.com/?spm=a230r.7195193.1997079397.39.af063f43I3lvmc" target="_blank">宠爱商城</a></li>-->
+            <li class="head-about"><a href="http://www.zhishengwh.com" target="_blank">玩转游戏</a></li>
+            <li class="head-about <?php if($type == 'about'){ echo 'cur';}?>""><a href="/index/about?type=about">关于宠爱</a></li>
+            <!--<li class="head-about"><a href="javascript:void(0);">加入宠爱</a></li>-->
+        </ul>
+    </div>
+</div>

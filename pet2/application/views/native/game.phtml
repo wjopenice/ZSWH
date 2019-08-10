@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 强制让文档的宽度与设备的宽度保持1:1,并且文档最大的宽度比例是1.0,且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <!-- WebApp全屏模式,隐藏地址栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 禁止百度转码显示 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 添加到IOS主屏后的标题 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>游戏列表</title>
+    <link rel="stylesheet" href="/public/css/native/swiper.min.css">
+    <!--<link rel="stylesheet" href="http://at.alicdn.com/t/font_972273_k4r9mu9cvc.css">-->
+    <link rel="stylesheet" href="/public/css/native/public.css">
+    <link rel="stylesheet" href="/public/css/native/game.css">
+</head>
+<body>
+<!-- game list -->
+<div class="game-box">
+    <!-- header -->
+    <!--<header class="header">
+        <div class="header-left"><div class="icon iconfont icon-arrowleft back-icon"></div></div>
+        <div class="header-input"><input class="search-input" type="text" maxlength="30" placeholder="请输入游戏/礼包/关键词"><i class="icon iconfont icon-search search-icon"></i></div>
+        <div class="header-right"><div class="icon iconfont icon-erweima1688 back-icon"></div></div>
+    </header>-->
+    <!-- swiper -->
+    <div class="wrapper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="swiper-img" src="/public/img/native/s2.png" alt=""></div>
+                <div class="swiper-slide"><img class="swiper-img" src="/public/img/native/s3.png" alt=""></div>
+                <div class="swiper-slide"><img class="swiper-img" src="/public/img/native/s1.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- game rank -->
+    <div class="hot">
+        <div class="hot-game">时下最热门的游戏</div>
+        <ul class="hot-list" id="new_hot">
+            <!--<li class="hot-li">
+                <img class="hot-img" src="/public/img/native/hot.png" alt="">
+                <p class="hot-title">全民突击</p>
+                <a href="javascript:void(0);" class="hot-button">点击下载</a>
+            </li>
+            <li class="hot-li">
+                <img class="hot-img" src="/public/img/native/hot.png" alt="">
+                <p class="hot-title">全民突击</p>
+                <a href="javascript:void(0);" class="hot-button">点击下载</a>
+            </li>
+            <li class="hot-li">
+                <img class="hot-img" src="/public/img/native/hot.png" alt="">
+                <p class="hot-title">全民突击</p>
+                <a href="javascript:void(0);" class="hot-button">点击下载</a>
+            </li>
+            <li class="hot-li">
+                <img class="hot-img" src="/public/img/native/hot.png" alt="">
+                <p class="hot-title">全民突击</p>
+                <a href="javascript:void(0);" class="hot-button">点击下载</a>
+            </li>-->
+        </ul>
+    </div>
+    <!-- ad -->
+    <div class="ad">
+        <ul class="ad-ul">
+            <li class="ad-li border-right"><a href="javascript:void(0);"><img class="ad-img" src="/public/img/native/ad1.png" alt=""></a></li>
+            <li class="ad-li"><a href="javascript:void(0);"><img class="ad-img" src="/public/img/native/ad2.png" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- recommend -->
+    <div class="recommend">
+        <div class="re-title"><span class="title-left">大家都在玩</span></div>
+        <ul class="item-list" id="recom">
+            <!--<li class="item border-bottom">
+                <img class="item-img" src="/public/img/native/hot.png" alt="">
+                <div class="item-info">
+                    <p class="item-title">全民突击</p>
+                    <p class="item-desc">英雄杀是由腾讯游戏倾力打造的是款卡牌策略桌游将中国历史与桌面游戏进行了完美的“联姻”。以独有的方式展示了一个个鲜活的历史人物，一段段精彩的历史故事。除了经典“杀人”玩法，还拥有丰富的3V3、排位赛及好友组队等模式，更革新地融入英雄DIY、宝具搭配玩法，万千的关卡挑战，邀你一起智造英雄，杀出天下！</p>
+                </div>
+                <a href="javascript:void(0);" class="item-button">点击下载</a>
+            </li>-->
+        </ul>
+    </div>
+    <!-- gift -->
+    <div class="recommend">
+        <div class="re-title"><span class="title-left">热门游戏</span></div>
+        <ul class="item-list" id="hot">
+            <!--<li class="item border-bottom">
+                <img class="item-img" src="/public/img/native/hot.png" alt="">
+                <div class="item-info">
+                    <p class="item-title">全民突击</p>
+                    <p class="item-desc">英雄杀是由腾讯游戏倾力打造的是款卡牌策略桌游将中国历史与桌面游戏进行了完美的“联姻”。以独有的方式展示了一个个鲜活的历史人物，一段段精彩的历史故事。除了经典“杀人”玩法，还拥有丰富的3V3、排位赛及好友组队等模式，更革新地融入英雄DIY、宝具搭配玩法，万千的关卡挑战，邀你一起智造英雄，杀出天下！</p>
+                </div>
+                <a href="javascript:void(0);" class="item-button">点击下载</a>
+            </li>-->
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="ft-title">深圳玩转游戏平台</p>
+        <p class="copy-info">zhishengwh 粤ICP备18083935号-1意见反馈</p>
+    </footer>
+</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/swiper.min.js"></script>
+<script>
+    $(function(){
+        $.get('http://www.zhishengwh.com/index.php?s=/Media/Index/pettap.html',{m:'m'},function(msg){
+            var new_hot = '';
+            var recom = '';
+            var hot = '';
+            for(i in msg.reco){
+                recom += '<li class="hot-li"><img class="hot-img" src="https://www.zhishengwh.com'+msg.reco[i].icon+'" alt=""><p class="hot-title">'+msg.reco[i].game_name+'</p><a href="https://www.zhishengwh.com'+msg.reco[i].and_dow_address+'" class="hot-button">点击下载</a></li>';
+            }
+            $("#new_hot").html(recom);
+
+            for(v in msg.xin){
+                new_hot += '<li class="item border-bottom"><img class="item-img" src="https://www.zhishengwh.com'+msg.xin[v].icon+'" alt=""><div class="item-info"><p class="item-title">'+msg.xin[v].game_name+'</p><p class="item-desc">'+msg.xin[v].introduction+'</p></div><a href="https://www.zhishengwh.com'+msg.xin[v].and_dow_address+'" class="item-button">点击下载</a></li>';
+            }
+            $("#recom").html(new_hot);
+
+            for(y in msg.hot){
+                hot += '<li class="item border-bottom"><img class="item-img" src="https://www.zhishengwh.com'+msg.hot[y].icon+'" alt=""><div class="item-info"><p class="item-title">'+msg.hot[y].game_name+'</p><p class="item-desc">'+msg.hot[y].introduction+'</p></div><a href="https://www.zhishengwh.com'+msg.hot[y].and_dow_address+'" class="item-button">点击下载</a></li>';
+            }
+            $("#hot").html(hot);
+
+        },"json");
+    });
+    var mySwiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: true,//可选选项，自动滑动
+        loop: true
+    });
+</script>
+</body>
+</html>

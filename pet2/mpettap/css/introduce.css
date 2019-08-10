@@ -1,0 +1,20 @@
+/*  header  */
+.bar~.content{top: 0;}
+.bar{background: none;}
+.bar:after{background: none;}
+
+/*  swiper  */
+.downapp{position: absolute;color: #fff;bottom: 5rem;font-size: .74rem;border: 1px solid #fff;width: 5.4rem;height: 1.6rem;line-height: 1.6rem;text-align: center;border-radius: 1rem;left: 50%;margin-left: -2.7rem;}
+.swiper-slide img{width: 100%;height: 100%;}
+.content{overflow: hidden;}
+.swiper-container{height: 100%;}
+.c1 ,.c2 ,.c3{width: 100%;height: 100%;display: block;}
+.c1{background: url("../images/c1.png") no-repeat;background-size: 100% 100%;}
+.c2{background: url("../images/c2.png") no-repeat;background-size: 100% 100%;}
+.c3{background: url("../images/c3.png") no-repeat;background-size: 100% 100%;}
+
+.in-text{text-align: center;padding: 0 1.8rem;}
+.in-title{color: #e09f30;font-size: .76rem;font-weight: 600;display: inline-block;border-bottom: 1px solid #e09f30;margin: 6rem 0 2.4rem;}
+.in-content{color: #fff;font-size: .62rem;display: block;}
+.arrow-left{font-size: 1.4rem;color: #9a6f27;position: absolute;bottom: 1rem;left: 1rem;}
+.arrow{font-size: 1.4rem;color: #9a6f27;position: absolute;bottom: 1rem;right: 1rem;}

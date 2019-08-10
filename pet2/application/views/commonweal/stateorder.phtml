@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-词语过滤</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/commonweal/stateorder.css" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>用户ID</span></div></th>
+                    <th class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>标题</span></div></th>
+                    <th class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>订单号</span></div></th>
+                    <th class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>支付类型</span></div></th>
+                    <th class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>支付金额</span></div></th>
+                    <th class="laytable-cell-1-0-5"><div class="layui-table-cell"><span>支付状态</span></div></th>
+                    <th class="laytable-cell-1-0-6"><div class="layui-table-cell"><span>时间</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($arrData as $key=>$value): ?>
+                    <tr>
+                       <td class="laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['user_id']?></span></div></td>
+                        <td class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['title']?></span></div></td>
+                        <td class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value['order_number']?></span></div></td>
+                        <td class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?php echo ($value['pay_way'] == 0)?"支付宝":"微信"; ?></span></div></td>
+                        <td class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=$value['pay_amount']?></span></div></td>
+                        <td class="laytable-cell-1-0-5"><div class="layui-table-cell"><span><?php if($value['pay_status']==0){echo '<span style="color: red;">支付失败</span>';}else{echo '<span style="color: green;">支付成功</span>';}?></span></div></td>
+                        <td class="laytable-cell-1-0-6"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$value['pay_time'])?></span></div></td>
+
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<?=$showstr?>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

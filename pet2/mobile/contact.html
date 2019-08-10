@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们-美女主播1V1直播社交APP</title>
+    <meta name="keywords" content="花间、花间直播、花间app、花间社交、花间交友、花间一对一、花间官网">
+    <meta name="description" content="花间APP致力于美女主播一对一私密社交，下载花间APP体验海量美女直播，下载花间安卓及IOS版请认准花间官网www.ihuajian.com。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content=" black ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <link rel="canonical" href="http://www.zhuijumiao.com">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/rem.js"></script>
+    <!-- <script>
+        var us = navigator.userAgent.toLowerCase();
+        if ((us.indexOf('android') > -1 || us.indexOf('linux') > -1) || navigator.platform.toLowerCase().indexOf('linux') != -1||us.indexOf('iphone') > -1 || us.indexOf('ipad') > -1) {
+        }else{
+            window.location.href='http://www.zhuijumiao.com';
+        }
+    </script> -->
+</head>
+<body>
+<!-- Swiper -->
+<div class="tabTit fixed">
+    <a href="index.html">首页</a>
+    <a href="about.html">关于我们</a>
+    <a href="contact.html" class="active">联系我们</a>
+    <a href="manual.html">花间手册</a>
+</div>
+<div class="contact">
+    <div class="map"><div style="width:100%;height:100%;" id="dituContent"></div></div>
+    <ul>
+        <li>公司名称：浙江菲遇互联网科技有限公司</li>
+        <li>公司地址：浙江省宁波市鄞州区泰康中路558号2501-3室</li>
+        <li>电话：<a href="tel:18758351415">18758351415</a></li>
+        <li>邮箱：<a href="mailto:hs0571@163.com">hs0571@163.com</a></li>
+    </ul>
+</div>
+<script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script>
+    var map = new BMap.Map("dituContent");
+    var point = new BMap.Point(121.554729,29.813321);
+    map.centerAndZoom(point,15);
+    var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body{overflow: auto;-webkit-overflow-scrolling : touch;}
+.bar-nav{height: 2.4rem;padding: 0 .5rem;}
+.bar .icon{float: right;margin-top: .4rem;}
+.icon-tuichu{cursor: pointer;}
+.content{overflow-x: hidden;}
+.logo{height: 2.4rem;}
+.info-box{padding: 1rem .5rem;font-size: .8rem;}
+.page img{width: 100%;}
+.page, .page-group{height: 100%;}
+.f-box{/*position: absolute;*/bottom: 0;}
+
+.success-icon{width:56px;height:48px;display:block;margin:20px auto;background:url(../../img/media/rescueinfo/hehe.png) no-repeat;background-position:-56px -96px;vertical-align:middle;}
+.info-btn{background: #ffffff;padding: 15px;border-radius: 5px;box-shadow: 2px 2px 4px #5f5f5f;}
+.info-btn:hover{box-shadow: none; border: none; background: #ff0d00; color: white;}
+table, tr, td, th, caption{border-collapse: collapse;border-spacing: 0;text-align: left;padding: .75rem;font-size: .76rem;}
+caption{text-align: center;font-size: .8rem; margin-bottom: .5rem;}
+.back-box{text-align: center;}
+.back-btn{margin: 1rem 0;display: inline-block;width: 8rem;}
+.in-b{display: flex;}
+.i-b{flex: 1;text-align: center;}

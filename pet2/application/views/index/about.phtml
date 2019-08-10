@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="关于宠爱，宠爱简介，宠爱资料">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/about/index.css">
+</head>
+<body>
+    <div class="header about-top news-top">
+        <?php load_view("inc/header");?>
+    </div>
+    <!-- about -->
+    <div class="company center clearfix">
+        <!--  swiper  -->
+        <div class="swiper-box fl">
+            <div class="tit">关于宠爱</div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/public/img/media/about/about-banner1.png" style="width: 700px;height: 480px;" alt=""></div>
+                    <div class="swiper-slide"><img src="/public/img/media/about/about-banner2.png" style="width: 700px;height: 480px;" alt=""></div>
+                    <div class="swiper-slide"><img src="/public/img/media/about/about-banner3.png" style="width: 700px;height: 480px;" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--  简介  -->
+        <div class="company_intro fr">
+            <div class="tit">宠爱介绍</div>
+            <p>深圳致晟文化创新有限公司创始人致力于打造基于互联网的宠爱之家APP，为社会为流浪猫狗提供公益性援助，同时公司出资建立自己宠物救助站，以及联系医院，减轻社会救助站的环境及所开支问题。</p>
+            <p>宠爱之家是款集领养、救援、商城、社区、聊天于一体的新型慈善APP，我们让爱心人士资金捐助更加清晰透明，让救助爱宠更加便捷，让救助基地求助渠道更加广阔，让萌宠交流更加有趣，让领养代替购买！</p>
+            <p>宠爱团队衷心希望更多热爱公益事业，有爱心人士加入到宠爱之家平台上！</p>
+        </div>
+
+    </div>
+
+    <?php load_view("inc/footer");?>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/swiper.min.js"></script>
+    <script src="/public/js/media.js"></script>
+    <script>
+        //swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },//可选选项，自动滑动
+            speed: 500,
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+    </script>
+</body>
+</html>

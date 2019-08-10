@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="宠爱宠物救助站入驻信息，宠爱宠物救助站合作，宠物救助站信息">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <title>宠爱之家-分享潮流宠物资讯,打造宠物行业门户</title>
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="/public/css/media/public.css">
+    <link rel="stylesheet" href="/public/css/media/base.css">
+    <link rel="stylesheet" href="/public/css/media/rescueinfo/index.css">
+    <style>td,th{padding: 10px;}</style>
+</head>
+<body>
+<div class="header">
+    <!--  header  -->
+    <div class="nav-bar">
+        <div class="main">
+            <a href="http://www.pettap.cn/" class="logo">宠爱之家</a>
+            <ul class="nav">
+                <!--<li class=""><a href="../index.html">首页</a></li>
+                <li class="head-about"><a href="../news.html">宠爱动态</a></li>
+                <li class="head-about cur"><a href="../rescue.html">宠爱救助站</a></li>
+                <li class="head-about"><a href="javascript:alert('程序小哥哥正在努力加紧中！');">宠爱商城</a></li>-->
+                <li class="head-about"><a href="javascript:void(0);">加入宠爱之家官方救助平台</a></li>
+                <!--<li class="head-about"><a href="javascript:void(0);">加入宠爱</a></li>-->
+            </ul>
+            <ul class="out-btn">
+                <li><span>欢迎&nbsp;</span><span><?=$_COOKIE['mobile_num']?></span></li>
+                <li>|</li>
+                <li><a class="btn" href="/index/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--  swiper  -->
+<div class="swiper-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/public/img/media/rescueinfo/banner1.jpg" width="100%" height="180" alt=""></div>
+            <div class="swiper-slide"><img src="/public/img/media/rescueinfo/banner2.jpg" width="100%" height="180" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <!--<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>-->
+    </div>
+</div>
+<!--  提交信息  -->
+<div class="info-box center">
+
+    <table border="1" width="100%">
+        <caption>用户审核进度</caption>
+        <tr><th>标题</th><th>进度</th><th>内容</th></tr>
+        <tr><td>是否是经营性</td><td><?php get_zs_user_merc_status_info($oneData->is_commercial); ?></td><td><?=$oneData->commercial?></td></tr>
+        <tr><td>姓名</td><td><?php get_zs_user_merc_status_info($oneData->is_real_name); ?></td><td><?=$oneData->real_name?></td></tr>
+        <tr><td>手机号</td><td><?php get_zs_user_merc_status_info($oneData->is_mobile_num); ?></td><td><?=$oneData->mobile_num?></td></tr>
+        <tr><td>身份证号</td><td><?php get_zs_user_merc_status_info($oneData->is_id_card); ?></td><td><?=$oneData->id_card?></td></tr>
+        <tr><td>性别</td><td><?php get_zs_user_merc_status_info($oneData->is_sex); ?></td><td><?=$oneData->sex?></td></tr>
+        <tr><td>所在地</td><td><?php get_zs_user_merc_status_info($oneData->is_address); ?></td><td><?=$oneData->address?></td></tr>
+        <tr><td>说明</td><td><?php get_zs_user_merc_status_info($oneData->is_info); ?></td><td><?=$oneData->info?></td></tr>
+        <tr><td>身份证正面</td><td><?php get_zs_user_merc_status_info($oneData->is_idcard); ?></td><td><img width="50" height="50" src="/public<?=$oneData->idcard?>"></td></tr>
+        <tr><td>身份证反面</td><td><?php get_zs_user_merc_status_info($oneData->is_reidcard); ?></td><td><img width="50" height="50" src="/public<?=$oneData->reidcard?>"></td></tr>
+        <tr><td>手持身份证</td><td><?php get_zs_user_merc_status_info($oneData->is_handidcard); ?></td><td><img width="50" height="50" src="/public<?=$oneData->handidcard?>"></td></tr>
+        <tr><td>营业执照图</td><td><?php get_zs_user_merc_status_info($oneData->is_permit); ?></td><td><img width="50" height="50" src="/public<?=$oneData->permit?>"></td></tr>
+        <tr><td>场地照片图1</td><td><?php get_zs_user_merc_status_info($oneData->is_field1); ?></td><td><img width="50" height="50" src="/public<?=$oneData->field1?>"></td></tr>
+        <tr><td>场地照片图2</td><td><?php get_zs_user_merc_status_info($oneData->is_field2); ?></td><td><img width="50" height="50" src="/public<?=$oneData->field2?>"></td></tr>
+        <tr><td>场地照片图3</td><td><?php get_zs_user_merc_status_info($oneData->is_field3); ?></td><td><img width="50" height="50" src="/public<?=$oneData->field3?>"></td></tr>
+        <tr><td>场地照片图4</td><td><?php get_zs_user_merc_status_info($oneData->is_field4); ?></td><td><img width="50" height="50" src="/public<?=$oneData->field4?>"></td></tr>
+    </table>
+    <button class="sub-btn" id="sbtn" onclick="window.history.back()">返回</button>
+</div>
+
+<!--  回到顶部  -->
+<a class="go-top">返回顶部</a>
+
+<!--  footer  -->
+<div class="footer">
+    <div class="center">
+        <p><a href="javascript:void(0);">Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved</a></p>
+    </div>
+</div>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/swiper.min.js"></script>
+<script src="/public/js/ajaxfileupload.js"></script>
+<script src="/public/js/media.js"></script>
+<script>
+    $(function(){
+        //轮播
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 4000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+
+
+        $.each($("table img"),function(i,v){
+            console.log(v.src)
+            if(v.src == 'http://www.pettap.cn/public'){
+                v.remove();
+            }
+        })
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>宠爱之家-填写入驻信息</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1016610_4yrtv93dycc.css">
+    <link rel="stylesheet" href="/public/css/mpettap/reset.css">
+    <link rel="stylesheet" href="/public/css/mpettap/rescueinfo.css">
+</head>
+<body>
+    <div class="page">
+        <header class="bar bar-nav">
+            <a href="javascript:void(0);" external class="pull-left logo"></a>
+            <span class="icon iconfont icon-tuichu pull-right" onclick="window.location.href='/login/waplogin'"></span>
+        </header>
+        <div class="content">
+            <!-- banner -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:void(0);" external><img src="/public/images/mpettap/pt1.png" width="100%" height="100%" alt=""></a></div>
+                    <div class="swiper-slide"><a href="javascript:void(0);" external><img src="/public/images/mpettap/pt2.png" width="100%" height="100%" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- info -->
+            <div class="info-box">
+                <div class="one info">
+                    <div class="in-title">一、是否是经营性救助站(必填)</div>
+                    <div class="clearfix">
+                        <div class="radio-inline radio-filed">
+                            <input type="radio" name="commercial" value="经营性" checked>
+                            <label for="">经营性</label>
+                        </div>
+                        <div class="radio-inline radio-filed">
+                            <input type="radio" name="commercial" value="非经营性" >
+                            <label for="">非经营性</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="two info">
+                    <div class="in-title">二、信息输入(必填)</div>
+                    <div class="clearfix">
+                        <div class="radio-inline sex-inline">
+                            <span class="input-t">选择性别：</span>
+                            <div class="sex">
+                                <input type="radio" name="sex" value="男" checked>
+                                <label for="">男</label>
+                            </div>
+                            <div class="sex">
+                                <input type="radio" name="sex" value="女" >
+                                <label for="">女</label>
+                            </div>
+                        </div>
+                        <div class="radio-inline">
+                            <span class="input-t">用户姓名：</span>
+                            <input type="text" class="input-b fl" id="uname" placeholder="请输入姓名">
+                        </div>
+                        <div class="radio-inline">
+                            <span class="input-t">手机号码：</span>
+                            <input type="text" class="input-b" id="mobile" placeholder="请输入手机号码" value="<?=$_SESSION['mobile_num']?>" readonly>
+                        </div>
+                        <div class="radio-inline">
+                            <span class="input-t">身份证号：</span>
+                            <input type="text" class="input-b" id="card" placeholder="请输入身份证号码">
+                        </div>
+                        <div class="radio-inline">
+                            <span class="input-t">所在地址：</span>
+                            <input type="text" class="input-b" id="address" placeholder="请输入详细地址">
+                        </div>
+                        <div class="radio-inline">
+                            <span class="input-t">备注说明：</span>
+                            <textarea class="textarea" id="info" placeholder="组织&#10团体介绍&#10经营&#10服务范围"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="th info">
+                    <div class="in-title">三、上传图片(必填)</div>
+                    <div class="three license">
+                        <span class="i-text">身份证正面：</span>
+                        <div class="pr field">
+                            <input type="file" accept="image/*" class="input-img" onchange="selectFile(this,event,'idcard')">
+                            <div class="upload"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                            <input type="hidden" id="idcard" name="idcard" value="">
+                        </div>
+                    </div>
+                    <div class="three license">
+                        <span class="i-text">身份证反面：</span>
+                        <div class="pr field">
+                            <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'reidcard')">
+                            <div class="upload"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                            <input type="hidden" id="reidcard" name="reidcard" value="">
+                        </div>
+                    </div>
+                    <div class="three license">
+                        <span class="i-text">手持身份证：</span>
+                        <div class="pr field">
+                            <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'handidcard')">
+                            <div class="upload"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                            <input type="hidden" id="handidcard" name="handidcard" value="">
+                        </div>
+                    </div>
+                    <div class="three license" id="license">
+                        <span class="i-text">营业执照图：</span>
+                        <div class="pr field">
+                            <input type="file"  accept="image/*" class="input-img" onchange="selectFile(this,event,'permit')">
+                            <div class="upload"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                            <input type="hidden" id="permit" name="permit" value="">
+                        </div>
+                    </div>
+                    <div class="three license">
+                        <span class="i-text">场地照片图：</span>
+                        <div class="pr field">
+                            <input type="file"  accept="image/*" class="input-img field-img" onchange="selectFile(this,event,'field1')">
+                            <div class="upload field-img"><img class="book-pic" src="/public/img/media/rescueinfo/upload.png" alt=""></div>
+                            <input type="hidden" id="field1" name="field1" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-b"><button class="sub-btn" id="sbtn">提交</button></div>
+            </div>
+
+
+
+            <!--  address  -->
+            <div class="address">
+                <div class="address-con">
+                    <div class="tit">宠爱之家深圳总部</div>
+                    <p><span class="icon iconfont icon-weizhi tit-icon"></span><span>广东省深圳市南山区兰香一街海王星辰总部大厦13楼</span></p>
+                    <p><span class="icon iconfont icon-dianhua tit-icon"></span><span class="add-t">客服QQ：2705180242</span><span class="icon iconfont icon-youjian tit-icon"></span><span>电子邮箱：2705180242@qq.com</span></p>
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="footer">
+                Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved
+                <a href="http://www.miitbeian.gov.cn" external rel="nofollow">粤ICP备18083935号</a>
+            </div>
+        </div>
+    </div>
+
+    <!--<span class="icon iconfont icon-31huidaodingbu go-top" id="goTop"></span>-->
+
+    <script src="/public/js/jquery.js"></script>
+    <!--<script type='text/javascript' src='/public/js/mpettap/test.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/public/js/mpettap/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>-->
+    <script src="/public/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/public/js/mpettap/rescueinfo.js" charset='utf-8'></script>
+    <script>
+        //读取图片和提交后端
+        let form = new FormData();//通过HTML表单创建FormData对象
+        let upload;
+        let inputhidden;
+        function selectFile(tag,e,type){
+            var that = $(tag);
+            let files = e.currentTarget.files;
+            if(files.length == 0){
+                return;
+            }
+            let file = files[0];
+            //把上传的图片显示出来
+            let reader = new FileReader();
+            // 将文件以Data URL形式进行读入页面
+            reader.readAsBinaryString(file);
+            /* reader.onload = function(f){
+                 //var index = $(tag).index();
+                 upload = $(tag).next("div");
+                 let src = "data:" + file.type + ";base64," + window.btoa(this.result);
+             };*/
+            form.append('file',file);
+            //提交
+            let httpRequest;
+            //ie7+ 主流浏览器
+            if(window.XMLHttpRequest){
+                //alert("ie7+ 主流浏览器");
+                httpRequest = new XMLHttpRequest();
+            }else if(window.ActiveXObject){
+                //alert("ie7-");
+                httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            }else{
+                alert("主流浏览器");
+            }
+            httpRequest.open("post","/index/upload",true);
+            //httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8");
+            httpRequest.send(form);
+            httpRequest.onreadystatechange =()=> {
+                // 信息已经返回，可以开始处理
+                if (httpRequest.readyState == 4) {
+                    // 页面正常，可以开始处理信息
+                    if (httpRequest.status == 200) {
+                        let resdata = eval("("+httpRequest.responseText+")");
+
+                        if(resdata.msg == "ok"){
+                            upload = $(tag).next("div");
+                            upload.html("<img class='book-pic' src ='/public"+resdata.data+"'/>");
+                            $("#"+type).val(resdata.data);
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+        $(function(){
+            //轮播
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: {
+                    delay: 8000
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+
+            //是否是经营性救助站选中
+            $(".radio-filed").click(function () {
+                $(".radio-filed").find('input').removeAttr('checked');
+                $(this).find('input').attr('checked', 'checked');
+                var filedVal = $(this).find('input').val();
+                if(filedVal == '非经营性'){
+                    $("#license").hide();
+                    $("#license").find('input').attr('disabled','disabled');
+                }else{
+                    $("#license").show();
+                    $("#license").find('input').removeAttr('disabled');
+                }
+            });
+
+            //男女选中
+            $(".sex").click(function () {
+                $(".sex").find('input').removeAttr('checked');
+                $(this).find('input').attr('checked', 'checked');
+            });
+
+            //提交
+            $("#sbtn").click(function(){
+                var jsonData = {
+                    commercial:encodeURI($('input[name="commercial"]:checked').val()),//经营性质
+                    sex:encodeURI($('input[name="sex"]:checked').val()),//男女
+                    real_name:encodeURI($('#uname').val()),//名字
+                    id_card:$('#card').val(),//身份证
+                    mobile_num:$('#mobile').val(),//手机号
+                    location_province:$("#province1 option:selected").text(),//省
+                    location_city:$("#city1 option:selected").text(),//市
+                    location_area:$("#district1 option:selected").text(),//区
+                    address:encodeURI($("#address").val()),//详细地址
+                    info:encodeURI($('#info').val()),//说明
+                    idcard:$('#idcard').val(),//身份证正面图
+                    reidcard:$('#reidcard').val(),//身份证反面图
+                    handidcard:$('#handidcard').val(),//手持身份证
+                    permit:$('#permit').val(),//营业执照
+                    field1:$('#field1').val(),//场地图1
+                    field2:"",//场地图2
+                    field3:"",//场地图3
+                    field4:"",//场地图4
+                    is_permit:($('input[name="commercial"]:checked').val() == "非经营性") ? '1':'2'
+                };
+                $.post("/wap/getuserdata",jsonData,function(msg){
+                    let resdata = eval("("+msg+")");
+                    if(resdata.msg == "ok"){
+                        alert("提交成功");
+                        window.location.href="/wap/ajaxmobilenum";
+                    }else{
+                        alert("提交失败");
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

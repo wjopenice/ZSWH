@@ -1,0 +1,24 @@
+/*   头部   */
+.news-top{height: 340px;background-image: url(../../../img/media/about/join-banner.png);background-size: cover;}
+
+/* -- 关于我们 -- */
+.company {padding-top: 70px;}
+.swiper-container{width: 700px;height: 480px;}
+.swiper-box .tit {margin-bottom: 14px;font-size: 20px;font-weight: 600;color: #000;padding-left: 45px;line-height: 24px;background: url(../../../img/media/index/icon_tit.png) no-repeat left center/21px 17px;}
+/*  swiper  */
+.swiper-container{border-radius: 10px;}
+.swiper-pagination-bullet{border-radius: 4px;background: #fff;opacity: .8;}
+.swiper-pagination-bullet-active{opacity: .8;background: #ff8383;width: 20px;}
+.swiper-pagination-bullet{height: 3px;}
+.company_intro {min-height: 522px;width: 520px;padding: 36px 38px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border-radius: 10px;-webkit-box-shadow: 0 0 20px rgba(147, 147, 147, .2);box-shadow: 0 0 20px rgba(147, 147, 147, .2)}
+.company_intro .tit {font-size: 28px;color: #333;padding-bottom: 56px;background: url(../../../img/media/about/auout-us.png) no-repeat left bottom/162px 38px;}
+.company_intro p {font-size: 16px;line-height: 26px;color: #333;margin-top: 20px;}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>宠爱之家-查看审核</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/public/css/media/swiper.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1016610_4yrtv93dycc.css">
+    <link rel="stylesheet" href="/public/css/mpettap/reset.css">
+    <link rel="stylesheet" href="/public/css/mpettap/examine.css">
+</head>
+<body>
+<div class="page">
+    <header class="bar bar-nav">
+        <a href="javascript:void(0);" external class="pull-left logo"></a>
+        <span class="icon iconfont icon-tuichu pull-right" onclick="window.location.href='/login/waplogin'"></span>
+    </header>
+    <img src="/public/images/mpettap/pt1.png" alt="">
+    <!-- info -->
+
+
+    <div class="info-box">
+        <table border="1" width="100%">
+            <caption>用户审核进度</caption>
+            <tr><th>标题</th><th>进度</th></tr>
+            <tr><td>是否是经营性</td><td><?php get_zs_user_merc_status_info($oneData->is_commercial); ?></td></tr>
+            <tr><td>姓名</td><td><?php get_zs_user_merc_status_info($oneData->is_real_name); ?></td></tr>
+            <tr><td>手机号</td><td><?php get_zs_user_merc_status_info($oneData->is_mobile_num); ?></td></tr>
+            <tr><td>身份证号</td><td><?php get_zs_user_merc_status_info($oneData->is_id_card); ?></td></tr>
+            <tr><td>性别</td><td><?php get_zs_user_merc_status_info($oneData->is_sex); ?></td></tr>
+            <tr><td>所在地</td><td><?php get_zs_user_merc_status_info($oneData->is_address); ?></td></tr>
+            <tr><td>说明</td><td><?php get_zs_user_merc_status_info($oneData->is_info); ?></td></tr>
+            <tr><td>身份证正面</td><td><?php get_zs_user_merc_status_info($oneData->is_idcard); ?></td></tr>
+            <tr><td>身份证反面</td><td><?php get_zs_user_merc_status_info($oneData->is_reidcard); ?></td></tr>
+            <tr><td>手持身份证</td><td><?php get_zs_user_merc_status_info($oneData->is_handidcard); ?></td></tr>
+            <tr><td>营业执照图</td><td><?php get_zs_user_merc_status_info($oneData->is_permit); ?></td></tr>
+            <tr><td>场地照片图1</td><td><?php get_zs_user_merc_status_info($oneData->is_field1); ?></td></tr>
+            <tr><td>场地照片图2</td><td><?php get_zs_user_merc_status_info($oneData->is_field2); ?></td></tr>
+            <tr><td>场地照片图3</td><td><?php get_zs_user_merc_status_info($oneData->is_field3); ?></td></tr>
+            <tr><td>场地照片图4</td><td><?php get_zs_user_merc_status_info($oneData->is_field4); ?></td></tr>
+        </table>
+        <div class="back-box"><button id="sbtn" class="info-btn back-btn" onclick="window.history.back()">返回</button></div>
+    </div>
+
+    <div class="f-box">
+        <!--  address  -->
+        <div class="address">
+            <div class="address-con">
+                <div class="tit">宠爱之家深圳总部</div>
+                <p><span class="icon iconfont icon-weizhi tit-icon"></span><span>广东省深圳市南山区兰香一街海王星辰总部大厦13楼</span></p>
+                <p><span class="icon iconfont icon-dianhua tit-icon"></span><span class="add-t">客服QQ：2705180242</span><span class="icon iconfont icon-youjian tit-icon"></span><span>电子邮箱：2705180242@qq.com</span></p>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            Copyright © 2017 Shenzhen Zhisheng Cultural Innovation Co., Ltd. All Rights Reserved
+            <a href="http://www.miitbeian.gov.cn" external rel="nofollow">粤ICP备18083935号</a>
+        </div>
+    </div>
+</div>
+<script src="/public/js/jquery.js"></script>
+</body>
+</html>
+

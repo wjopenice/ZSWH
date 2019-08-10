@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-救助站审核详情</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/user/verifydetail.css?=20181136" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-border-box layui-table-view">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th data-field="u_id" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>标题</span></div></th>
+                    <th data-field="t_id" class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>内容</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <tr>
+                    <td data-field="u_id" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>申请时间</span></div></td>
+                    <td data-field="t_id" colspan="2" class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$oneData->create_time)?></span></div></td>
+                </tr>
+                <?php foreach ($oneData as $key=>$value): ?>
+                      <?php if($key != "id" && $key != "create_time"):
+                         $status_key = "is_".$key;
+                      ?>
+                        <tr>
+                            <td data-field="u_id" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=get_zs_merc_name($key)?></span></div></td>
+                            <td data-field="t_id" class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value?></span></div></td>
+                        </tr>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                <?php foreach ($twoData as $k=>$v):
+                    $status_key = "is_".$k;
+                ?>
+                    <tr>
+                        <td data-field="u_id" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=get_zs_merc_name($k)?></span></div></td>
+                        <td data-field="t_id" class="laytable-cell-1-0-2"><div class="layui-table-cell"><img src="/public<?=$v?>" width="220" height="144" alt=""></div></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <input type="button" class="s-btn" onclick="window.location.href='/user/verifystatus'" value="返回">
+    </form>
+
+    <!--  蒙版  -->
+    <div class="mask">
+        <img src="/public/img/common/jz.jpg" alt="">
+    </div>
+</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    $(function(){
+        var docHeight = $(window).height()-168;
+        //console.log(docHeight);
+        $(window).resize(function(){
+            $(".mask").css({
+                height: docHeight
+            });
+        });
+
+        $(".mask").click(function(){
+            $(".mask").hide(500)
+        });
+
+        $(".layui-table-cell img").click(function(){
+            var imgurl = $(this).attr('src');
+            if(imgurl != ''){
+                $(".mask").show(500);
+                $(".mask img").attr('src',imgurl);
+            }
+        });
+    })
+</script>
+</body>
+</html>

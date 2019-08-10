@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家APP后台管理-APP首页文章</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <style>
+        body{background-color: #fff;}
+        .layui-table-view .layui-table{width: 100%;}
+        .layui-card-header{padding: 10px 0;}
+        .laytable-cell-1-0-8 .layui-input-block{margin-left: 0;}
+        .layui-form-item{margin: 0;}
+        .layui-table td, .layui-table th{padding: 6px 15px;}
+        .laytable-cell-1-0-0{width: 10%;}
+        .laytable-cell-1-0-1{width: 30%;}
+        .laytable-cell-1-0-2{width: 10%;}
+        .laytable-cell-1-0-3{width: 10%;}
+        .laytable-cell-1-0-4{width: 20%;}
+        .laytable-cell-1-0-5{width: 10%;}
+        .laytable-cell-1-0-6{width: 10%;}
+        .layui-table, .layui-table-view{margin: 10px;}
+        #pages{margin: 0 10px;line-height: 26px;}
+        .layui-laypage{margin: 0;}
+        #pages{margin: 10px 10px;line-height: 26px;}
+        #pages a{display: inline-block;height: 26px;line-height: 26px;padding: 0 10px;float: left;}
+        #pages a.active{background: #009688;color: #fff;border-radius: 3px;}
+    </style>
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto" lay-filter="layadmin-userfront-formlist">
+    <form action="/admin/newssearch" method="get">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">标题文档</label>
+                <div class="layui-input-block">
+                    <input type="text" name="search" placeholder="请输入标题文档" id="search_val" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <button type="submit" class="layui-btn layuiadmin-btn-useradmin" lay-submit lay-filter="LAY-user-front-search">
+                    <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                </button>
+            </div>
+            <div class="layui-inline">
+                <button type="button" class="layui-btn layui-btn-normal">
+                    <a href="newsadd" style="display: flex;color: #fff;"><i class="layui-icon layui-icon-add-circle-fine"></i><span style="align-items:center;">新增文章</span></a>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th data-field="account" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>标题</span></div></th>
+                    <th data-field="sex" class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span>创建者</span></div></th>
+                    <th data-field="mobile_num" class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>点赞量</span></div></th>
+                    <th data-field="user_level" data-minwidth="100" class="laytable-cell-1-0-4"><div class="layui-table-cell"><span>分类</span></div></th>
+                    <th data-field="register_time" class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span>添加时间</span></div></th>
+                    <th data-field="register_ip" class="layui-unselect laytable-cell-1-0-6" style="border-right: 0;"><div class="layui-table-cell"><span>操作</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($page as $key=>$value): ?>
+                <tr>
+                    <td data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['id']?></span></div></td>
+                    <td data-field="title" class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['title']?></span></div></td>
+                    <td data-field="author" class="layui-unselect laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=$value['author']?></span></div></td>
+                    <td data-field="click" class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$value['click']?></span></div></td>
+                    <td data-field="type" data-minwidth="100" class="laytable-cell-1-0-4"><div class="layui-table-cell"><span><?=get_zs_news_type_name($value['type'])?></span></div></td>
+                    <td data-field="create_time" class="layui-unselect laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$value['create_time'])?></span></div></td>
+                    <td data-field="register_ip" class="layui-unselect laytable-cell-1-0-6"><div class="layui-table-cell"><span class="layui-btn layui-btn-xs layui-btn-danger">删除</span></div></td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

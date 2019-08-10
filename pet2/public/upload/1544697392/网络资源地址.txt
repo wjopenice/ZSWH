@@ -1,0 +1,121 @@
+﻿
+phpstorm 2016.2.x 最新版激活方法
+https://blog.csdn.net/veloi/article/details/54378653
+
+PHP如何获取PUT和DELETE请求的参数
+https://zhidao.baidu.com/question/361668132034875172.html
+
+PHP-网络请求 GET、POST、PUT、DELETE
+https://www.cnblogs.com/thinkleesion/p/5504562.html
+
+PHP使用CURL模拟POST/GET/PUT/DELETE方式提交数据
+https://blog.csdn.net/u012581409/article/details/24777723
+
+Making RESTful Requests in PHP
+http://www.gen-x-design.com/archives/making-restful-requests-in-php/
+
+iP138查询网
+http://user.ip138.com/
+
+PHP+ajaxfileupload 实现用户头像上传
+https://blog.csdn.net/jerry_dui/article/details/49936083
+
+省市区 Mysql 数据库表
+https://www.cnblogs.com/derrck/p/4739818.html
+
+Yii2 自定义class、自定义全局函数
+https://blog.csdn.net/xiaoyangxiaodong/article/details/45078303
+
+PHP json_encode里面经常用到的 JSON_UNESCAPED_UNICODE和JSON_UNESCAPED_SLASHES
+https://blog.csdn.net/gaoxuaiguoyi/article/details/65698800
+
+站长工具 > 端口扫描
+http://tool.chinaz.com/port/
+
+Linux上SVN的搭建使用
+https://blog.csdn.net/weixin_37998647/article/details/78686246
+
+linux下如何查找nginx配置文件的位置
+https://www.cnblogs.com/catlee/p/7965385.html
+
+LNMP出现502 bad gateway的解决
+https://www.linuxidc.com/Linux/2014-10/108008.htm
+
+Yii2.0-advanced-10—数据库操作4（AR条件查询where）
+https://blog.csdn.net/wlzx120/article/details/53503899
+
+Yii2 AR查询,Where多条件查询详解,输出当前sql
+http://www.inpy.cn/news/118.html
+
+PHP函数—header详解
+https://blog.csdn.net/wlzx120/article/details/47279927
+
+windows下扩展yaf，并生成yaf框架文件
+https://www.cnblogs.com/chengshan/p/7246242.html
+
+Yaf整合Smarty模板引擎
+https://blog.csdn.net/yangligao_/article/details/43406989
+
+在Yaf框架开发的项目中使用Yii的方式处理URL链接
+https://blog.csdn.net/lsg9012/article/details/78045459
+
+如何使用git上传代码到github
+https://jingyan.baidu.com/article/e5c39bf5c8c4d039d76033b2.html
+
+php7版mencache地址
+https://github.com/websupport-sk/pecl-memcache/archive/php7.zip
+
+linux上安装php7 memcache扩展 和 安装服务端memcached
+https://www.cnblogs.com/hejun695/p/5369610.html
+https://blog.csdn.net/u011547570/article/details/78325556
+
+centos7编译安装apache2.4
+https://blog.csdn.net/lyp256/article/details/55090282
+https://www.linuxidc.com/Linux/2017-10/148100.htm
+
+linux杀掉病毒程序
+https://www.cnblogs.com/MYSQLZOUQI/articles/4990966.html
+
+phper的linux学习 -Lnmp搭建和svn的配置
+https://blog.csdn.net/zya0727/article/details/50856674
+
+google翻译
+https://translate.google.cn/
+
+Yaf安装与部署
+https://blog.csdn.net/mlx212/article/details/44178395
+
+PHP原生支付宝pc+wap在线支付演示源码
+http://www.sucaihuo.com/php/1948.html
+
+php接入支付宝的流程(转载)
+https://www.cnblogs.com/zhuchenglin/p/6554801.html
+
+PHP开发支付宝之电脑网站支付--流程简介
+https://www.cnblogs.com/zjfblog/p/7249257.html
+
+sql文件过大运行报错
+https://blog.csdn.net/h_hanlinglingzi/article/details/80325084
+
+mysql 查询当天、本周，本月，上一个月的数据
+https://www.cnblogs.com/benefitworld/p/5832897.html
+
+php、mysql查询当天，查询本周，查询本月的数据(字段是时间戳)
+https://blog.csdn.net/everything1209/article/details/53215848
+
+微信公众号开发之网页中及时获取当前用户Openid及注意事项 - 潇十一郎 - 博客园
+https://www.cnblogs.com/zhangxiaoyong/p/6280045.html
+
+Yaf项目实战开发之第一天配置及扩展model
+https://lvtao.net/yaf/yaf-case-ext-model.html
+
+yaf框架学习笔记
+https://www.kancloud.cn/liustone/yaf-note/84601
+
+upload h5图片文件上传插件
+http://www.jq22.com/yanshi18514
+
+下游测试接口地址
+http://www.zhishengwh.com/api/Order/testpay.html
+
+

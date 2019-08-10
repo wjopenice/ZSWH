@@ -1,0 +1,18 @@
+/*  列表样式  */
+.layui-table-view .layui-table{width: 100%;}
+.layui-card-header{padding: 10px 0;}
+.laytable-cell-1-0-8 .layui-input-block{margin-left: 0;}
+.layui-form-item{margin: 0;}
+.layui-table td, .layui-table th{padding: 6px 15px;}
+.laytable-cell-1-0-0{width: 10%;}
+.laytable-cell-1-0-1{width: 25%;}
+.laytable-cell-1-0-2{width: 25%;}
+.laytable-cell-1-0-3{width: 15%;}
+.laytable-cell-1-0-4{width: 15%;}
+.laytable-cell-1-0-5{width: 10%;}
+.layui-table, .layui-table-view{margin: 10px;}
+.layui-laypage{margin: 0;}
+.layui-table-cell .layui-input-s{line-height: 24px;border-radius: 4px;border: 1px solid #b7b7b7;width: 100%;padding-left: 6px;}
+
+.layui_a{display: flex;color: #fff;}
+.layui_a_span{align-items:center;}

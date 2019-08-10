@@ -1,0 +1,41 @@
+/*  share header  */
+.header{padding: .4rem;overflow: hidden;}
+.head-img{margin-right: .25rem;float: left;width: 1rem;height: 1rem;}
+.head-img img{width: 1rem;height: 1rem;border-radius: 50%;}
+.header-text{float: left;height: 1rem;}
+.info-list{margin: .1rem 0;overflow: hidden;}
+.name{font-size: .34rem;color: #f5bb55;width: 1.7rem;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;height: .4rem;line-height: .4rem;float: left;}
+.province ,.city{line-height: .4rem;float: left;margin-right: .2rem;}
+.detail-box {font-size: .3rem;color: #404040;line-height: .42rem;padding: 0 .4rem;border-bottom: .2rem solid #f7f7f7;}
+
+/*  朋友圈图片展示  */
+.pic-list{display: flex;flex-direction: row;flex-wrap: wrap;}
+.pic-img{width: 31.33%;height: 2.5rem;text-align: center;display:flex;align-items:center;justify-content: center;margin: 1%;}
+.pic-img img{width: 100%;height: 100%;}
+.topTip{line-height: 20px;}
+
+/*  点赞和评论  */
+.comment-box{margin: .3rem 0;overflow: hidden;}
+.comment-fl{float: right;overflow: hidden;color: #666;}
+.fabulous{float: left;}
+.comment{float: right;margin-left: .2rem;}
+.icon-msg{font-weight: 600;margin-right: .1rem;}
+
+/*   评论列表   */
+.f-title{border-bottom: 1px solid #f7f7f7;padding: .3rem .4rem;overflow: hidden;}
+.f-title .c-num span{margin-right: .2rem;}
+.f-title .f-num span{margin-left: .2rem;color: #666;}
+.c-num{float: left;}
+.f-num{float: right;}
+.c-list{padding-bottom: 1.6rem;}
+.c-list li{padding: .4rem .4rem 0;overflow: hidden;}
+.c-list li .head-img{width: 19%;margin-right: 0;}
+.c-list li .header-text{width: 81%;height: 100%;}
+
+/*   下载APP   */
+.down-app{overflow: hidden;position: fixed;bottom: 0;left: 0;right: 0;z-index: 1;height: 1.2rem;background: #fff;-webkit-box-shadow: 0 0 7px rgba(89,89,89,.35);box-shadow: 0 0 7px rgba(89,89,89,.35);padding: 0 .4rem;}
+.down-app img{width: 1.2rem;height: 1.2rem;float: left;}
+.app{float: left;margin-top: .25rem;}
+.app-name{font-size: .34rem;color: #f5bb55;}
+.app-text{font-size: .26rem;color: #666;padding: .1rem 0;}
+.down-btn{float: right;background: #f5bb55;color: #fff;padding: .2rem;border-radius: .1rem;margin: .26rem 0;-webkit-box-shadow: 0 0 7px rgba(89,89,89,.35);box-shadow: 0 0 7px rgba(89,89,89,.35);}
