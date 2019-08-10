@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="head">
+        <a href="/Mobile/Merc/wapordinarylogin/type/wapmerc.html" class="back fl"></a>
+        <span class="fr screen"></span>
+        <h1>充值记录</h1>
+    </div>
+    <div class="waprechargebox">
+        <!-- search -->
+        <div class="rsearchbox">
+           <!-- <div class="ov searchinput">
+                <input type="text" class="fl"><i class="fl"></i>
+            </div>-->
+        </div>
+        <div class="mygamenav">
+            <?php $mytype = empty($_GET['mytype'])?0:$_GET['mytype']; ?>
+            <ul class="ov">
+                <li  style="width: 49%" onclick="window.location.href='/Mobile/Merc/pctrade.html?mytype=0'" class="fl <?php if($mytype == 0){echo 'mgactive';} ?> "><span></span>平台币</li>
+                <li  style="width: 49%" onclick="window.location.href='/Mobile/Merc/pctrade.html?mytype=1'" class="fl <?php if($mytype == 1){echo 'mgactive';} ?> "><span></span>绑定平台币</li>
+            </ul>
+        </div>
+        <!--  list  -->
+        <ul class="rechargelist">
+            <foreach name="list_data" item="v">
+                <li>
+                    <p class="ov p10">
+                        <?php if($mytype == 0): ?>
+                             <span class="fl"><?php if($v['pay_way'] == 1){echo '支付宝';}else{echo '渠道代充';}?></span>
+                        <?php else: ?>
+                             <span class="fl"><?=$v['game_name']?></span>
+                        <?php endif; ?>
+                        <span class="fr"><?=date("Y-m-d H:i:s",$v['create_time'])?></span></p>
+                    <p class="ov"><span><?=$v['pay_order_number']?></span><a href="javascript:;" class="fr" style="text-decoration: none;"><?=$v['pay_amount']?>元</a></p>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+    <script src='__JS__/jquery.js'></script>
+    <script>
+        $(function(){
+            //选项卡
+            $(".mygamenav ul li").click(function(){
+                var index = $(this).index();
+                $(".mygamenav ul li").eq(index).addClass('mgactive').siblings().removeClass('mgactive');
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<script src="__STATIC__/layer/layer.js" type="text/javascript"></script>
+	<script src="__STATIC__/layer/extend/layer.ext.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="__CSS__/admin_table.css" media="all">
+	<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	<div class="main-title cf">
+		<h2>游戏授权</h2>
+	</div>
+	<!-- 标签页导航 -->
+	<div class="tab-wrap">
+		<!--<ul class="tab-nav nav">
+			<li data-tab="tab1" class="current"><a href="javascript:void(0);">基础</a></li></li>
+		</ul>-->
+		<div class="tab-content zc_for">
+			<style>
+				#divbody ul,#divbody li{list-style-type:none;margin:0;padding:0;}
+				#divbody{display:block;width:100%; height:700px;overflow:hidden;}
+				#divbody div:nth-of-type(1){float:left;width:30%;height:90%;border:solid 1px #e0e0e0;padding: 10px;}
+				#divbody div:nth-of-type(2){float:left;width:10%;height:100%;line-height:500px; font-weight:bold;font-size: 20px;text-align:center;}
+				#divbody div:nth-of-type(3){float:left;width:30%;height:90%;border:solid 1px #e0e0e0;padding: 10px;}
+				#divbody div:nth-of-type(1)>ul li{display:block;width:100%;height:20px;background:#e2e2e2;margin:5px 0;padding: 10px 0;cursor: pointer;}
+				#divbody div:nth-of-type(3)>ul li{display:block;width:100%;height:20px;background:#e2e2e2;margin:5px 0;padding: 10px 0;cursor: pointer;}
+				.scorll{overflow: hidden;overflow-y: scroll;}
+			</style>
+			<div id="divbody">
+				<div class="scorll">
+					<ul>
+						<volist name=":get_game_list()" id="vo">
+						<li onclick="build({$vo.id},'{$vo.game_name}')">{$vo.game_name}</li>
+						</volist>
+					</ul>
+				</div>
+				<div>=></div>
+				<div class="scorll">
+					<ul id="data">
+						<volist name="result" id="su">
+							<li game_id="{$su.game_id}" onclick="remove({$su.game_id})" id="{$su.game_id}">{$su.game_name}</li>
+						</volist>
+					</ul>
+				</div>
+				<div class="scorll"><input type="button" value="提交" class="btn savegame" style="margin-top: 300px;margin-left: 100px;width:100px;"></div>
+			</div>
+		</div>
+	</div>
+</block>
+
+<block name="script">
+
+	<script>
+		highlight_subnav('{:U('Promote/branch')}');
+	function build(game_id,game_name){
+	var liNode = document.createElement("li");
+	liNode.innerText = game_name;
+	liNode.setAttribute("game_id",game_id);
+	liNode.onclick = function(){
+	liNode.parentNode.removeChild(liNode);
+	};
+	var dataNode = document.getElementById('data');
+	var obj_lis = dataNode.getElementsByTagName("li");
+	for(i=0;i<obj_lis.length;i++) {
+			if(game_name==obj_lis[i].innerHTML)
+			{
+				return false;
+			}
+		}
+	dataNode.appendChild(liNode);
+	}
+	function remove(game_id)
+	{
+		$("#"+game_id).remove();
+	}
+	$(".savegame").click(function () {
+		var game_ids="";
+		var game_names="";
+		var obj_lis =  document.getElementById('data').getElementsByTagName("li");
+		for(i=0;i<obj_lis.length;i++) {
+			var gameid=obj_lis[i].getAttribute('game_id');
+			var gamename=obj_lis[i].innerHTML;
+			game_ids=game_ids+gameid+",";
+			game_names=game_names+gamename+",";
+		}
+		var promote_id={$promote_id};
+		var promote_account="{$promote_account}";
+		if(confirm("确认授权？")) {
+			$.ajax({
+				type: 'post',
+				dataType: 'json',
+				data: {
+					promote_id: promote_id,
+					promote_account: promote_account,
+					game_ids: game_ids,
+					game_names: game_names
+				},
+				url: "{:U('promote/build/id/" + promote_id + "')}",
+				success: function (data) {
+					console.log(data)
+					if (data == 1) {
+						alert("授权成功")
+					}
+					else
+					{
+						alert(data);
+					}
+				}
+			});
+		}
+	})
+	</script>
+</block>
+
+
+
+

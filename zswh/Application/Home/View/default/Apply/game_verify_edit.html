@@ -1,0 +1,91 @@
+<extend name="Public/promote_base"/>
+
+<block name="body">
+  <style type="text/css">
+  .pos{position: relative;}
+  </style>
+  <script src='__STATIC__/zeroclipboard/jquery.zclip.min.js'></script>
+  <div id="query">
+      <div id="lg" class="mod">
+          <h2 style="padding: 14px 0 14px 14px;">渠道信息</h2>
+          <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="{$list_data.id}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;">
+          <div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">登陆账号：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="account" value="{$list_data.account}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">登陆密码：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="password" name="password" value="{$list_data.password}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">真实姓名：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">{$list_data.real_name}</div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">直冲流水：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">
+                  <input type="radio" name="alipayway_sign" id="kq" checked="<if condition='$vo.alipayway_sign eq 1'>checked</if>" value="1"/><label for="kq">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="alipayway_sign" id="gb" checked="<if condition='$vo.alipayway_sign eq 0'>checked</if>" value="0" /><label for="gb">关闭</label></div>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">平台币余额：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="balance_coin" value="{$list_data.balance_coin}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">手机号码：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="mobile_phone" value="{$list_data.mobile_phone}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">银行名称：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="bank_name" value="{$list_data.bank_name}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">银行卡号：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="bank_card" value="{$list_data.bank_card}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">电子邮件：</div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="text" name="email" value="{$list_data.email}" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;"></div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">推广员状态：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">
+                  <input type="radio" name="status" id="wsh" checked="<if condition='$vo.status eq 0'>checked</if>" value="0"/><label for="wsh">未审核</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="status" id="zc" checked="<if condition='$vo.status eq 1'>checked</if>" value="1" /><label for="zc">正常</label>
+                  <input type="radio" name="status" id="lh" checked="<if condition='$vo.status eq 2'>checked</if>" value="2" /><label for="lh">拉黑</label>
+                </div>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;"><input type="submit" value="确定" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede; background: #0777bf;color: white;"></div>
+                <div style="float: left;width: 80%;line-height: 30px;"><input type="button" value="返回" style="height: 30px;width: 21%;border-radius: 2px;border: 1px solid #dedede;" onclick="window.history.back(-1);"></div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;"></div>
+                <div style="float: left;width: 80%;line-height: 30px;"></div>
+              </div>
+            </div>
+          </div>
+          </form>
+      </div>
+  </div>
+
+</block>
+<block name="script">
+  <script type="text/javascript">
+  //导航高亮
+  highlight_subnav('{:U('Apply/index')}');
+  </script>
+</block>

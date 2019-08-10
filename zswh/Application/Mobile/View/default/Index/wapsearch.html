@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+<div class="head searchhead">
+    <a href="javascript:history.back(-1)" class="back fl"></a>
+    <!-- search -->
+    <div class="waprsearchbox">
+        <div class="ov searchinput">
+            <form action="" method="get">
+            <input type="text" placeholder="请输入要搜索的关键词" class="fl" name="keyword" id="keyword"><i class="fl search"></i>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="wapapplygamebox">
+
+    <!--  detail  -->
+    <div class="applygamebox searchbottom">
+        <ul class="gift_ul" id="searchdata">
+
+        </ul>
+    </div>
+    <!--  猜您喜欢  -->
+    <div class="gamebox">
+        <p class="titlebox ov"><span class="online fl"></span><span class="fl font">猜您喜欢</span><a class="fr font more" onclick="change()">换一换</a></p>
+        <ul class="gift_ul" id="like">
+        </ul>
+    </div>
+</div>
+
+<script src='__JS__/jquery.js'></script>
+<script>
+    $(".search").on('click',function () {
+        var keyword=$("#keyword").val();
+       if(keyword=="")
+       {
+           alert("请输入关键词");return;
+       }
+        $.ajax({
+            type:'get',
+            dataType:'json',
+            data:{
+               keyword:keyword
+            },
+            url:"{:U('Index/search')}",
+            success:function(data){
+                console.log(data)
+                var game=data;
+                var li="";
+                for(var i=0;i<game.length;i++) {
+                    li = li + "<li class='ov'>  <div class='gift_header fl'><img src='"+game[i]['icon']+"' alt=''></div>";
+                    li=li+"<div class='gift_name all_play_name fl' onclick=\"window.location.href='/index.php?s=/Mobile/Index/wapgamedetail/id/"+game[i]['id']+".html'\">" +
+                        ' <p class="gift_text all_play_text ofh">'+game[i]['game_name']+'</p>' +
+                        '<p class="all_play_role">'+game[i]['game_size']+'|'+game[i]['game_type_name']+'</p>' +
+                        ' <p class="gift_bag ofh">'+game[i]['introduction']+'</p></div>';
+                    if(game[i]['dow_status']==0) {
+                        li = li + ' <a class="receive_btn fr" href="javascript:;">下载</a>';
+                    }
+                    else
+                    {
+                        li = li + ' <a class="receive_btn fr" href="/index.php?s=/Mobile/Down/down_file/game_id/'+game[i]['id']+'/type/1.html">下载</a>';
+                    }
+                    li = li + "</li>";
+                }
+                console.log(li);
+                $("#searchdata").html(li);
+            },
+            error:function(){
+                alert('服务器错误，请稍后再试！')
+            }
+        })
+    })
+    $(function () {
+        change();
+    })
+    function change() {
+        $.ajax({
+            type:'post',
+            url:"{:U('Index/change')}",
+            success:function(data){
+              var game=$.parseJSON(data);
+              console.log(game);
+              var li="";
+              for(var i=0;i<game.length;i++) {
+                  li = li + "<li class='ov'>  <div class='gift_header fl'><img src='"+game[i]['icon']+"' alt=''></div>";
+                  li=li+"<div class='gift_name all_play_name fl' onclick=\"window.location.href='/index.php?s=/Mobile/Index/wapgamedetail/id/"+game[i]['id']+".html'\">" +
+                      ' <p class="gift_text all_play_text ofh">'+game[i]['game_name']+'</p>' +
+                      '<p class="all_play_role">'+game[i]['game_size']+'|'+game[i]['game_type_name']+'</p>' +
+                      ' <p class="gift_bag ofh">'+game[i]['introduction']+'</p></div>';
+                  if(game[i]['dow_status']==0) {
+                      li = li + ' <a class="receive_btn fr" href="javascript:;">下载</a>';
+                  }
+                  else
+                  {
+                      li = li + ' <a class="receive_btn fr" href="/index.php?s=/Mobile/Down/down_file/game_id/'+game[i]['id']+'/type/1.html">下载</a>';
+                  }
+                  li = li + "</li>";
+              }
+             $("#like").html(li);
+            },
+            error:function(){
+                alert('服务器错误，请稍后再试！')
+            }
+        })
+    }
+</script>
+</body>
+</html>

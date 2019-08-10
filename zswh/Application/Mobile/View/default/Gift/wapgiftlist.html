@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="head">
+        <a href="javascript:history.back(-1)" class="back fl"></a>
+        <a href="{:U('Index/wapsearch')}" class="more_share fr"></a>
+        <h1>礼包中心</h1>
+    </div>
+    <div class="wapgiftbox">
+        <!--  推荐礼包  -->
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">推荐礼包</span></p>
+            <ul class="gift_ul">
+                <volist name="recommend_gift" id="vo" >
+                <li class="ov">
+                    <div class="gift_header fl"><img src="__ROOT__{$vo.gift_icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'game_id\'].\'\')}'">
+                        <p class="gift_text all_play_text ofh">{$vo.giftbag_name}-{$vo.game_name}</p>
+                        <p class="all_play_role">{$vo.desribe}</p>
+                    </div>
+                    <div id="{$vo.gift_id}" title="{$vo.giftbag_name}"> </div>
+                    <a class="receive_btn fr lq" href="javascript:;">领取</a>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <!--  最新礼包  -->
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">最新礼包</span></p>
+            <ul class="gift_ul">
+                <volist name="gift" id="vo" >
+                <li class="ov">
+                    <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'game_id\'].\'\')}'">
+                        <p class="gift_text all_play_text ofh">{$vo.giftbag_name}-{$vo.game_name}</p>
+                        <p class="all_play_role">{$vo.desribe}</p>
+                    </div>
+                    <div id="{$vo.gift_id}" title="{$vo.giftbag_name}"> </div>
+                    <a class="receive_btn fr lq" href="javascript:;">领取</a>
+                </li>
+                </volist>
+            </ul>
+        </div>
+
+        <!--  全部礼包  -->
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">全部礼包</span></p>
+            <ul class="gift_ul">
+                <volist name='data' id='v'>
+                <li class="ov">
+                    <div class="gift_header fl"><img src="__ROOT__{$v.icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'game_id\'].\'\')}'">
+                        <p class="gift_text all_play_text ofh">{$v.giftbag_name}-{$v.game_name}</p>
+                        <p class="all_play_role">{$v.desribe}</p>
+                     </div>
+                    <div id="{$vo.gift_id}" title="{$vo.giftbag_name}"> </div>
+                    <a class="receive_btn fr lq" href="javascript:;">领取</a>
+
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="nullbox" ><p>没有了，暂时到底了</p></div>
+    </div>
+    <!--  底部tap  -->
+    <include file="Public/nav" />
+
+    <script src='__JS__/jquery.js'></script>
+    <script>
+        $(".lq").on('click',function () {
+            var that = $(this);
+            //  alert(  $(this).prev().attr('id'));return;
+            $.ajax({
+                type:'post',
+                dataType:'json',
+                data:{
+                    giftid:$(this).prev().attr('id'),
+                    giftname:$(this).prev().attr('title')
+                },
+                url:"{:U('Gift/getGameGift')}",
+                success:function(data) {
+                    if (parseInt(data.status) == 1 ) {
+//                    登录成功时候的状态
+                        if(data.msg=='ok'){
+                           //that.text("已领取");
+                            alert("领取成功,礼包码:"+data.data);
+
+                        }
+                        if(data.msg=='no'){
+//                        您已领取过该礼包
+                            alert("您已领取过该礼包,礼包码:\n"+data.data)
+                        }
+                        if(data.msg=='noc'){
+//                        该礼包已领取完，下次请早
+                            alert(" 该礼包已领取完，下次请早")
+                        }
+                    }
+                    if (parseInt(data.status) == 0 ) {
+                        //登录失败的时候
+                        alert("领取礼包请先用户登录");
+                    }
+                },
+                error:function() {
+                    alert('服务器故障，请稍候再试。。。。');
+                }
+            });
+        })
+
+    </script>
+</body>
+</html>

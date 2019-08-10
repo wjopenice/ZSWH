@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/swiper.min.css">
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="head">
+        <a href="javascript:history.back(-1)" class="back fl"></a>
+        <a href="{:U('Index/wapsearch')}" class="more_share fr"></a>
+        <h1>游戏分类</h1>
+    </div>
+
+    <div class="wapgamebox">
+        <!--  swiper  -->
+        <div class="wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <volist name="adv_top" id="vo" >
+                        <div class="swiper-slide" ><a href="{:U('Index/wapgamedetail?id='.$vo['game_id'].'')}"><img class="swiper-img" src="__ROOT__{$vo['data']|get_cover='path'}" alt=""></a></div>
+                    </volist>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--  全部游戏  -->
+    <div class="allgamebox ov">
+        <!--  左侧导航  -->
+        <ul class="leftnav fl">
+            <li  class="<?php if($game_type == 0){ echo 'leftactive'; } ?>"><a href="{:U('Index/wapgamelist?type=wapgamelist&game_type=0')}" style="color: #333"><span></span>推荐</a> </li>
+            <volist name=':get_game_type_all_show()' id='vo' key='k'>
+                <li class="<?php if($game_type ==$vo['id']){ echo 'leftactive'; } ?>"><span></span><a href="{:U('Index/wapgamelist?type=wapgamelist&game_type='.$vo['id'].'')}" style="color: #333">{$vo.type_name}</a></li>
+            </volist>
+        </ul>
+        <!--  右侧切换  -->
+        <div class="rightbox fl">
+            <div class="gamecontent rightactive">
+                <p class="gamectitle"></p>
+                <ul class="rgamelist ov">
+                    <volist name='list_data' id='v'>
+                    <li class="fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$v[\'id\'].\'\')}'">
+                        <img src="__ROOT__{$v.icon|get_cover='path'}">
+                        <p class="ofh">{$v.game_name}</p>
+                    </li>
+                    </volist>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div style="height: 80px"></div>
+    <!--  底部tap  -->
+    <include file="Public/nav" />
+
+
+
+
+
+    <script src='__JS__/jquery.js'></script>
+    <script src='__JS__/swiper.min.js'></script>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: true,//可选选项，自动滑动
+                loop: true
+            });
+
+            //选项卡
+            $(".leftnav li").click(function(){
+                var index = $(this).index();
+                $(".leftnav li").eq(index).addClass('leftactive').siblings().removeClass('leftactive');
+                $(".gamecontent").eq(index).addClass('rightactive').siblings().removeClass('rightactive');
+            });
+        })
+    </script>
+</body>
+</html>

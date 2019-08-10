@@ -1,0 +1,1636 @@
+[ 2019-03-04T14:30:06+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0420s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0441s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0432s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0425s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.644824s ]
+INFO: [ app_init ] --END-- [ RunTime:1.645001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+
+[ 2019-03-04T14:30:10+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0387s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0384s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0387s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0386s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0372s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0387s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0385s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0382s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0388s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0381s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.589002s ]
+INFO: [ app_init ] --END-- [ RunTime:1.589157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0431s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
+[ 2019-03-04T14:30:28+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0391s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0383s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0395s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0394s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.600501s ]
+INFO: [ app_init ] --END-- [ RunTime:1.600712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: lite F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `sys_auth_group_access` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sys_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0391s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `sys_action` [ RunTime:0.0393s ]
+SQL: SELECT * FROM `sys_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0397s ]
+SQL: SELECT `nickname` FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `sys_action_log` [ RunTime:0.0388s ]
+SQL: INSERT INTO `sys_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1551681026','admin在2019-03-04 14:30登录了后台') [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined offset: 1 F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 733 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 733 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sys_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1551594626 LIMIT 1   [ RunTime:0.0398s ]
+SQL: UPDATE `sys_member` SET `login`=`login`+1,`last_login_time`='1551681026',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-04T14:30:33+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0440s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0434s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0398s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0402s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.664538s ]
+INFO: [ app_init ] --END-- [ RunTime:1.664721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0399s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0398s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0392s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0403s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0393s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0389s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0404s ]
+NOTIC: [8] Undefined variable: yestoday F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  ) LIMIT 1   [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1551628800 and 1551715199  ) LIMIT 1   [ RunTime:0.0511s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1551628800 and 1551715199  ) LIMIT 1   [ RunTime:0.0539s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1551628800 and 1551715199  ) LIMIT 1   [ RunTime:0.0405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1551369600 and 1554047999  ) LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0393s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0439s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1551542400 and 1551628800   and pay_way <> 0 )  [ RunTime:0.0410s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1551542400 and 1551628800  )  [ RunTime:0.0403s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1551628800 and 1551715199   and pay_way <> 0 )  [ RunTime:0.0396s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1551628800 and 1551715199  )  [ RunTime:0.0417s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0399s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0393s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1551628800 and 1551715199  ) LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1551369600 and 1554047999  ) LIMIT 1   [ RunTime:0.0467s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0402s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0430s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0402s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1551110400 and 1551679413  )  [ RunTime:0.0412s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1551110400 and 1551679413  )  [ RunTime:0.0407s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1551110400 and 1551679413  )  [ RunTime:0.0525s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 93 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.677955s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.559748s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.740341s ]
+SQL: select version() as v; [ RunTime:0.0393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054676s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.099286s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.099469s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.844915s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014028s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.151650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.165623s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.066267s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.725792s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014876s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.151650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.166401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2019-03-04T14:30:38+08:00 ] 127.0.0.1 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0409s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0423s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.627556s ]
+INFO: [ app_init ] --END-- [ RunTime:1.627870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0408s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0497s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0412s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0404s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0405s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '扩展工具' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `sys_config` WHERE `status` = 1 AND `category` = 0 AND `group` = 1 ORDER BY sort  [ RunTime:0.0412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0410s ]
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+NOTIC: [8] Use of undefined constant group_id - assumed 'group_id' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 111 行.
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0402s ]
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 148 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 153 行.
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0411s ]
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 148 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\e915606f4666252950bacf14eab57f78.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+
+[ 2019-03-04T14:30:43+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0404s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0495s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0409s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.633800s ]
+INFO: [ app_init ] --END-- [ RunTime:1.633990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0399s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0412s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0406s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0445s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0407s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0413s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0409s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0410s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0486s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0402s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0407s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0406s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1672s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 200 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1227 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0405s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1226 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0439s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1225 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0404s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1224 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0404s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1223 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0411s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0403s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1221 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0405s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1220 LIMIT 1   [ RunTime:0.0439s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0404s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1219 LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1218 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0406s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.745875s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.746063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-03-04T14:31:17+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0400s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0399s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.612783s ]
+INFO: [ app_init ] --END-- [ RunTime:1.612971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0400s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0407s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0407s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0397s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0405s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0401s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0403s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0402s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0405s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 10,10   [ RunTime:0.0413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0402s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0400s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1626s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 200 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1217 LIMIT 1   [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0402s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1216 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1215 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0417s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1214 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0396s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1213 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1212 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1211 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0398s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1209 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0396s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1208 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0396s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.637032s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.637217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2019-03-04T14:31:37+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0516s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0525s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0387s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0378s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0388s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0383s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.669756s ]
+INFO: [ app_init ] --END-- [ RunTime:1.669943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0381s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0381s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0387s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0390s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0389s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0393s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0395s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 20,10   [ RunTime:0.0406s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0395s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0394s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1588s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 200 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1207 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0429s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1206 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0380s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0388s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1205 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0389s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0405s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1204 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1203 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0392s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1202 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1201 LIMIT 1   [ RunTime:0.0394s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1199 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1200 LIMIT 1   [ RunTime:0.0389s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0399s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1199 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0389s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1198 LIMIT 1   [ RunTime:0.0405s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0387s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.596779s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.596976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-03-04T14:43:41+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0398s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0390s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.612983s ]
+INFO: [ app_init ] --END-- [ RunTime:1.613228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0421s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0402s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0396s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0403s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0398s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0398s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0409s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0400s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0399s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1617s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 200 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1227 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0395s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1226 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0392s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1225 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1224 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0386s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1223 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1221 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0388s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1220 LIMIT 1   [ RunTime:0.0402s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0394s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1219 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0392s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1218 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0399s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.686316s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.686510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2019-03-04T14:49:43+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0415s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0454s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0410s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.636889s ]
+INFO: [ app_init ] --END-- [ RunTime:1.637141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0456s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0412s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0411s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0409s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0402s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0418s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0415s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0415s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1681s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 199 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1227 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0411s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1226 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0411s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1225 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0407s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1224 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0427s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0411s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1223 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0409s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1222 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 97 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1221 LIMIT 1   [ RunTime:0.0442s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1220 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1219 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0444s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1218 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0413s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.761410s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.761518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
+[ 2019-03-04T14:49:50+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0388s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0384s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0384s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0388s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0388s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0382s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0381s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0383s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0387s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0390s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.595889s ]
+INFO: [ app_init ] --END-- [ RunTime:1.596220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0387s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0384s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0385s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0390s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0374s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0383s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0392s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0388s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0395s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0387s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0388s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 10,10   [ RunTime:0.0399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0384s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0384s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0458s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0385s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0378s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0388s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0375s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0384s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1570s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 199 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1217 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0380s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1216 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0385s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0380s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1215 LIMIT 1   [ RunTime:0.0382s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0382s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0379s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1214 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0385s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0384s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1213 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0382s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1212 LIMIT 1   [ RunTime:0.0377s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0384s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1211 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0387s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1210 LIMIT 1   [ RunTime:0.0448s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0385s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1209 LIMIT 1   [ RunTime:0.0381s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0398s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1208 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.569170s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.569368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2019-03-04T14:55:36+08:00 ] 127.0.0.1 /admin.php?s=/Promote/lists/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0400s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0388s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0401s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.610991s ]
+INFO: [ app_init ] --END-- [ RunTime:1.611242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000166s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::lists() should be compatible with Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+NOTIC: [2] Declaration of Admin\Controller\PromoteController::edit($id = 0) should be compatible with Admin\Controller\ThinkController::edit($model = NULL, $id = 0) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0399s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0426s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0402s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Promote/lists%' ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0407s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0397s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\PromoteController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Promote' LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0399s ]
+NOTIC: [8] Use of undefined constant UC_AUTH_KEY - assumed 'UC_AUTH_KEY' F:\Visual-NMP-x64\www\zswh\ThinkPHP\Common\functions.php 第 531 行.
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0392s ]
+SQL: SELECT `id`,`account`,`parent_id`,`real_name`,`mobile_phone`,`email`,`status`,`alipayway_sign`,`admin_id` FROM `tab_promote` ORDER BY id desc LIMIT 20,10   [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0398s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 9  [ RunTime:0.0403s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0451s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 184 行.
+SQL: SELECT * FROM `sys_member`  [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `tab_promote` WHERE ( status=1 )  [ RunTime:0.1623s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a8c7ce2e98b84f6d6d42f78c705f2005.php 第 199 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1207 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0398s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1206 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0383s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1205 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1204 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 103 LIMIT 1   [ RunTime:0.0382s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1203 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1202 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1201 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1199 LIMIT 1   [ RunTime:0.0395s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1200 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1199 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 1198 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `tab_promote` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `sys_member` WHERE `uid` = 101 LIMIT 1   [ RunTime:0.0398s ]
+NOTIC: [8] Undefined index: category_id F:\Visual-NMP-x64\www\zswh\Application\Admin\Common\function.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.611989s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.612176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2019-03-04T15:20:58+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/bind_balance_edit_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0412s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0432s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0413s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.636325s ]
+INFO: [ app_init ] --END-- [ RunTime:1.636571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0414s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0419s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0417s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/bind_balance_edit_list%' ) LIMIT 1   [ RunTime:0.0454s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0424s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 198 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 198 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0414s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'promote_game_edit' LIMIT 1   [ RunTime:0.0432s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_promote_game_edit` [ RunTime:0.0413s ]
+SQL: SELECT `id`,`game_name`,`promote_account`,`prev_amount`,`amount`,`status`,`op_account`,`create_time` FROM `tab_promote_game_edit` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote_game_edit` LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 48  [ RunTime:0.0416s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 906 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0415s ]
+NOTIC: [8] Undefined variable: total F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\3e228cdff9bf3172c73d530f0ced0a00.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000163s ]
+
+[ 2019-03-04T15:22:49+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/bind_balance_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0390s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0386s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0384s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0384s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0385s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0386s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.591872s ]
+INFO: [ app_init ] --END-- [ RunTime:1.592052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0388s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0379s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0391s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0392s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/bind_balance_edit%' ) LIMIT 1   [ RunTime:0.0405s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0385s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: meta_title F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\0140de8a4602470a2b943aea7cdfc42e.php 第 5 行.
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0388s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0395s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0810s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.304082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.304261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2019-03-04T15:23:02+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/promote_game_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0397s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0401s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.613485s ]
+INFO: [ app_init ] --END-- [ RunTime:1.613754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0398s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0398s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0403s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/promote_game_list%' ) LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0398s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0408s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 38 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'promote_game' LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `tab_promote_game` [ RunTime:0.0401s ]
+SQL: SELECT `id`,`promote_account`,`promote_nickname`,`game_id`,`bind_balance` FROM `tab_promote_game` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote_game` LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 47  [ RunTime:0.0401s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 906 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0395s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0406s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0806s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0415s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0401s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0396s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 452 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 452 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 453 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\eade3046fcce0e455f1808048dc33858.php 第 186 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.759736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.759926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2019-03-04T15:23:43+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/movebanglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0412s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0416s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.719344s ]
+INFO: [ app_init ] --END-- [ RunTime:1.719589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0404s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0394s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0394s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0400s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/movebanglist%' ) LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0395s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0407s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `tab_movebang` [ RunTime:0.0413s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 68 行.
+SQL: SELECT SUM(amount) AS tp_sum FROM `tab_movebang` LIMIT 1   [ RunTime:0.0469s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'Movebang' LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `tab_movebang` [ RunTime:0.0394s ]
+SQL: SELECT `id`,`agents_name`,`type`,`game_id`,`amount`,`promote_account`,`create_time` FROM `tab_movebang` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_movebang` LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 44  [ RunTime:0.0395s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 906 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0389s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0400s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0811s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0412s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0397s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0382s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0393s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: status F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\46d2f4fde6eee77db434a58f4044d1ce.php 第 183 行.
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.705411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.705595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2019-03-04T15:24:12+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/bang_propaylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0396s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0395s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0392s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0393s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.601120s ]
+INFO: [ app_init ] --END-- [ RunTime:1.601330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0396s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0394s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0394s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0401s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/bang_propaylist%' ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0395s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0405s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `tab_bang_propay` [ RunTime:0.0436s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 116 行.
+SQL: SELECT SUM(amount) AS tp_sum FROM `tab_bang_propay` LIMIT 1   [ RunTime:0.0402s ]
+NOTIC: [8] Undefined index: p F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\BangPropayController.class.php 第 119 行.
+SQL: SHOW COLUMNS FROM `sys_model` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `sys_model` WHERE `name` = 'bang_propay' LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_model` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `tab_bang_propay` [ RunTime:0.0396s ]
+SQL: SELECT `id`,`game_id`,`user_account`,`user_nickname`,`amount`,`status`,`op_account`,`create_time` FROM `tab_bang_propay` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_bang_propay` LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT `extend` FROM `sys_model` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `sys_attribute` [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `sys_attribute` WHERE `model_id` = 41  [ RunTime:0.0398s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 906 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0399s ]
+NOTIC: [8] Undefined variable: map F:\Visual-NMP-x64\www\zswh\Application\Common\Common\extend.php 第 125 行.
+SQL: SELECT * FROM `tab_game`  [ RunTime:0.0803s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0459s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0394s ]
+SQL: SELECT * FROM `tab_game` WHERE `id` = 446 LIMIT 1   [ RunTime:0.0392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.724426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.724607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2019-03-04T15:42:28+08:00 ] 127.0.0.1 /admin.php?s=/BangPropay/batch.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0394s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0395s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0380s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0395s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0385s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0393s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.602641s ]
+INFO: [ app_init ] --END-- [ RunTime:1.602885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0400s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0407s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0392s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0394s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0392s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%BangPropay/batch%' ) LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sys_menu` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT DISTINCT  `group` FROM `sys_menu` WHERE `group` <> '' AND `pid` = 138  [ RunTime:0.0397s ]
+SQL: SELECT `id`,`url` FROM `sys_menu` WHERE `pid` = 138 AND `hide` = 0  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道管理' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道数据' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '渠道对账' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0400s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `sys_menu` WHERE `group` = '充值组' AND `pid` = 138 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0406s ]
+ERR: 参数错误或者未定义:ids
+
+[ 2019-03-04T16:00:40+08:00 ] 127.0.0.1 /admin.php?s=/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0394s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0455s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0387s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0396s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0386s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0391s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0394s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0395s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.608162s ]
+INFO: [ app_init ] --END-- [ RunTime:1.608461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2019-03-04T16:00:43+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0422s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0412s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.636739s ]
+INFO: [ app_init ] --END-- [ RunTime:1.636929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0414s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+

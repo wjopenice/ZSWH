@@ -1,0 +1,1158 @@
+[ 2018-12-21T15:27:09+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0415s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0407s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0407s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0395s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.627115s ]
+INFO: [ app_init ] --END-- [ RunTime:1.627351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+
+[ 2018-12-21T15:27:11+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0421s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0417s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.645565s ]
+INFO: [ app_init ] --END-- [ RunTime:1.645726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0421s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2018-12-21T15:27:22+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0418s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0429s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0423s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.659978s ]
+INFO: [ app_init ] --END-- [ RunTime:1.660182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: lite F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `sys_auth_group_access` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0422s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_action` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `sys_member` [ RunTime:0.0418s ]
+SQL: SELECT `nickname` FROM `sys_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_action_log` [ RunTime:0.0422s ]
+SQL: INSERT INTO `sys_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1545377240','admin在2018-12-21 15:27登录了后台') [ RunTime:0.0442s ]
+SQL: SELECT * FROM `sys_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0422s ]
+NOTIC: [8] Undefined offset: 1 F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 733 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given F:\Visual-NMP-x64\www\zswh\Application\Common\Common\function.php 第 733 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sys_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1545290840 LIMIT 1   [ RunTime:0.0426s ]
+SQL: UPDATE `sys_member` SET `login`=`login`+1,`last_login_time`='1545377240',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-12-21T15:27:27+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0419s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0432s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0420s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.639000s ]
+INFO: [ app_init ] --END-- [ RunTime:1.639193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0417s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0416s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0417s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0424s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0421s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0478s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0403s ]
+NOTIC: [8] Undefined variable: yestoday F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 49 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  ) LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0425s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0424s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0423s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0424s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0415s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0427s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0419s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0416s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0449s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0432s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0432s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376347  )  [ RunTime:0.0428s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376347  )  [ RunTime:0.0418s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376347  )  [ RunTime:0.1310s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 92 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.799017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.668889s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.858910s ]
+SQL: select version() as v; [ RunTime:0.0415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064727s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.048601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.113365s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.113638s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.978837s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.175791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.182754s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.069312s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.852104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007685s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.175791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.183544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-12-21T15:27:52+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0418s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0400s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0393s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.626692s ]
+INFO: [ app_init ] --END-- [ RunTime:1.626938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0409s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0410s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0402s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0420s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0410s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0502s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0408s ]
+NOTIC: [8] Undefined variable: yestoday F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 49 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  ) LIMIT 1   [ RunTime:0.0437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0421s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0408s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0415s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0402s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0406s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0412s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0404s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0404s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0408s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0412s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376372  )  [ RunTime:0.0418s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376372  )  [ RunTime:0.0412s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376372  )  [ RunTime:0.1314s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 92 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.744801s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.621429s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.790487s ]
+SQL: select version() as v; [ RunTime:0.0401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042239s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.043389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.085607s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.085730s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.877447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006788s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.135677s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.050208s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.757530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007681s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.136483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-12-21T15:29:29+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0418s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0407s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0402s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0419s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.634117s ]
+INFO: [ app_init ] --END-- [ RunTime:1.634411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0420s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0426s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0414s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0421s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0426s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0418s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0417s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0403s ]
+NOTIC: [8] Undefined variable: yestoday F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 49 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  ) LIMIT 1   [ RunTime:0.0444s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0451s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0434s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0413s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0414s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0423s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0422s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0417s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0411s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0422s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0418s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0514s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376349  )  [ RunTime:0.0423s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376349  )  [ RunTime:0.0413s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376349  )  [ RunTime:0.1324s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 92 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.778729s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.646004s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.823370s ]
+SQL: select version() as v; [ RunTime:0.0408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042999s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.085308s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.085411s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.911551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006677s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.135799s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.050661s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.782296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007565s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.136613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-12-21T15:30:33+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0414s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0415s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.632438s ]
+INFO: [ app_init ] --END-- [ RunTime:1.632723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0411s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0410s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0412s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0410s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0413s ]
+INFO: [ AdminIndex ] --START--
+
+[ 2018-12-21T15:30:49+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0437s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0434s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0438s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0437s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0438s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0436s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0437s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0439s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0438s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.660973s ]
+INFO: [ app_init ] --END-- [ RunTime:1.661176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0435s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0432s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0434s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0442s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0431s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0437s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0445s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0435s ]
+INFO: [ AdminIndex ] --START--
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.001276s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.180525s ]
+NOTIC: [8] Undefined variable: addons_config F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a2687d4c008de26902ac38bda01195da.php 第 1 行.
+NOTIC: [8] Undefined variable: addons_config F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a2687d4c008de26902ac38bda01195da.php 第 4 行.
+SQL: select version() as v; [ RunTime:0.0430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.090314s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.274372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.046660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.050966s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.050866s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.142597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004975s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.046660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2018-12-21T15:30:59+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0415s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0399s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0416s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.630790s ]
+INFO: [ app_init ] --END-- [ RunTime:1.631002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0414s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0409s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0416s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0415s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0439s ]
+INFO: [ AdminIndex ] --START--
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.000404s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.173211s ]
+NOTIC: [8] Undefined variable: addons_config F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a2687d4c008de26902ac38bda01195da.php 第 1 行.
+NOTIC: [8] Undefined variable: addons_config F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Admin\a2687d4c008de26902ac38bda01195da.php 第 4 行.
+SQL: select version() as v; [ RunTime:0.0407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.085987s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.259084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002325s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044624s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.044686s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.131173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002588s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-12-21T15:31:08+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0426s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0492s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0425s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.656647s ]
+INFO: [ app_init ] --END-- [ RunTime:1.656910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0412s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0422s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0438s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0428s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000489s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0424s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0425s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0425s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0422s ]
+NOTIC: [8] Undefined variable: yestoday F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 50 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  ) LIMIT 1   [ RunTime:0.0451s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0444s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0419s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0425s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0425s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0420s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0422s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0425s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0430s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0414s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0422s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0426s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0432s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0426s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376327  )  [ RunTime:0.0430s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376327  )  [ RunTime:0.0432s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376327  )  [ RunTime:0.1322s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 93 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.785270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.650344s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.830984s ]
+SQL: select version() as v; [ RunTime:0.0415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043482s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.043642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.087124s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.087257s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.920320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006191s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.131511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.137920s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.050974s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.788797s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007119s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.131511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.138771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-12-21T15:37:55+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0482s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0463s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0398s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0417s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.712742s ]
+INFO: [ app_init ] --END-- [ RunTime:1.713046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0416s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0422s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0431s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0419s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0418s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545235200 and 1545321600  ) LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0414s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0414s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0405s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0421s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0417s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0424s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0419s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0411s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0402s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0438s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0427s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0408s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376375  )  [ RunTime:0.0407s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376375  )  [ RunTime:0.0417s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376375  )  [ RunTime:0.1280s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 93 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.753895s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.624693s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.798368s ]
+SQL: select version() as v; [ RunTime:0.0427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044853s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.041994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086692s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.086725s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.884558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001692s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.129979s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.043265s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.754818s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001891s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.130161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000184s ]
+
+[ 2018-12-21T15:41:25+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0431s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0435s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0466s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0428s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0442s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0433s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0435s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0436s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0435s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0431s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0432s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.667043s ]
+INFO: [ app_init ] --END-- [ RunTime:1.667315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0422s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0441s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0420s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0447s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0432s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0437s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0433s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0428s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0441s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0434s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545235200 and 1545321600  ) LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0474s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0429s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0434s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0436s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0435s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0447s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0438s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0435s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0441s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0436s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0435s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0433s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0442s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0442s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0438s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0441s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0434s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0443s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376344  )  [ RunTime:0.0434s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376344  )  [ RunTime:0.0431s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376345  )  [ RunTime:0.1363s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 93 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.833705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.703131s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.880677s ]
+SQL: select version() as v; [ RunTime:0.0424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044627s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.089149s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.089292s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.972821s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006751s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.135123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.141970s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.052899s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.845497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007585s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.135123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.142746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2018-12-21T15:42:01+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0426s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0426s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0426s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0426s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0426s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.646159s ]
+INFO: [ app_init ] --END-- [ RunTime:1.646361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0, $extend_map = Array) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\Visual-NMP-x64\www\zswh\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0425s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `sys_auth_group` [ RunTime:0.0423s ]
+SQL: SELECT * FROM sys_auth_group as ag right JOIN sys_auth_group_access as aga on(ag.id=aga.group_id and aga.uid=1)  WHERE ( ag.status=1 ) LIMIT 1   [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `sys_menu` [ RunTime:0.0426s ]
+SQL: SELECT `id`,`title`,`url` FROM `sys_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0429s ]
+SQL: SELECT `pid` FROM `sys_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3054 LIMIT 1   [ RunTime:0.0427s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 451 LIMIT 1   [ RunTime:0.0426s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0435s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `tab_spend` [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tab_deposit` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tab_promote` [ RunTime:0.0427s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` LIMIT 1   [ RunTime:0.0424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545235200 and 1545321600  ) LIMIT 1   [ RunTime:0.0456s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( register_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_user` WHERE ( login_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0475s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` LIMIT 1   [ RunTime:0.0424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_game` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 )  [ RunTime:0.0429s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 )  [ RunTime:0.0427s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545235200 and 1545321600   and pay_way <> 0 )  [ RunTime:0.0434s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545235200 and 1545321600  )  [ RunTime:0.0508s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and pay_time  between 1545321600 and 1545407999   and pay_way <> 0 )  [ RunTime:0.0430s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1545321600 and 1545407999  )  [ RunTime:0.0424s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_spend` WHERE ( pay_status=1 and promote_id > 0  and pay_way <> 0 )  [ RunTime:0.0430s ]
+SQL: SELECT sum(pay_amount) as amount FROM `tab_deposit` WHERE ( pay_status=1  and promote_id > 0 )  [ RunTime:0.0425s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1545321600 and 1545407999  ) LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tab_promote` WHERE ( create_time  between 1543593600 and 1546271999  ) LIMIT 1   [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0423s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='blog' )  ) )  [ RunTime:0.0434s ]
+SQL: SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and pid=( SELECT `id` FROM `sys_category` WHERE ( status=1 and display=1 and name='media' )  ) )  [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('39','40','2','51') ) LIMIT 1   [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0426s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sys_document as d WHERE ( d.status=1 and d.display=1 and d.category_id in ('42','43','44','45','46','47','48') ) LIMIT 1   [ RunTime:0.0426s ]
+SQL: SELECT `pay_amount`,pay_time as time FROM `tab_spend` WHERE ( pay_status=1 and pay_way <> 0 and pay_time  between 1544803200 and 1545376321  )  [ RunTime:0.0430s ]
+SQL: SELECT `pay_amount`,create_time as time FROM `tab_deposit` WHERE ( pay_status=1 and create_time  between 1544803200 and 1545376321  )  [ RunTime:0.0434s ]
+SQL: SELECT `account`,register_time as time FROM `tab_user` WHERE ( lock_status=1 and register_time  between 1544803200 and 1545376321  )  [ RunTime:0.1331s ]
+NOTIC: [2] Missing argument 3 for Addons\SiteStat\SiteStatAddon::idata(), called in F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php on line 93 and defined F:\Visual-NMP-x64\www\zswh\Addons\SiteStat\SiteStatAddon.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.781688s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:1.651215s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.827753s ]
+SQL: select version() as v; [ RunTime:0.0418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044322s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.043740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.088074s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.088345s ]
+SQL: SELECT `config` FROM `sys_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.919996s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004952s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.134436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.139319s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.050918s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.790638s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005141s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.134436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.139494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000192s ]
+

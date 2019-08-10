@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/swiper.min.css">
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="wapindex">
+        <!--  swiper  -->
+        <div class="wrapper">
+            <div class="swiper-container">
+                <div class="searchbox">
+                    <div class="logobox"><img src="__IMG__/logo.png" width="120" height="35" alt="" style="padding: 7.5px 20px;"></div>
+                    <a class="sbox" href="{:U('Index/wapsearch')}"><img src="__IMG__/icon_search.png" width="25" height="25" style="padding: 12.5px 20px;" alt=""></a>
+                </div>
+                <div class="swiper-wrapper">
+                    <volist name="adv_top" id="vo" >
+                    <div class="swiper-slide" ><a href="{:U('Index/wapgamedetail?id='.$vo['game_id'].'')}"><img class="swiper-img" src="__ROOT__{$vo['data']|get_cover='path'}" alt=""></a></div>
+                    </volist>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--  游戏box  -->
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">角色扮演</span><a class="fr font more" href="{:U('Index/wapgamelist?type=wapgamelist')}">更多</a></p>
+            <ul class="gift_ul">
+                <volist name="juese" id="vo" >
+                    <li onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'id\'].\'\')}'" class="ov">
+                        <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                        <div class="gift_name all_play_name fl" onclick="">
+                            <p class="gift_text all_play_text ofh">{$vo.game_name}</p>
+                            <p class="all_play_role">{$vo['game_size']}| {$vo.game_type_name}</p>
+                            <p class="gift_bag ofh">{$vo['introduction']}</p>
+                        </div>
+                        <a class="receive_btn fr" href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&type=1')}</if>">下载</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">卡牌游戏</span><a class="fr font more" href="{:U('Index/wapgamelist?type=wapgamelist')}">更多</a></p>
+            <ul class="gift_ul">
+                <volist name="kapai" id="vo" >
+                    <li onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'id\'].\'\')}'" class="ov">
+                    <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl" onclick="">
+                        <p class="gift_text all_play_text ofh">{$vo.game_name}</p>
+                        <p class="all_play_role">{$vo['game_size']}| {$vo.game_type_name}</p>
+                        <p class="gift_bag ofh">{$vo['introduction']}</p>
+                    </div>
+                    <a class="receive_btn fr" href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&type=1')}</if>">下载</a>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">策略养成</span><a class="fr font more" href="{:U('Index/wapgamelist?type=wapgamelist')}">更多</a></p>
+            <ul class="gift_ul">
+                <volist name="celue" id="vo" >
+                    <li onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'id\'].\'\')}'" class="ov">
+                        <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                        <div class="gift_name all_play_name fl" onclick="">
+                            <p class="gift_text all_play_text ofh">{$vo.game_name}</p>
+                            <p class="all_play_role">{$vo['game_size']}| {$vo.game_type_name}</p>
+                            <p class="gift_bag ofh">{$vo['introduction']}</p>
+                        </div>
+                        <a class="receive_btn fr" href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&type=1')}</if>">下载</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">休闲益智</span><a class="fr font more" href="{:U('Index/wapgamelist?type=wapgamelist')}">更多</a></p>
+            <ul class="gift_ul">
+                <volist name="xiuxian" id="vo" >
+                    <li onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'id\'].\'\')}'" class="ov">
+                        <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                        <div class="gift_name all_play_name fl" onclick="">
+                            <p class="gift_text all_play_text ofh">{$vo.game_name}</p>
+                            <p class="all_play_role">{$vo['game_size']}| {$vo.game_type_name}</p>
+                            <p class="gift_bag ofh">{$vo['introduction']}</p>
+                        </div>
+                        <a class="receive_btn fr" href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&type=1')}</if>">下载</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <!--  礼包box  -->
+        <div class="gamebox">
+            <p class="titlebox ov"><span class="online fl"></span><span class="fl font">游戏礼包</span><a class="fr font more" href="{:U('Gift/wapgiftlist')}">更多</a></p>
+            <ul class="gift_ul">
+                <volist name="gift" id="vo" >
+                <li class="ov" >
+                    <div class="gift_header fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'game_id\'].\'\')}'"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl" onclick="window.location.href='{:U(\'Index/wapgamedetail?id=\'.$vo[\'game_id\'].\'\')}'">
+                        <p class="gift_text all_play_text ofh">{$vo.giftbag_name}-{$vo.game_name}</p>
+                        <p class="all_play_role"> {$vo.desribe}</p>
+                    </div>
+                    <div id="{$vo.gift_id}" title="{$vo.giftbag_name}"> </div>
+                    <a class="receive_btn fr lq" href="javascript:;"  id="lq_{$vo.gift_id}">
+                       领取
+                    </a>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="nullbox"><p>没有了，暂时到底了</p></div>
+    </div>
+    <!--  底部tap  -->
+    <include file="Public/nav" />
+
+    <script src='__JS__/jquery.js'></script>
+    <script src='__JS__/swiper.min.js'></script>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: true,//可选选项，自动滑动
+                loop: true
+            });
+        })
+        $(".lq").on('click',function () {
+            var that = $(this);
+          //  alert(  $(this).prev().attr('id'));return;
+            $.ajax({
+                type:'post',
+                dataType:'json',
+                data:{
+                    giftid:$(this).prev().attr('id'),
+                    giftname:$(this).prev().attr('title')
+                },
+                url:"{:U('Gift/getGameGift')}",
+                success:function(data) {
+                    if (parseInt(data.status) == 1 ) {
+//                    登录成功时候的状态
+                        if(data.msg=='ok'){
+                           // that.text("已领取");
+                            alert("领取成功,礼包码:"+data.data);
+
+                        }
+                        if(data.msg=='no'){
+//                        您已领取过该礼包
+                            alert("您已领取过该礼包,礼包码:\n"+data.data)
+                        }
+                        if(data.msg=='noc'){
+//                        该礼包已领取完，下次请早
+                            alert(" 该礼包已领取完，下次请早")
+                        }
+                    }
+                    if (parseInt(data.status) == 0 ) {
+                        //登录失败的时候
+                       alert("领取礼包请先用户登录");
+                    }
+                },
+                error:function() {
+                    alert('服务器故障，请稍候再试。。。。');
+                }
+            });
+        })
+
+    </script>
+</body>
+</html>

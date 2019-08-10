@@ -1,0 +1,89 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>词语过滤</h2>
+	</div>
+	<div class="cf top_nav_list">
+		<div class="fl button_list">
+<!--            <a class="btn blue" href="{:U('User/add_filter')}">新 增</a>
+          &lt;!&ndash;  <button class="btn ajax-post gre" url="{:U('changeStatus?method=resumeUser')}" target-form="ids">启 用</button>
+            <button class="btn ajax-post red" url="{:U('changeStatus?method=forbidUser')}" target-form="ids">禁 用</button>&ndash;&gt;
+            <a class="btn ajax-post confirm red" url="{:U('User/del_filter')}" target-form="ids">删 除</a>-->
+        </div>
+
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="keywords" class="search-input" value="{:I('keywords')}" placeholder="请输入关键词">
+				<!-- <a class="sch-btn" href="javascript:;" id="search" url="{:U('index')}"><i class="btn-search"></i></a> -->
+			</div>
+            <div class="input-list">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('filter')}">搜索</a>
+            </div>
+		</div>
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table table-striped">
+	<table class="">
+    <thead>
+        <tr>
+		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+		<th class="">ID</th>
+		<th class="">不良词语</th>
+		<!--<th class="">操作</th>-->
+		</tr>
+    </thead>
+    <tbody>
+		<notempty name="list_data">
+		<volist name="list_data" id="vo">
+		<tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}" /></td>
+			<td>{$vo.id} </td>
+			<td>{$vo.word}</td>
+		<!--	<td>
+			     &lt;!&ndash;<a  href="{:U('User/editWord?id='.$vo['id'])}" class="">编辑</a>&ndash;&gt;
+                <a href="{:U('User/del_filter?id='.$vo['id'])}" class="confirm ajax-get">删除</a>
+                </td>-->
+		</tr>
+		</volist>
+		<else/>
+		<td colspan="9" class="text-center"> aOh! 暂时还没有内容! </td>
+		</notempty>
+	</tbody>
+    </table>
+	</div>
+	<div class="page">
+		{$_page|default=''}
+	</div>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+    //导航高亮
+    highlight_subnav('{:U('User/index')}');
+	</script>
+</block>

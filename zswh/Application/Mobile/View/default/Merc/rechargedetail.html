@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+<div class="head">
+    <a href="javascript:history.back(-1)" class="back fl"></a>
+    <h1>充值明细详情</h1>
+</div>
+<div class="waprechargedetailbox">
+    <!--  detail  -->
+    <div class="detailbox">
+        <p class="ov"><span class="fl">用户账号</span><span class="fr">{$s.user_account}</span></p>
+        <p class="ov"><span class="fl">订单号</span><span class="fr">{$s.pay_order_number}</span></p>
+        <p class="ov"><span class="fl">游戏名称</span><span class="fr">{$s.game_name}</span></p>
+        <p class="ov"><span class="fl">充值金额</span><span class="fr">{$s.pay_amount}元</span></p>
+        <p class="ov"><span class="fl">支付方式</span><span class="fr">
+            <switch name='s.pay_way'>
+                      <case value="0">平台币</case>
+                      <case value="1">支付宝</case>
+                      <case value="2">微信</case>
+                    </switch></span></p>
+        <p class="ov"><span class="fl">充值时间</span><span class="fr">{$s.pay_time|date='Y-m-d',###}</span></p>
+        <p class="ov"><span class="fl">充值状态</span><span class="fr">
+            <switch name='s.pay_status'>
+                      <case value="0">支付未下单</case>
+                      <case value="1">支付成功</case>
+                    </switch></span></p>
+        <p class="ov"><span class="fl">渠道</span><span class="fr">{$s.promote_account}{:get_parent_promote($s['promote_id'])}</span></p>
+    </div>
+</div>
+
+<script src='__JS__/jquery.js'></script>
+</body>
+</html>

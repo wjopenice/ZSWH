@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <style>
+        .screentime input {width: 75%;}
+    </style>
+</head>
+<body>
+<form action="/Mobile/Merc/waprecharge" method="post">
+<div class="head">
+    <a href="/Mobile/Merc/wapalreadlogin/type/wapmerc.html" class="back fl"></a>
+    <span class="fr screen screensurebtn" onclick="formsubmit()">查询</span>
+    <h1>充值明细</h1>
+</div>
+<div class="wapscreen">
+    <div class="rsearchbox" style="margin-bottom: 10px">
+        <div class="ov searchinput">
+            <input type="text" class="fl" name="user_account" value="{:I('user_account')}" placeholder="请输入用户名">
+        </div>
+    </div>
+    <ul class="ov screennavgame">
+       <!-- <li class="fl wapscreenaction"><span></span>全部游戏</li>-->
+        <li class="fr wapscreenaction" style="width: 100%"><span></span>
+            <select name="game_name" id="game_name" style="width: 90%;padding: 10px;border-radius: 12px">>
+                <option value="">全部游戏</option>
+                <volist name=":get_game_list()" id ="s">
+                    <if condition="I('game_name') eq ($s['game_name'])">
+                        <option  value="{$s.game_name}" selected="selected" >{$s.game_name}</option>
+                        <else/>
+                        <option  value="{$s.game_name}" >{$s.game_name}</option>
+                    </if>
+                </volist>
+            </select>
+        </li>
+    </ul>
+    <ul class="ov screennavgame">
+     <!--   <li class="fl wapscreenaction"><span></span>全部子账户</li>-->
+        <li class="fr wapscreenaction" style="width: 100%"><span></span>
+            <select name="promote_id" id="subid" style="width: 90%;padding: 10px;border-radius: 12px">
+                <option value="0">全部子账户</option>
+                <volist name=":get_prmoote_chlid_account1(session('promote_auth.pid'))" id ="s">
+                    <if condition="I('promote_id') eq ($s['id'])">
+                        <option  value="{$s.id}" selected="selected" >{$s.account}</option>
+                        <else/>
+                        <option  value="{$s.id}" >{$s.account}</option>
+                    </if>
+                </volist>
+            </select>
+        </li>
+    </ul>
+    <div>
+        <div class="screenallgame wapscraction">
+            <div class="screentime ov">
+                <div class="fl screengametime" style="margin-bottom: 10px"><p>开始时间</p><input type="date" max class="start_time"  name="time-start" ></div>
+                <div class="fl screengametime" style="margin-bottom: 10px"><p>结束时间</p><input type="date" min class="end_time" name="time-end" ></div>
+            </div>
+            <ul class="rechargelist elogo">
+                <foreach name="data" item="v">
+                    <li class="ov" onclick="window.location.href='{:U(\'Merc/rechargedetail?id=\'.$v[\'id\'].\'\')}'">
+                        <p class="p10 ov"><span class="fl"><?=$v['user_account']?></span><span class="fr"><?=date("Y-m-d",$v['pay_time'])?></span></p>
+                        <p class="ov"><span class="fl"><?=$v['game_name']?></span><a href="javascript:;" class="fr" style="text-decoration: none;"><?=$v['pay_amount']?></a></p>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+</div>
+</form>
+<script src='__JS__/jquery.js'></script>
+<script>
+    function formsubmit(){
+        $("form").submit();
+    }
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            $(".start_time").attr('max',end_time);
+        });
+    })
+</script>
+</body>
+</html>

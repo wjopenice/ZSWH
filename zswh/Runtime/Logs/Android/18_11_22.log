@@ -1,0 +1,131 @@
+[ 2018-11-22T16:47:11+08:00 ] 127.0.0.1 /android.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0419s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0421s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.642684s ]
+INFO: [ app_init ] --END-- [ RunTime:1.642922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0447s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tab_appimage` [ RunTime:0.0417s ]
+NOTIC: [2] Missing argument 3 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 17 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 4 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 17 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 5 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 17 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [8] Undefined variable: size F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: p F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined index: limit F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Db\Driver.class.php 第 923 行.
+SQL: SELECT `id`,`game_name`,`icon`,`game_size`,`introduction`,`version_num`,`version`,`and_dow_address`,`dow_mynum` FROM `tab_game` WHERE `app_recommend_status` = 1 AND `game_status` = 1 ORDER BY app_sort LIMIT 0,20   [ RunTime:0.0428s ]
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2873 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2851 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2863 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1140 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2437 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tab_game_set` [ RunTime:0.0422s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 400 LIMIT 1   [ RunTime:0.0425s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 399 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 392 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 183 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 342 LIMIT 1   [ RunTime:0.0421s ]
+NOTIC: [2] Missing argument 4 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 19 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 5 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 19 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [8] Undefined variable: p F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+SQL: SELECT `id`,`game_name`,`icon`,`game_size`,`introduction`,`version_num`,`version`,`and_dow_address`,`dow_mynum` FROM `tab_game` WHERE `app_recommend_status` = 3 AND `game_status` = 1 ORDER BY app_sort LIMIT 0,9   [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2815 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2746 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2790 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2759 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2805 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2825 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 388 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 378 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 382 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 377 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 386 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 366 LIMIT 1   [ RunTime:0.0417s ]
+NOTIC: [2] Missing argument 3 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 21 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 4 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 21 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 5 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 21 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [8] Undefined variable: size F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: p F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined index: limit F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Db\Driver.class.php 第 923 行.
+SQL: SELECT `id`,`game_name`,`icon`,`game_size`,`introduction`,`version_num`,`version`,`and_dow_address`,`dow_mynum` FROM `tab_game` WHERE `app_recommend_status` = 2 AND `game_status` = 1 ORDER BY app_sort LIMIT 0,20   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1500 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2503 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2469 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2773 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2323 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 187 LIMIT 1   [ RunTime:0.0433s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 333 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 344 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 387 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 327 LIMIT 1   [ RunTime:0.0414s ]
+NOTIC: [2] Missing argument 4 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 23 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 5 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 23 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [8] Undefined variable: p F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+SQL: SELECT `id`,`game_name`,`icon`,`game_size`,`introduction`,`version_num`,`version`,`and_dow_address`,`dow_mynum` FROM `tab_game` WHERE `cp_name` = 'cps' AND `game_status` = 1 ORDER BY app_sort LIMIT 0,6   [ RunTime:0.0432s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2222 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2229 LIMIT 1   [ RunTime:0.0442s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2238 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2250 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2338 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2347 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 315 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 316 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 317 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 318 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 331 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 335 LIMIT 1   [ RunTime:0.0419s ]
+NOTIC: [2] Missing argument 4 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 25 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [2] Missing argument 5 for Android\Model\GameModel::type_to_select(), called in F:\Visual-NMP-x64\www\zswh\Application\Android\Controller\IndexController.class.php on line 25 and defined F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 85 行.
+NOTIC: [8] Undefined variable: p F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+NOTIC: [8] Undefined variable: field F:\Visual-NMP-x64\www\zswh\Application\Android\Model\GameModel.class.php 第 127 行.
+SQL: SELECT `id`,`game_name`,`icon`,`game_size`,`introduction`,`version_num`,`version`,`and_dow_address`,`dow_mynum` FROM `tab_game` WHERE `cp_name` <> 'cps' AND `game_status` = 1 ORDER BY app_sort LIMIT 0,6   [ RunTime:0.0436s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1154 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1191 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1169 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1162 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3069 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1328 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 182 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 184 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 185 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 186 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 435 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT `apk_pck_name` FROM `tab_game_set` WHERE `game_id` = 190 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tab_appimage` WHERE `status` = 1 AND `pos_id` = 1 ORDER BY sort  [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2832 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2833 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2834 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2835 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2933 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2837 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `tab_appimage` WHERE `status` = 1 AND `pos_id` = 2 ORDER BY sort  [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2838 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tab_appimage` WHERE `status` = 1 AND `pos_id` = 3 ORDER BY sort  [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2986 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tab_appimage` WHERE `status` = 1 AND `pos_id` = 4 ORDER BY sort  [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2840 LIMIT 1   [ RunTime:0.0421s ]
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <style>
+        .screentime input {width: 75%;}
+    </style>
+</head>
+<body>
+<form action="/Mobile/Apply/game_verify" method="post">
+<div class="head">
+    <a href="/Mobile/Merc/wapalreadlogin/type/wapmerc.html" class="back fl"></a>
+    <span class="fr screen screensurebtn" onclick="formsubmit()">查询</span>
+    <h1>子账号审核</h1>
+</div>
+<div class="wapscreen">
+    <div class="rsearchbox" style="margin-bottom: 10px">
+        <div class="ov searchinput">
+            <input type="text" class="fl" name="account" value="{:I('account')}" placeholder="请输入子渠道账号">
+        </div>
+    </div>
+
+    <div>
+        <div class="screenallgame wapscraction">
+
+            <ul class="rechargelist elogo">
+                <foreach name="data" item="v">
+                    <li class="ov" onclick="window.location.href='{:U(\'Apply/game_verify_edit?id=\'.$v[\'id\'].\'\')}'">
+                        <p class="p10 ov"><span class="fl"><?=$v['account']?></span><span class="fr"><?=$v['real_name']?></span></p>
+                        <p class="ov"><span class="fl"><?=$v['mobile_phone']?></span><span class="fr"><if condition='$v.status eq 1'>开启<elseif condition="$v.status eq 2"/>拉黑<else/>未审核</if></span></p>
+                        <p class="ov"><span class="fl">直冲流水</span> <span class="fr"><if condition='$vo.alipayway_sign eq 1'>开启<else/>关闭</if></span></p>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+</div>
+</form>
+<script src='__JS__/jquery.js'></script>
+<script>
+    function formsubmit(){
+        $("form").submit();
+    }
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            $(".start_time").attr('max',end_time);
+        });
+    })
+</script>
+</body>
+</html>

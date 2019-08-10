@@ -1,0 +1,79 @@
+<extend name="Public/promote_base"/>
+
+<block name="body">
+  <style type="text/css">
+  .pos{position: relative;}
+    #btn_sub{
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1.53846154;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      padding: 6px 20px;
+      background: #e02222;
+      color: #fff;
+      border: 1px solid transparent;
+    }
+  </style>
+  <script src='__STATIC__/zeroclipboard/jquery.zclip.min.js'></script>
+  <div id="query">
+      <div id="lg" class="mod">
+          <h2 style="padding: 14px 0 14px 14px;">编辑审核信息</h2>
+        <form id="form" action="{:U('Apply/apply_edit?id='.$data['id'])}" method="post" class="form-horizontal">
+          <div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">游戏账号：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">{$data['game_name']}</div>
+                <input type="hidden" name="dis_gameid" value="{$data['game_id']}"/>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">申请人：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">{$data['promote_account']}</div>
+                <input type="hidden" name="dis_promoteid" value="{$data['promote_id']}"/>
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">分成比例：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">
+                 <input type="text" style="height: 30px;width: 80%;border-radius: 2px;border: 1px solid #dedede;" name="ratio" value="{$data['ratio']}" placeholder="请输入1-100的数字,如:30即为30%">
+                </div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+              </div>
+            </div>
+            <div style="overflow: hidden;padding: 14px;">
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">直冲流水：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">
+                  <input name="status" type="radio" id="kq2"value="0" <eq name="data['status']" value="0">checked="checked"</eq> ><label for="kq2">未审核</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<input id="gb2" name="status" type="radio" value="1" <eq name="data['status']" value="1">checked="checked"</eq>><label for="gb2">通过</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<input id="gb3" name="status" type="radio" value="2" <eq name="data['status']" value="2">checked="checked"</eq>><label for="gb3">驳回</label>
+
+                </div>
+              </div>
+              <div style="float: left;width: 50%;overflow: hidden;">
+                <div style="float: left;width: 20%;line-height: 30px;">启用状态：</div>
+                <div style="float: left;width: 80%;line-height: 30px;">
+                  <input name="enable_status" type="radio" id="kq1" checked="checked" value="1" <eq name="data['enable_status']" value="1">checked="checked"</eq>/><label for="kq1">启用</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<input id="gb1" name="enable_status" type="radio"  value="0" <eq name="data['enable_status']" value="0">checked="checked"</eq>/><label for="gb1">关闭</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-item cf" style="margin-bottom: 20px;margin-left: 36%;margin-top: 30px;">
+            <input type="hidden" name='apply_id' value="{$data['id']}"></input>
+            <input type="submit" value="确定" id="btn_sub">
+          </div>
+        </form>
+      </div>
+  </div>
+</block>
+<block name="script">
+  <script type="text/javascript">
+  //导航高亮
+  highlight_subnav('{:U('Apply/apply_edit')}');
+  </script>
+</block>

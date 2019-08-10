@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="wbg">
+<div class="waplogobox">
+    <div class="waplogo wapregister">
+        <img src="__IMG__/waplogo.png" alt="">
+    </div>
+    <div>
+        <ul class="ov waploginnav wapregisternav">
+            <li class="fl waploginaction"><span></span>渠道注册</li>
+            <li class="fl"><span></span>用户注册</li>
+        </ul>
+        <div>
+            <form action="" method="post">
+                <div class="qudao qudaoaction">
+                    <input class="input_merc" type="hidden" name="type" value="merc">
+                    <div class="input_box registerinput_box"><input class="input_merc" type="text" name="account"  placeholder="请输入6-12位账号！" oninput="if(value.length>11)value=value.slice(0,11)"></div>
+                    <div class="input_box registerinput_box"><input class="input_merc" type="password" name="password" placeholder="请输入您的密码！" maxlength="20"></div>
+                    <div class="input_box registerinput_box"><input class="input_merc" type="text" name="real_name" placeholder="请输入联系人！" maxlength="20"></div>
+                    <div class="input_box registerinput_box"><input class="input_merc" type="tel" name="mobile_phone" placeholder="请输入联系人电话！" maxlength="20"></div>
+                    <div class="input_box registerinput_box">
+                        <select class="input_merc" name="admin_id">
+                            <option value ="请选择管理员">请选择管理员</option>
+                            <foreach name="sys_member" item="vo">
+                                <option value="{$vo.uid}" <if condition="$vo.uid eq $user_id">selected</if>>{$vo.nickname}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                    <!--      登录      -->
+                    <div class="login_btn"><input type="submit" value="注册" id="merc"></div>
+                </div>
+                <div class="qudao">
+                    <input class="input_user" type="hidden" name="type" value="user" disabled="disabled" >
+                    <div class="input_box registerinput_box"><input class="input_user" type="text" name="username" placeholder="请输入用户名！" oninput="if(value.length>11)value=value.slice(0,11)" disabled></div>
+                    <div class="input_box registerinput_box"><input class="input_user" type="password" name="pwd" placeholder="请输入您的密码！" maxlength="20" disabled></div>
+                    <!--      登录      -->
+                    <div class="login_btn"><input type="submit" value="注册" disabled id="user"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script src='__JS__/jquery.js'></script>
+<script>
+    //选项卡
+    $(".waploginnav li").click(function(){
+        var index = $(this).index();
+        $(".waploginnav li").eq(index).addClass('waploginaction').siblings().removeClass('waploginaction');
+        $(".qudao").eq(index).addClass('qudaoaction').siblings().removeClass('qudaoaction');
+        if(index == 0){
+            $(".input_user").attr("disabled","disabled");
+            $(".input_merc").removeAttr("disabled");
+            $("#user").attr("disabled","disabled");
+            $("#merc").removeAttr("disabled");
+        }else{
+            $(".input_user").removeAttr("disabled");
+            $(".input_merc").attr("disabled","disabled");
+            $("#user").removeAttr("disabled");
+            $("#merc").attr("disabled","disabled");
+        };
+    });
+</script>
+</body>
+</html>

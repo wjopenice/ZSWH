@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="head">
+        <a href="/Mobile/Merc/wapordinarylogin/type/wapmerc.html" class="back fl"></a>
+        <span class="fr screen"></span>
+        <h1>积分记录</h1>
+    </div>
+    <div class="waprechargebox">
+        <!-- search -->
+        <div class="rsearchbox">
+           <!-- <div class="ov searchinput">
+               &lt;!&ndash; <input type="text" class="fl"><i class="fl"></i>&ndash;&gt;
+            </div>-->
+        </div>
+        <!--  list  -->
+        <ul class="rechargelist">
+            <foreach name="list_data" item="v">
+                <li>
+                    <p class="ov p10">
+                        <span class="fl">
+                            <switch name="vo['pay_way']" >
+                                <case value="0">平台币</case>
+                                <case value="1">支付宝</case>
+                                <case value="2">微信</case>
+                                <default />支付宝
+                              </switch>
+                    </span>
+                        <span class="fr"><?=date("Y-m-d H:i:s",$v['create_time'])?></span></p>
+                    <p class="ov"><span><?=$v['points']?>积分</span><a href="javascript:;" class="fr" style="text-decoration: none;"><?=$v['amount']?>元</a></p>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+    <script src='__JS__/jquery.js'></script>
+</body>
+</html>

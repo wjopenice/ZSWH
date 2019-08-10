@@ -1,0 +1,271 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题栏 -->
+    <div class="main-title">
+        <h2>一级渠道用户列表</h2>
+    </div>
+	<div class="cf top_nav_list">
+		<div class="fl button_list">
+		<empty name="model.extend">
+			<!--<div class="tools">
+				 <a class="btn blue" href="{:U('add?model='.$model['id'])}">新 增</a> 
+				&lt;!&ndash; <button class="btn ajax-post confirm red" target-form="ids" url="{:U('del?model='.$model['id'])}">删 除</button> &ndash;&gt;
+                <button class="btn ajax-post org" target-form="ids" url="{:U("Promote/set_status",array("status"=>1,"msg_type"=>5,"field"=>"status"))}">审 核</button>
+            <button class="btn ajax-post lahei" target-form="ids" url="{:U("Promote/set_status",array("status"=>2,"msg_type"=>10,"field"=>"status"))}">拉 黑</button>
+			</div>-->
+		</empty>
+		</div>
+		<!-- 高级搜索 -->
+		<div class="search-form fr cf">
+            <!-- 渠道直冲状态 -->
+            <div class="d_list">
+                <div class="drop-down drop-down13" style="width:100px">
+                    <span  class="sort-txt" data="{I('alipayway_sign')}" style="width:65px">
+                        <if condition="I('alipayway_sign') eq ''">直冲流水
+                        <elseif  condition="I('alipayway_sign') eq 0" />关闭
+                        <elseif  condition="I('alipayway_sign') eq 1" />开启
+                        </if>
+                    </span>
+                    <i class="arrow arrow-down"></i>
+                    <ul  class="nav-list hidden">
+                        <li><a href="javascript:;" value="0" style="width:80px">关闭</a></li>
+                        <li><a href="javascript:;" value="1" style="width:80px">开启</a></li>
+                    </ul>
+                </div>
+                <input type='hidden' class="hiddenvalue" id='alipayway_sign' name="alipayway_sign" value="{:I('alipayway_sign')}"></input>
+            </div>
+            <!-- 所属管理员 -->
+            <div class="i_list">
+                <div class="drop-down drop-down22">
+                    <if condition="I('nickname') eq ''">
+                        <input type="text" id="i_list_id" class="sort-txt" value="" placeholder="请选择管理员" />
+                        <else />
+                        <input type="text" id="i_list_id" class="sort-txt"  value="{:I('nickname')}" placeholder="请选择管理员" />
+                    </if>
+                    <input type="hidden" id="i_list_idh" name="admin_id" value="{:I('admin_id')}" />
+                    <input type="hidden" id="i_list_ida" name="nickname" value="{:I('nickname')}" />
+                    <i class="arrow arrow-down"></i>
+                    <ul id="i_list_li" class="nav-list hidden i_list_li">
+                        <li><a href="javascript:;" value="" >全部</a></li>
+                        <volist name=":get_member_list()" id="vo">
+                            <li><a href="javascript:;" value="{$vo.uid}" >{$vo.nickname}</a></li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+			<div class="sleft">
+				<input type="text" name="{$model['search_key']|default='account'}" class="search-input" value="{:I('account')}" placeholder="请输入渠道账号" id="account">
+				<!-- <a class="sch-btn" href="javascript:;" id="search" url="{:U('Promote/lists','model='.$model['name'],false)}"><i class="btn-search"></i></a> -->
+			</div>
+            <div class="sleft">
+                <input type="text" name="{$model['search_key']|default='id'}" class="search-input" value="{:I('id')}" placeholder="请输入渠道ID" id="qu_id">
+            </div>
+
+            <div class="input-list">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('Promote/branch',false)}">搜素</a>
+            </div>
+		</div>
+	</div>
+
+
+    <!-- 数据列表 -->
+    <div class="data-table">
+        <div class="data-table table-striped">
+            <table>
+                <!-- 表头 -->
+                <thead>
+                    <tr>
+                        <th style="text-align:center" class="row-selected row-selected">
+                            <input class="check-all" type="checkbox">
+                        </th>
+                        <th style="text-align:center">渠道ID</th>
+                        <th style="text-align:center">渠道账号</th>
+                        <th style="text-align:center">渠道类型</th>
+                        <th style="text-align:center">姓名</th>
+                        <th style="text-align:center">手机</th>
+                        <th style="text-align:center">状态</th>
+                        <th style="text-align:center">直冲流水</th>
+                        <th style="text-align:center">所属管理员</th>
+                        <th style="text-align:center">操作</th>
+                    </tr>
+                </thead>
+
+                <!-- 列表 -->
+                <tbody>
+                <volist name="list_data" id="data">
+                    <tr>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center"><input class="ids" type="checkbox" value="{$data['id']}" name="ids[]"></td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">{$data.id}</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">{$data.account}</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">一级渠道</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">{$data.real_name}</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">{$data.mobile_phone}</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">
+                            <if condition="$data['status'] eq 0">未审核
+                                <elseif condition="$data['status'] eq 1"/>正常
+                                <elseif condition="$data['status'] eq 2"/>拉黑
+                            </if>
+                        </td>
+
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">
+                            <if condition="$data['alipayway_sign'] eq 0">关闭
+                                <elseif condition="$data['alipayway_sign'] eq 1"/>开启
+                            </if>
+                        </td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center">{$data.nickname}</td>
+                        <td style="border-right:1px solid #DDDDDD;text-align:center"><a href="/admin.php?s=/Promote/build/id/{$data.id}.html">游戏授权</a></td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="page">
+        {$_page|default=''}
+    </div>
+</block>
+
+<block name="script">
+<script type="text/javascript">
+//导航高亮
+highlight_subnav('{:U('Promote/branch')}');
+function exportuser(){
+    var account = $("#account").val();
+    var admin_id=$("#i_list_idh").val();
+    var status=$("#status").val();
+    var promote_name=$("#promoteidh").val();
+    var alipayway_sign=$("#alipayway_sign").val();
+    var input = document.getElementsByName("ids[]");
+    var ids=[];
+   for (var i = 0; i < input.length; i++)
+    {
+        var obj = input[i];
+        //判断是否是checkbox并且已经选中
+        if (obj.type == "checkbox" && obj.checked)
+        {
+            var code = obj.value;//获取checkbox的值
+           ids.push(code);
+        }
+    }
+   var url="/admin.php?s=/Export/expUser/id/23/ids/"+ids+"/qu_id/"+$("#qu_id").val()+"/account/"+account+"/status/"+status+"/admin_id/"+admin_id+"/promote_name/"+promote_name+"/alipayway_sign/"+alipayway_sign+".html";
+   window.open(url);
+
+}
+$(function(){
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+
+    //回车自动提交
+    $('.search-form').find('input').keyup(function(event){
+        if(event.keyCode===13){
+            $("#search").click();
+        }
+    });
+
+     //状态
+    $(".d_list").find(".drop-down12").hover(function(){
+        $(this).find(".nav-list").removeClass("hidden");
+    },function(){
+        $(this).find(".nav-list").addClass("hidden");
+    });
+
+     $(".drop-down12 .nav-list li").find("a").each(function(){
+        var that = $(".drop-down12");
+        $(this).click(function(){
+            var text = $(this).text(),val = $(this).attr("value");
+            that.find(".sort-txt").text(text).attr("data",val);
+            that.find(".nav-list").addClass("hidden");
+            that.siblings('.hiddenvalue').val(val);
+        })
+    });
+
+ //直冲状态
+$(".d_list").find(".drop-down13").hover(function(){
+        $(this).find(".nav-list").removeClass("hidden");
+    },function(){
+        $(this).find(".nav-list").addClass("hidden");
+    });
+
+     $(".drop-down13 .nav-list li").find("a").each(function(){
+        var that = $(".drop-down13");
+        $(this).click(function(){
+            var text = $(this).text(),val = $(this).attr("value");
+            that.find(".sort-txt").text(text).attr("data",val);
+            that.find(".nav-list").addClass("hidden");
+            that.siblings('.hiddenvalue').val(val);
+        })
+    });
+     //渠道管理员名称
+     $(".drop-down22").on('click',function(event) {
+        var navlist = $(this).find('.i_list_li');
+        if (navlist.hasClass('hidden')) {
+            navlist.removeClass('hidden');
+            $('#i_list_id').focus().val('');            
+        } else {
+            navlist.addClass('hidden');
+        }
+        $(document).one("click", function(){
+            navlist.addClass('hidden');
+        });
+        event.stopPropagation();
+    });
+
+    $('#i_list_id').on('keyup',function(event) {
+        var val  = $.trim($(this).val()).toLowerCase();
+        $('#i_list_idh').val(val);
+    });
+    
+    $("#i_list_li").find("a").each(function(){
+        $(this).click(function(){
+            var text = $.trim($(this).text()).toLowerCase();
+            var admin_id = $.trim($(this).attr('value')).toLowerCase();
+            $("#i_list_id").val(text);
+            $('#i_list_idh').val(admin_id);
+            $("#i_list_ida").val(text);
+            //alert(text);
+        })
+    });
+
+     //上级渠道搜索 
+      $(".drop-down2").on('click',function(event) {
+        var navlist = $(this).find('.i_list_li');
+        if (navlist.hasClass('hidden')) {
+            navlist.removeClass('hidden');
+            $('#promoteid').focus().val('');            
+        } else {
+            navlist.addClass('hidden');
+        }
+        $(document).one("click", function(){
+            navlist.addClass('hidden');
+        });
+        event.stopPropagation();
+    });
+    var a = $('.i_list_li li a');
+    $('#promoteid').on('keyup',function(event) {
+        var val  = $.trim($(this).val()).toLowerCase();
+        $('#promoteidh').val(val);
+    });
+    
+    $("#promoteidlist").find("a").each(function(){
+        $(this).click(function(){
+            var text = $.trim($(this).text()).toLowerCase();
+            $("#promoteid").val(text);
+            $('#promoteidh').val(text);
+        })
+    });
+
+})
+</script>
+</block>

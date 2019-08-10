@@ -1,0 +1,109 @@
+<extend name="Public/base"/>
+<block name="body">
+    <!-- 标题栏 -->
+    <div class="main-title">
+        <h2>[充值补单] 列表</h2>
+    </div>
+    <div class="cf top_nav_list">
+        <div style="float: left;">
+            <div class="search-form fr cf">
+                <!-- 新增搜索功能 2017/7/31 -->
+                <div class="chose_game"  id="sel_game" style="float:left;width:172px;height:28px;line-height:28px;margin:0 5px 0 5px;">
+                    <select id="type" style="width: 160px;height: 30px;border: 0;">
+                        <option value="spend">平台币</option>
+                        <option value="bind">绑定平台币</option>
+                    </select>
+                </div>
+                <div class="sleft">
+                    <input type="text" id="orderdata" name="pay_order_number" class="search-input" value="" placeholder="请输入订单号" id='pay_order_number'>
+                </div>
+                <div class="input-list">
+                    <a class="sch-btn" href="javascript:void(0);" id="search">搜索</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>.table-striped div{padding: 12px 0;border-bottom: 1px solid #f1f1f1;}</style>
+    <!-- 数据列表 -->
+    <div class="data-table">
+        <div id="table-striped" class="data-table table-striped">
+            <!--<div><span>用户ID：</span><span>sdfsdfgsd</span></div>
+            <div><span>游戏ID：</span><span>sdfsdfgsd</span></div>
+            <div><span>SP订单号：</span><span>sdfsdfgsd</span></div>
+            <div><span>道具名称：</span><span>sdfsdfgsd</span></div>
+            <div><span>金额：</span><span>sdfsdfgsd</span></div>
+            <div><span>支付时间：</span><span>sdfsdfgsd</span></div>
+            <div><span>推广员账号：</span><span>sdfsdfgsd</span></div>
+            <div><span>CP订单号：</span><span>sdfsdfgsd</span></div>
+            <div><span>补单地址：</span><span>sdfsdfgsd</span></div>-->
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <style>
+        #sel_game .combo-select {width:172px;border: 1px #fff solid;}
+        #sel_game .text-input {height:28px;}
+        #sel_game .combo-input{padding:0 0 0 12px;}
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            $("#search").click(function(){
+                var orderdata = $("#orderdata").val();
+                var type = $("#type").val();
+                var user = "{:session('user_auth.username')}";
+                $.post("/admin.php?s=/repair/repair_ajax_data",{order:orderdata,type:type,user:user},function (msg) {
+                    console.log(msg)
+                    if(msg != ''){
+                        var time = formatUnixtimestamp(msg.pay_time);
+                        var str = "";
+                        str += "<div><span>用户ID：</span><span>"+msg.user_id+"</span></div>";
+                        str += "<div><span>游戏ID：</span><span>"+msg.game_id+"</span></div>";
+                        str += "<div><span>SP订单号：</span><span>"+msg.pay_order_number+"</span></div>";
+                        str += "<div><span>道具名称：</span><span>"+msg.body+"</span></div>";
+                        str += "<div><span>金额：</span><span>"+msg.pay_amount+"元</span></div>";
+                        str += "<div><span>支付时间：</span><span>"+time+"</span></div>";
+                        str += "<div><span>推广员账号：</span><span>"+msg.promote_account+"</span></div>";
+                        str += "<div><span>CP订单号：</span><span>"+msg.cp_order+"</span></div>";
+                        str += "<div><span>补单地址：</span><span>"+msg.links+"</span></div>";
+                        str += "<div><a class='re_btn' style='padding: 6px 30px;background: #0166CC;color: #fff;border-radius: 2px;cursor: pointer;'>补单</a></div>";
+                        $("#table-striped").html(str);
+                        $(".re_btn").click(function(){
+                            repair(msg);
+                        });
+                    }else{
+                        $("#table-striped").empty();
+                        $("#table-striped").html('<h4>您选择币种</h4>');
+                    }
+                });
+            });
+        });
+        function repair(tag){
+            $.post('/admin.php?s=/repair/repair_ajax',tag,function(message){
+                console.log(message)
+                var msgone = message[0];
+                console.log(msgone)
+                if(msgone == 1 || message.indexOf("SUCCESS")>-1 || message.indexOf("ok")>-1 ){
+                    alert('补单成功！');
+                    //window.location.href = window.location.href;
+                }else{
+                    alert('补单失败！')
+                }
+            });
+        }
+        //时间戳转化为时间格式
+        function formatUnixtimestamp (unixtimestamp){
+            var unixtimestamp = new Date(unixtimestamp*1000);
+            var year = 1900 + unixtimestamp.getYear();
+            var month = "0" + (unixtimestamp.getMonth() + 1);
+            var date = "0" + unixtimestamp.getDate();
+            var hour = "0" + unixtimestamp.getHours();
+            var minute = "0" + unixtimestamp.getMinutes();
+            var second = "0" + unixtimestamp.getSeconds();
+            return year + "-" + month.substring(month.length-2, month.length)  + "-" + date.substring(date.length-2, date.length)
+                + " " + hour.substring(hour.length-2, hour.length) + ":"
+                + minute.substring(minute.length-2, minute.length) + ":"
+                + second.substring(second.length-2, second.length);
+        }
+    </script>
+</block>

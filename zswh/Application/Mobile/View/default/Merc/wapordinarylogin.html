@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/swiper.min.css">
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+    <!--  homelogin  -->
+    <div class="gamehomebox">
+        <img src="__IMG__/beijing.png" width="100%" height="100%" alt="">
+        <img src="__IMG__/homeimg.png" class="homeimg" width="74" height="74" alt="">
+        <a href="javascript:;" class="homelogin ofh"><?=$_SESSION['username']?></a>
+    </div>
+
+    <!--  list  -->
+    <ul class="homelist">
+        <li class="ov"><a href="javascript:;" class="fl">用户昵称</a><span class="fr"><?=$userdata['nickname']?></span></li>
+        <li class="ov"><a href="javascript:;" class="fl">平台币余额</a><span class="fr"><?=round($userdata['balance'],2)?>元</span></li>
+        <li class="ov"><a href="javascript:;" class="fl">积分</a><span class="fr"><?=$userdata['points']?></span></li>
+        <li class="ov"><a href="javascript:;" class="fl">绑定手机号</a><span class="fr"><?=$userdata['phone']?></span></li>
+        <li class="ov"><a href="javascript:;" class="fl">真实姓名</a><span class="fr"><?=$userdata['real_name']?></span></li>
+        <li class="ov"><a href="javascript:;" class="fl">身份证号码</a><span class="fr"><?=$userdata['idcard']?></span></li>
+        <li class="ov" onclick="window.location.href='/Mobile/Merc/pctrade.html'"><a href="javascript:;" class="fl">充值记录</a><i class="fr"></i></li>
+        <li class="ov" onclick="window.location.href='/Mobile/Merc/pctradexf.html'"><a href="javascript:;" class="fl">消费记录</a><i class="fr"></i></li>
+        <li class="ov" onclick="window.location.href='/Mobile/Merc/points.html'"><a href="javascript:;" class="fl">积分记录</a><i class="fr"></i></li>
+    </ul>
+
+    <div class="loginbtn alreadybtn"><a href="/Mobile/User/loginout">退出登录</a></div>
+
+    <!--  底部tap  -->
+    <include file="Public/nav" />
+
+
+
+
+
+    <script src='__JS__/jquery.js'></script>
+    <script src='__JS__/swiper.min.js'></script>
+</body>
+</html>

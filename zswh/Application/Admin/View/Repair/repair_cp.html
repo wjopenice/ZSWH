@@ -1,0 +1,93 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题栏 -->
+    <div class="main-title">
+        <h2>[充值补单] 列表</h2>
+    </div>
+    <div class="cf top_nav_list">
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <!-- 新增搜索功能 2017/7/31 -->
+            <div class="sleft">
+                <input type="text" name="pay_order_number" class="search-input" value="" placeholder="请输入订单号" id='pay_order_number'>
+            </div>
+            <div class="input-list">
+                <a class="sch-btn" href="javascript:;" id="search" url="">搜索</a>
+            </div>
+        </div>
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table">
+        <div class="data-table table-striped">
+            <table>
+                <!-- 表头 -->
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>SP订单号</th>
+                    <th>用户</th>
+                    <th>商品名称</th>
+                    <th>充值金额</th>
+                    <th>游戏名称</th>
+                    <th>补单方式</th>
+                    <th>CP订单号</th>
+                    <th>操作人昵称</th>
+                </tr>
+                </thead>
+
+                <!-- 列表 -->
+                <tbody id="id_tr">
+                <foreach name="arrData" item="vo" >
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.pay_order_number}</td>
+                    <td>{$vo.user_account}</td>
+                    <td>{$vo.body}</td>
+                    <td>{$vo.pay_amount}</td>
+                    <td>{$vo.game_name}</td>
+                    <td><?php echo  $vo['type'] == 'spend'?"平台币":"绑定平台币"; ?></td>
+                    <td>{$vo.cp_order}</td>
+                    <td>{$vo.op_nickname}</td>
+                </tr>
+                </foreach>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="page">
+        {$_page|default=''}
+    </div>
+</block>
+
+<block name="script">
+    <style>
+        #sel_game .combo-select {width:172px;border: 1px #fff solid;}
+        #sel_game .text-input {height:28px;}
+        #sel_game .combo-input{padding:0 0 0 12px;}
+    </style>
+    <script type="text/javascript">
+        //导航高亮
+        $(function(){
+            $("#search").click(function () {
+                var order = $("#pay_order_number").val();
+                $.post("/admin.php?s=/repair/repair_search",{order:order},function (msg) {
+                    $("#id_tr").empty();
+                    var str = "";
+                    str += "<tr>";
+                    str += "<td>"+msg.id+"</td>";
+                    str += "<td>"+msg.pay_order_number+"</td>";
+                    str += "<td>"+msg.user_account+"</td>";
+                    str += "<td>"+msg.body+"</td>";
+                    str += "<td>"+msg.pay_amount+"</td>";
+                    str += "<td>"+msg.game_name+"</td>";
+                    str += "<td>"+(msg.type=='spend'?'平台币':'绑定平台币')+"</td>";
+                    str += "<td>"+msg.cp_order+"</td>";
+                    str += "<td>"+msg.op_nickname+"</td>";
+                    str += "</tr>";
+                    $("#id_tr").html(str);
+                });
+            });
+        })
+    </script>
+</block>

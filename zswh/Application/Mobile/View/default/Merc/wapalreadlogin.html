@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/swiper.min.css">
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+<!--  homelogin  -->
+<div class="gamehomebox">
+    <img src="__IMG__/beijing.png" width="100%" height="100%" alt="">
+    <img src="__IMG__/homeimg.png" class="homeimg" width="74" height="74" alt="">
+    <a href="javascript:;" class="homelogin ofh"><?=$_SESSION['username']?></a>
+</div>
+
+<!--  list  -->
+<ul class="homelist">
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/waprecharge'"><a href="" class="fl">充值明细</a><i class="fr"></i></li>
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/bindrecharge'"><a href="javascript:;" class="fl">绑币充值明细</a><i class="fr"></i></li>
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/wapregisterlog'"><a href="javascript:;" class="fl">注册明细</a><i class="fr"></i></li>
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/waploginlog'"><a href="javascript:;" class="fl">登录记录</a><i class="fr"></i></li>
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/wapreqgame'"><a href="javascript:;" class="fl">申请游戏</a><i class="fr"></i></li>
+    <li class="ov" onclick="window.location.href='/Mobile/Merc/wapmygame?type=-1'"><a href="javascript:;" class="fl">我的游戏</a><i class="fr"></i></li>
+   <!-- <if condition="$parent eq 1">
+        <li class="ov" onclick="window.location.href='/Mobile/Apply/game_verify'"><a href="javascript:;" class="fl">子帐号审核</a><i class="fr"></i></li>
+    </if>-->
+   <!-- <if condition="$parent eq 1">
+        <li class="ov" onclick="window.location.href='/Mobile/Apply/childlists?type=-1'"><a href="javascript:;" class="fl">子帐号分包</a><i class="fr"></i></li>
+    </if>-->
+</ul>
+
+<div class="loginbtn alreadybtn"><a href="/Mobile/User/loginout">退出登录</a></div>
+
+<!--  底部tap  -->
+<include file="Public/nav" />
+
+
+
+
+
+<script src='__JS__/jquery.js'></script>
+<script src='__JS__/swiper.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <style>
+        .screentime input {width: 75%;}
+    </style>
+</head>
+<body>
+<form id="data_form" action="/Mobile/Merc/wapregisterlog" method="post">
+<div class="head">
+        <a href="/Mobile/Merc/wapalreadlogin/type/wapmerc.html" class="back fl"></a>
+        <h1>注册记录</h1>
+        <span class="fr screen screensurebtn" onclick="formsubmit()">查询</span>
+    </div>
+    <div class="wapscreen">
+        <ul class="ov screennavgame">
+            <li class="fl wapscreenaction"><span></span>全部子账号</li>
+            <li class="fr wapscreenaction"><span></span>
+                <select name="promote_id">
+                    <option value="0">全部子账户</option>
+                    <volist name=":get_prmoote_chlid_account1(session('promote_auth.pid'))" id ="s">
+                        <if condition="I('promote_id') eq ($s['id'])">
+                            <option  value="{$s.id}" selected="selected" >{$s.account}</option>
+                            <else/>
+                            <option  value="{$s.id}" >{$s.account}</option>
+                        </if>
+                    </volist>
+                </select>
+            </li>
+        </ul>
+        <div>
+            <div class="screenallgame wapscraction">
+                <div class="screentime ov">
+                    <div class="fl screengametime"><p>开始时间</p><input type="date" name="time-start" max class="start_time" value="{:I('time-start')}"></div>
+                    <div class="fl screengametime"><p>结束时间</p><input type="date" name="time-end" min class="end_time" value="{:I('time-end')}"></div>
+                </div>
+                <ul class="rechargelist elogo">
+                    <foreach name="list_data" item="v">
+                        <li class="ov">
+                            <p class="p10 ov"><span class="fl"><?=$v['register_ip']?></span><span class="fr"><?=date("Y-m-d H:i:s",$v['register_time'])?></span></p>
+                            <p class="ov"><span class="fl"><?=$v['account']?></span><a href="javascript:;" class="fr" style="text-decoration: none;">{$v['promote_account']}{:get_parent_promote($v['promote_id'])}</a></p>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</form>
+    <script src='__JS__/jquery.js'></script>
+    <script>
+        function formsubmit(){
+            $("form").submit();
+        }
+        $(function(){
+            $(".start_time").change(function(){
+                var start_time = $(".start_time").val();
+                $(".end_time").attr('min',start_time);
+            });
+
+            $(".end_time").change(function(){
+                var end_time = $(".end_time").val();
+                $(".start_time").attr('max',end_time);
+            });
+        })
+    </script>
+</body>
+</html>

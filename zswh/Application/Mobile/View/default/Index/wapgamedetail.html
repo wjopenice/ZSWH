@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <link rel="stylesheet" href="__CSS__/swiper.min.css">
+</head>
+<body class="bg" style="background: #fff">
+<div class="head searchhead">
+    <a href="javascript:history.back(-1)" class="back fl"></a>
+    <h1>游戏详情</h1>
+</div>
+<div class="wapapplygamebox">
+
+    <!--  detail  -->
+    <div class="applygamebox searchbottom">
+        <ul class="gift_ul">
+            <li class="ov">
+                <div class="gift_header fl"><img src="__ROOT__{$vo.icon|get_cover='path'}" alt=""></div>
+                <div class="gift_name all_play_name fl" onclick="">
+                    <p class="gift_text all_play_text ofh">{$vo.game_name}</p>
+                    <p class="all_play_role">{$vo.game_size}| {$vo.game_type_name}</p>
+                    <p class="gift_bag ofh">{$vo.introduction}</p>
+                </div>
+                <a class="receive_btn fr" href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&type=1')}</if>">下载</a>
+            </li>
+        </ul>
+    </div>
+    <!--  文章详情  -->
+    <div class="actdetail">
+        <!--  swiper  -->
+        <div class="wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <volist name=":explode(',',$vo['screenshot'])" id='pid'>
+                        <if condition='!empty($pid)'>
+                    <div class="swiper-slide"><img class="swiper-img" src="{$pid|get_cover='path'}" alt=""></div>
+                        </if>
+                    </volist>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 文章 -->
+        <div class="actdetailbox">
+         <p class="acttitle">{$vo.game_name}</p>
+            <p class="actcontent">{$vo.introduction}</p>
+        </div>
+    </div>
+</div>
+<!--  底部tap  -->
+<div style="height: 60px"></div>
+<!--  底部tap  -->
+<div class="nav" style="display: none">
+    <a class="" href="{:U('Index/wapindex?type=wapindex')}">首页</a>
+    <a class="" href="{:U('Gift/wapgiftlist?type=wapgiftlist')}">礼包</a>
+    <a class="" href="{:U('Index/wapgamelist?type=wapgamelist')}">分类</a>
+    <if condition="$status eq 0">
+        <a class="" href="{:U('Merc/wapordinarylogin?type=wapmerc')}">我的</a>
+        <elseif condition="$status eq 1" />
+        <a class="" href="{:U('Merc/wapmerc?type=wapmerc')}">渠道</a>
+        <else />
+        <a class="" href="{:U('Merc/wapalreadlogin?type=wapmerc')}">渠道</a>
+    </if>
+</div>
+<script src='__JS__/jquery.js'></script>
+<script src='__JS__/swiper.min.js'></script>
+<script>
+    $(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: true,//可选选项，自动滑动
+            loop: true
+        });
+    })
+</script>
+</body>
+</html>

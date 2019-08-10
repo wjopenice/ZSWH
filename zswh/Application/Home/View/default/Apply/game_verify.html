@@ -1,0 +1,100 @@
+<extend name="Public/promote_base"/>
+
+<block name="body">
+  <style type="text/css">
+  .pos{position: relative;}
+  </style>
+  <script src='__STATIC__/zeroclipboard/jquery.zclip.min.js'></script>
+  <div id="query">
+    <div id="other_se" class="mod">
+      <h2>查询</h2>
+      <form action="{:U('Apply/promote_name')}" method="post" enctype="multipart/form-data">
+        <div>
+          <input type="text" placeholder="请输子渠道名称" class="txts" name="promote_name" value="{:I('promote_name')}">
+          <input type="submit" value="查询" class="btns">
+        </div>
+      </form>
+    </div>
+    <div id="lg" class="mod">
+      <h2>渠道列表</h2>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <th>渠道ID</th>
+            <th>渠道账号</th>
+            <th>姓名</th>
+            <th>手机</th>
+            <th>状态</th>
+            <th>直冲流水</th>
+            <th>操作</th>
+          </tr>
+        </tbody>
+        <tbody>
+          <volist name="list_data" id="vo">
+          <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.account}</td>
+            <td>{$vo.real_name}</td>
+            <td>{$vo.mobile_phone}</td>
+            <td><if condition='$vo.status eq 1'>开启<elseif condition="$vo.status eq 2"/>拉黑<else/>未审核</if></td>
+            <td><if condition='$vo.alipayway_sign eq 1'>开启<else/>关闭</if></td>
+            <td class="pos"><a href="/index.php?s=/Home/Apply/game_verify_edit/id/{$vo.id}.html" style="color: #145ccd;">查看</a></td>
+          </tr>
+          </volist>
+          </tbody>
+      </table>
+    </div>
+    <div id="pagehtml" class="pagenavi clearfix">{$_page}</div>
+  </div>
+</block>
+<block name="script">
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('a.copy').zclip({
+          path: "/Public/static/zeroclipboard/ZeroClipboard.swf",
+          copy: function(){
+              return $(this).attr('data-url');
+          },
+          beforeCopy:function(){
+            $(this).addClass("proc");
+          },
+          afterCopy:function(){
+            $(this).removeClass("copy");
+            if($(this).attr('data-url')=="" || $(this).attr('data-url')==null){
+              layer.msg("游戏原包暂未上传",{icon:2});
+            }
+            else{
+              layer.msg("复制成功",{icon:1});
+            }
+
+          }
+    });
+  })
+
+  function apply($gameid,obj){
+    $.ajax({
+      type:"post",
+      url:"__URL__/apply",
+      dataType:"json",
+      data:{game_id:$gameid},
+      beforeSend:function(){
+         $(obj).attr("onclick","").html("审核中").addClass("proc");
+      },
+      success:function(res){
+        if(res.status){
+          $(obj).attr("onclick","").html("审核中").addClass("proc");
+          layer.msg(res.msg,{icon: 1});
+        }
+        else{
+          layer.msg(res.msg,{icon: 2});
+        }
+      },
+      error:function(){
+        layer.msg('服务器故障',{icon:5});
+      }
+    })
+  }
+  //导航高亮
+  highlight_subnav('{:U('Apply/index')}');
+  </script>
+</block>

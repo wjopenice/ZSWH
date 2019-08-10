@@ -1,0 +1,172 @@
+/* wapindex */
+.wapindex{background: #f4f4f4;height: 100%;}
+
+/* 底部导航 */
+.nav{position: fixed;bottom: 0;left: 0;z-index: 1;width: 100%;height: 50px;overflow: hidden;background: #fff;box-shadow: 0px 2px 7px #9e9e9e;}
+.nav a{float: left;width: 25%;text-align: center;font-size: .875rem;padding-top: 27px;color: #808080;}
+.nav a:nth-child(1){background: url(../images/nav_1.png) center 7px no-repeat;background-size:18px auto ;}
+.nav a:nth-child(1):hover,.nav a:nth-child(1).current{background: url(../images/nav_1h.png) center 7px no-repeat;background-size:18px auto ;}
+.nav a:nth-child(2){background: url(../images/nav_2.png) center 7px no-repeat;background-size:17px auto ;}
+.nav a:nth-child(2):hover,.nav a:nth-child(2).current{background: url(../images/nav_2h.png) center 7px no-repeat;background-size:17px auto ;}
+.nav a:nth-child(3){background: url(../images/nav_3.png) center 7px no-repeat;background-size:18px auto ;}
+.nav a:nth-child(3):hover,.nav a:nth-child(3).current{background: url(../images/nav_3h.png) center 7px no-repeat;background-size:18px auto ;}
+.nav a:nth-child(4){background: url(../images/nav_4.png) center 8px no-repeat;background-size:17px auto ;}
+.nav a:nth-child(4):hover,.nav a:nth-child(4).current{background: url(../images/nav_4h.png) center 8px no-repeat;background-size:17px auto ;}
+
+/*  swiper  */
+.wrapper .swiper-pagination-bullet-active{background: #fff;}
+.wrapper .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{bottom: 2px;}
+.wrapper{overflow: hidden;width: 100%;height: 0;padding-bottom: 48%;background: #f4f4f4;}
+.swiper-img{width: 100%;height: 100%}
+.swiper-container{position: relative;}
+.searchbox{position: absolute;top: 0;left: 0;z-index: 99;background: rgba(255, 255, 255, 0.7);width: 100%;height: 50px;overflow: hidden;}
+.logobox{float: left;}
+.sbox{display: inline-block;float: right;}
+
+/*  gamebox  */
+.more{color: #999;font-size: .9rem;}
+.gamebox{background: #fff;padding: .8rem 0 0;border-bottom: .5rem solid #f4f4f4;}
+.online{background: #6494ed;height: 21px;width: 3px;display: inline-block;margin-right: .8rem;}
+.titlebox{padding: 0 .8rem;}
+.all_play_box{background: #fff;padding:0 .6rem .4rem;margin-bottom: .4rem;}
+.all_play_title{margin-bottom: .4rem;}
+.all_play_role{font-size: .8rem;color: #999;margin-bottom: .3rem;}
+.all_play_name{margin: .4rem 0 0;}
+.all_play_text{margin-bottom: .3rem;}
+.receive_btn{width: 20%;text-align: center;height: 2rem;line-height: 2rem;border: 1px solid #6494ed;color: #6494ed;font-size: .8rem;border-radius: 3px;margin: 1.6rem 0;text-decoration: none;}
+
+/*  nullbox  */
+.nullbox{margin-bottom: 50px;background: #f4f4f4;padding: .5rem 0 .8rem;text-align: center;font-size: .8rem;color: #999;}
+
+
+/* Head */
+.head{position: fixed;top: 0;z-index: 3;width: 100%;height: 50px;border-bottom: 1px solid #f4f4f4;background: #fff;}
+.head h1{position: absolute;top: 0;z-index: 2;line-height: 50px;color: #333;text-align: center;width: 100%;font-size: 1.1rem;font-weight: normal;}
+.head a.fl{position: absolute;left: .8rem;top: 5px;z-index: 3;width: 20px;height: 40px;background: url(../images/del-icon.png) no-repeat center;background-size: 14px auto;}
+.head a.fr{position: absolute;right: .8rem;top: 5px;z-index: 3;width: 20px;height: 40px;background: url(../images/icon_search.png) no-repeat center;background-size: 18px auto;}
+
+/*  wapgiftbox  */
+.wapgiftbox{margin-top: 50px;}
+
+
+/*  wapgamebox  */
+.wapgamebox{margin-top: 50px;padding: 0 .8rem;}
+.wapgamebox .swiper-img{border-radius: 8px;}
+.wapgamebox .wrapper{border-radius: 8px;}
+.allgamebox{padding: .8rem 0 0;}
+.leftnav{width: 24%;}
+.leftnav li{height: 4.6rem;line-height: 4.6rem;background: #e7efff;border-bottom: 1px solid #fff;font-size: .9rem;font-weight: 600;color: #333;text-align: center;}
+.leftnav .leftactive{background: #fff;position: relative}
+.leftnav .leftactive span{display: inline-block;width: 3px;background: #6494ed;height: .8rem;position: absolute;left: 0;top: 1.9rem;}
+.rightbox{width: 76%;}
+.gamecontent{padding: 0 .8rem;display: none;}
+.rightactive{display: block;}
+.gamectitle{font-size: 1rem;margin-bottom: .8rem;}
+.rgamelist li{width: 33%;margin-bottom: .8rem;}
+.rgamelist li:nth-child(3n+1){text-align: left;} /* 1,4,7,10,13 */
+.rgamelist li:nth-child(3n+2){text-align: center;} /* 2,5,8,11,14 */
+.rgamelist li:nth-child(3n+3){text-align: right;} /* 3,4,9,12,15 */
+.rgamelist li img{width: 90%;}
+.rgamelist li p{font-size: .8rem;text-align: center;}
+
+
+/*  wapmerclogo  */
+.bg{background: #f4f4f4;}
+.gamehomebox{position: relative;}
+.homeback{position: absolute;left: .8rem;top: 5px;z-index: 3;width: 20px;height: 40px;background: url(../images/back-icon.png) no-repeat center;background-size: 14px auto;}
+.homeimg{position: absolute;top: 50%;left: 50%;margin-top: -56px;margin-left: -37px;}
+.homelogin{position: absolute;top: 50%;left: 50%;margin-top: 22px;margin-left: -36px;width: 72px;height: 25px;font-size: .9rem;color: #fff;text-align: center;}
+
+.homelist{margin-top: .2rem;background: #fff;overflow: hidden;}
+.homelist li{padding: 0 .8rem;border-bottom: 1px solid #f4f4f4;height: 50px;line-height: 50px;}
+.homelist li a{font-size: .9rem;color: #333;display: inline-block;}
+.homelist li i{display: inline-block;width: 20px;height: 20px;background: url(../images/pre.png) no-repeat center;background-size: 7px auto;margin-top: 15px;}
+.homelist li span{color: #999;font-size: .8rem;}
+
+.loginbtn{text-align: center;padding: 3rem 0 100px;}
+.loginbtn a{background: #6494ed;color: #fff;display: inline-block;width: 80%;height: 3rem;line-height: 3rem;border-radius: 4px;text-align: center;font-size: 1rem;font-weight: 600;}
+.alreadybtn a{background: #d2d2d2;}
+
+/*  recharge  */
+.screen{position: absolute;right: .8rem;top: 15px;font-size: .9rem;color: #333;display: inline-block;z-index: 99;}
+.waprechargebox{margin-top: 50px;}
+.rsearchbox{padding: .8rem .8rem 0;}
+.searchinput{background: #e8e8e8;border: 1px solid #e8e8e8;border-radius: 24px;height: 36px;}
+.searchinput input{background: #e8e8e8;width: 76%;font-size: .9rem;color: #666;padding-left: 4%;}
+.searchinput i{display: inline-block;width: 20%;height: 38px;background: url(../images/icon_search1.png) no-repeat center;background-size: 22px auto;}
+.rechargelist li{border-bottom: 1px solid #f4f4f4;padding: 0 .8rem;}
+.rechargelist li p{font-size: .8rem;color: #333;margin: .8rem 0;}
+.rechargelist li a{font-size: .8rem;color: #666;text-decoration: underline;}
+
+
+/*  waprechargedetailbox  */
+.waprechargedetailbox{margin-top: 50px;}
+.detailbox{padding: 0 .8rem;font-size: .8rem;background: #fff;}
+.detailbox p{border-bottom: 1px solid #f4f4f4;height: 3rem;line-height: 3rem;}
+
+/*  wapapplygamebox  */
+.wapapplygamebox{margin-top: 50px;}
+.applygamebox{background: #fff;border-bottom: .5rem solid #f4f4f4;margin-top: .8rem;}
+
+/*  wapmygamebox  */
+.wapmygamebox{margin-top: 50px;}
+.mygamebox{background: #fff;border-bottom: .5rem solid #f4f4f4;}
+.mygamenav{margin-top: .8rem;background: #fff;border-bottom: 1px solid #f4f4f4;}
+.mygamenav ul li{width: 33.33%;text-align: center;font-size: .9rem;color: #999;height: 3rem;line-height: 3rem;position: relative;}
+.mygamenav .mgactive{color: #6494ed;}
+.mygamenav .mgactive span{background: #6494ed;height: 2px;width: 40px;display: inline-block;position: absolute;left: 50%;margin-left: -20px;bottom: 0;}
+.mygamebox .mygameul{display: none;}
+.mygamebox .mgulactive{display: block;}
+
+/*  search  */
+.waprsearchbox{padding: .4rem .8rem 0 2.6rem;}
+.searchhead{border-bottom: 0;box-shadow: 0px -6px 19px #9e9e9e;}
+.searchbottom{border-bottom: .8rem solid #f4f4f4;}
+
+
+/*  wapgamedetail  */
+.actdetailbox{background: #fff;padding: 0 .8rem;}
+.acttitle{font-size: 1rem;padding: .8rem 0;text-align: center;}
+.actcontent{font-size: .8rem;line-height: 1.2rem;padding-bottom: .8rem;}
+
+/*  waplogo  */
+.waplogobox{height: 100%;}
+.waplogo{height: 30%;position: relative;}
+.waplogo img{width: 8rem;position: absolute;margin-left: -4rem;left: 50%;top: 50%;margin-top: -4rem;}
+.waploginnav{padding: 0 .8rem;height: 3rem;line-height: 3rem;color: #999;font-size: .9rem;margin-bottom: .8rem;}
+.waploginnav li{width: 50%;text-align: center;position: relative;}
+.waploginaction{color: #6494ed;}
+.waploginaction span{width: 20px;height: 2px;background: #6494ed;display: inline-block;position: absolute;bottom: 0;left: 50%;margin-left: -10px;}
+
+.input_box{margin: 0 4rem .4rem;height: 3rem;border-bottom: 1px solid #f4f4f4;}
+.input_box input{width: 100%;padding-left: 10px;font-size: .9rem;}
+.login_btn{margin: 2rem 4rem .6rem;}
+.login_btn input{width: 100%;height: 3rem;border: none;line-height: 3rem;border-radius: 28px;letter-spacing: 2px;color: #fff;font-weight: 600;font-size: .88rem;background: #6494ed;}
+.link_box{text-align: center;}
+.link_box{font-size: .76rem;}
+.link_box a{color: #999;font-size: .76rem;text-decoration: underline;}
+.qudao{display: none;}
+.qudaoaction{display: block;}
+.waplogofooter{font-size: .8rem;color: #999;position: absolute;bottom: 1rem;text-align: center;width: 200px;left: 50%;margin-left: -100px;}
+
+/*  wapregister  */
+.wapregister{height: 25%;}
+.wapregisternav{height: 2.4rem;line-height: 2.4rem;}
+.registerinput_box{height: 2.4rem;}
+.registerinput_box select{width: 100%;padding-left: 6px;font-size: .8rem;color: #666;line-height: 2.4rem;height: 2.4rem;}
+
+/*  screen  */
+.wapscreen{margin-top: 50px;}
+.wapscreen .screennavgame li{text-align: center;width: 50%;line-height: 3rem;height: 3rem;font-size: .9rem;color: #666;position: relative;}
+.wapscreen .screennavgame{border-bottom: 1px solid #f4f4f4;}
+.screensurebtn{color: #6494ed;border: 1px solid #6494ed;padding: .2rem .4rem;top: 11px;border-radius: 4px;}
+.wapscreen .screennavgame .wapscreenaction{color: #6494ed;}
+.wapscreenaction span{width: 20px;height: 2px;background: #6494ed;display: inline-block;position: absolute;bottom: .3rem;left: 50%;margin-left: -10px;}
+.screentime .screengametime{font-size: .8rem;text-align: center;width: 50%;}
+.screengametime p{padding: .2rem 0;}
+.screentime input{border: 1px solid #999;height: 1.6rem;line-height: 1.6rem;border-radius: 5px;padding-left: 10px;}
+.screenallgame ul{padding: .8rem;}
+.screenallgame ul li{line-height: 3rem;height: 3rem;font-size: .9rem;color: #666;border-bottom: 1px solid #f4f4f4;}
+.screenallgame{display: none;}
+.wapscraction{display: block;}
+.screenallgame .elogo li,.elogo li{line-height: normal;height: auto;}

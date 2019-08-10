@@ -1,0 +1,17 @@
+<?php
+$type = empty($_GET['type'])?"wapindex":$_GET['type'];
+$status = !isset($_SESSION['status'])?1:$_SESSION['status'];
+?>
+<!--  底部tap  -->
+<div class="nav">
+    <a class="<?php if($type == 'wapindex'){ echo 'current'; } ?>" href="{:U('Index/wapindex?type=wapindex')}">首页</a>
+    <a class="<?php if($type == 'wapgiftlist'){ echo 'current'; } ?>" href="{:U('Gift/wapgiftlist?type=wapgiftlist')}">礼包</a>
+    <a class="<?php if($type == 'wapgamelist'){ echo 'current'; } ?>" href="{:U('Index/wapgamelist?type=wapgamelist&game_type=0')}">分类</a>
+    <if condition="$status eq 0">
+        <a class="<?php if($type == 'wapmerc'){ echo 'current'; } ?>" href="{:U('Merc/wapordinarylogin?type=wapmerc')}">我的</a>
+    <elseif condition="$status eq 1" />
+        <a class="<?php if($type == 'wapmerc'){ echo 'current'; } ?>" href="{:U('Merc/wapmerc?type=wapmerc')}">渠道</a>
+    <else />
+        <a class="<?php if($type == 'wapmerc'){ echo 'current'; } ?>" href="{:U('Merc/wapalreadlogin?type=wapmerc')}">渠道</a>
+    </if>
+</div>

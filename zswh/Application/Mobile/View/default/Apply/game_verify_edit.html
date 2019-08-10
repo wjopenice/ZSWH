@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+<div class="head">
+    <a href="javascript:history.back(-1)" class="back fl"></a>
+    <h1>查看推广员信息</h1>
+</div>
+<div class="waprechargedetailbox">
+    <!--  detail  -->
+    <div class="detailbox">
+        <p class="ov"><span class="fl">登陆账号</span><span class="fr"><?=$list_data['account']?></span></p>
+        <p class="ov"><span class="fl">登陆密码</span><span class="fr"><?=$list_data['password']?></span></p>
+        <p class="ov"><span class="fl">真实姓名</span><span class="fr"><?=$list_data['real_name']?></span></p>
+        <p class="ov"><span class="fl">直冲流水</span>
+            <span class="fr">
+                  <input type="radio" name="alipayway_sign" id="kq" checked="<if condition='$list_data.alipayway_sign eq 1'>checked</if>" value="1"/><label for="kq">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="alipayway_sign" id="gb" checked="<if condition='$list_data.alipayway_sign eq 0'>checked</if>" value="0" /><label for="gb">关闭</label>
+            </span>
+        </p>
+
+    </div>
+</div>
+
+<script src='__JS__/jquery.js'></script>
+</body>
+</html>

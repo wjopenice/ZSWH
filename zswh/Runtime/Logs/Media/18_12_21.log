@@ -1,0 +1,529 @@
+[ 2018-12-21T15:26:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0419s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0431s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0413s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.640583s ]
+INFO: [ app_init ] --END-- [ RunTime:1.640826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011117s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0420s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0419s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0420s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0421s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tab_game` [ RunTime:0.0424s ]
+NOTIC: [8] Undefined index: limit F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\BaseController.class.php 第 79 行.
+SQL: SELECT `id`,`game_name`,`sort`,`short`,`game_type_id`,`game_type_name`,`game_score`,`features`,`recommend_level`,`version`,`game_size`,`icon`,`cover`,`screenshot`,`introduction`,`and_dow_address`,`ios_dow_address`,`game_address`,`dow_num`,`game_status`,`recommend_status`,`pay_status`,`dow_status`,`developers`,`create_time`,`bind_discount`,`discount`,`language`,`game_appid`,`game_coin_name`,`game_coin_ration`,`dow_mynum`,`app_dow_num`,`create_user`,`off_reason`,`cp_name`,`app_game_status`,`app_recommend_status`,`app_sort`,`version_num` FROM `tab_game` WHERE `game_status` = 1 ORDER BY sort DESC  [ RunTime:0.1665s ]
+NOTIC: [8] Undefined offset: 444 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 440 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 446 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 447 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 448 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 443 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 437 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 441 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 449 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 434 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 435 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 439 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 442 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 445 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 412 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 405 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 383 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 342 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 366 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 387 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 369 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 368 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 380 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 359 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 351 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 353 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 363 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 324 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 320 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 372 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 378 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 392 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 438 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 420 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 421 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 407 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 406 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 379 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 322 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 333 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 348 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 338 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 327 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 344 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 186 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 350 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 361 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 393 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 402 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 401 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 397 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 404 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 352 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 362 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 357 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 349 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 341 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 356 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 330 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 326 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 336 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 360 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 377 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 394 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 368 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 350 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 372 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 385 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 444 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 440 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 446 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 447 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 448 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 443 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 437 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 439 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 442 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 187 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 183 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 191 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 407 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 406 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 185 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 402 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 397 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 404 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 405 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 342 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 352 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 366 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 387 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 379 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 380 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 358 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 353 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 363 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 357 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 322 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 349 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 341 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 333 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 330 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 326 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 319 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 323 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 324 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 192 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 184 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 186 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 320 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 336 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 377 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 182 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 394 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 392 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 345 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 354 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 355 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 376 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 382 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 403 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 409 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 420 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 441 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 449 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 434 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 393 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 401 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 400 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 383 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 399 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 369 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 190 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 362 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 359 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 351 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 364 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 348 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 338 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 327 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 344 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 361 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 360 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 378 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 438 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 332 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 347 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 386 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 389 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 414 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 415 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 315 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 316 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 317 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined offset: 421 F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\IndexController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 1 ORDER BY sort ASC  [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tab_giftbag` [ RunTime:0.0422s ]
+SQL: SELECT tab_giftbag.id as gift_id,`game_id`,tab_giftbag.game_name,`giftbag_name`,`giftbag_type`,tab_game.icon,tab_giftbag.create_time FROM `tab_giftbag` INNER JOIN tab_game on tab_giftbag.game_id = tab_game.id  WHERE `game_status` = 1 GROUP BY tab_giftbag.game_id ORDER BY tab_giftbag.id desc LIMIT 10   [ RunTime:0.0455s ]
+SQL: SHOW COLUMNS FROM `tab_server` [ RunTime:0.0409s ]
+NOTIC: [8] Undefined index: group F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\BaseController.class.php 第 90 行.
+NOTIC: [8] Undefined index: limit F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\BaseController.class.php 第 91 行.
+SQL: SELECT tab_server.*,tab_game.icon,tab_game.cover FROM `tab_server` INNER JOIN tab_game on tab_server.game_id = tab_game.id  WHERE `game_status` = 1 AND `start_time` >= 1545321600 ORDER BY start_time  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`game_name`,`sort`,`short`,`game_type_id`,`game_type_name`,`game_score`,`features`,`recommend_level`,`version`,`game_size`,`icon`,`cover`,`screenshot`,`introduction`,`and_dow_address`,`ios_dow_address`,`game_address`,`dow_num`,`game_status`,`recommend_status`,`pay_status`,`dow_status`,`developers`,`create_time`,`bind_discount`,`discount`,`language`,`game_appid`,`game_coin_name`,`game_coin_ration`,`dow_mynum`,`app_dow_num`,`create_user`,`off_reason`,`cp_name`,`app_game_status`,`app_recommend_status`,`app_sort`,`version_num` FROM `tab_game` WHERE `game_status` = 1 ORDER BY dow_mynum desc LIMIT 10   [ RunTime:0.0440s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 4 ORDER BY sort ASC  [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 8 ORDER BY sort ASC  [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 9 ORDER BY sort ASC  [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 10 ORDER BY sort ASC  [ RunTime:0.0412s ]
+SQL: SELECT * FROM `tab_adv` WHERE `status` = 1 AND `pos_id` = 11 ORDER BY sort ASC  [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000382s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Use of undefined constant Member - assumed 'Member' F:\Visual-NMP-x64\www\zswh\Runtime\Cache\Media\2382d326250712baca3bf54c5b555904.php 第 72 行.
+SQL: SHOW COLUMNS FROM `sys_picture` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3053 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3006 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2990 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2872 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2969 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3032 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3044 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3038 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1686 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3078 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1672 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1685 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1687 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3148 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3100 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3131 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3138 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2934 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2955 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2714 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2565 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2503 LIMIT 1   [ RunTime:0.0429s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2459 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2375 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2323 LIMIT 1   [ RunTime:0.0504s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1610 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1612 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_category` [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `sys_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `sys_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `sys_document` [ RunTime:0.0421s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`admin`,`status` FROM `sys_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 44 AND `create_time` < 1545377203 AND ( deadline = 0 OR deadline > 1545377203 ) ORDER BY `level` DESC,`id` DESC LIMIT 3   [ RunTime:0.0439s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `sys_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `sys_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`admin`,`status` FROM `sys_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1545377203 AND ( deadline = 0 OR deadline > 1545377203 ) ORDER BY `level` DESC,`id` DESC LIMIT 3   [ RunTime:0.0436s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `sys_category` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `sys_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`admin`,`status` FROM `sys_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 42 AND `create_time` < 1545377203 AND ( deadline = 0 OR deadline > 1545377203 ) ORDER BY `level` DESC,`id` DESC LIMIT 3   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3018 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2949 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2942 LIMIT 1   [ RunTime:0.0427s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2917 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2903 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2453 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3114 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3087 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3126 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3132 LIMIT 1   [ RunTime:0.0439s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3139 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3108 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3081 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2674 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2417 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2651 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2806 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3093 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3149 LIMIT 1   [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3063 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3017 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2941 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2873 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2895 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2851 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2222 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2229 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2238 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1162 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3126 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3063 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3081 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3069 LIMIT 1   [ RunTime:0.0521s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2714 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 3149 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1154 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 2267 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1428 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `sys_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0433s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `sys_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0428s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`admin`,`status` FROM `sys_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 44 AND `create_time` < 1545377203 AND ( deadline = 0 OR deadline > 1545377203 ) ORDER BY `level` DESC,`id` DESC LIMIT 3   [ RunTime:0.0430s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1707 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1206 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sys_picture` WHERE `status` = 1 AND `id` = 1561 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tab_links` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tab_links` WHERE `status` = 1  [ RunTime:0.0421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:3.771687s ]
+INFO: [ view_parse ] --END-- [ RunTime:3.771809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002529s ]
+
+[ 2018-12-21T15:26:54+08:00 ] 127.0.0.1 /index.php?s=/Media/Member/is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0425s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0429s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0427s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.649126s ]
+INFO: [ app_init ] --END-- [ RunTime:1.649350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2] Declaration of Media\Controller\MemberController::detail() should be compatible with Media\Controller\BaseController::detail($model) F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\MemberController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0424s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0423s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0413s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0427s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0424s ]
+
+[ 2018-12-21T15:26:55+08:00 ] 127.0.0.1 /index.php?s=/Media/Game/dow_url_generate/game_id/444.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0421s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0408s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0409s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0425s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.637133s ]
+INFO: [ app_init ] --END-- [ RunTime:1.637316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0426s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0424s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0408s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-12-21T15:26:56+08:00 ] 127.0.0.1 /index.php?s=/Media/Game/dow_url_generate/game_id/440.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0518s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0406s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0404s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0461s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0405s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0414s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0411s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0411s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.641444s ]
+INFO: [ app_init ] --END-- [ RunTime:1.641875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0412s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0425s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0409s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2018-12-21T15:26:57+08:00 ] 127.0.0.1 /index.php?s=/Media/Game/dow_url_generate/game_id/446.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0425s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0410s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0421s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0412s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0418s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0427s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0412s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.634934s ]
+INFO: [ app_init ] --END-- [ RunTime:1.635020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0416s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0414s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0416s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000146s ]
+
+[ 2018-12-21T15:26:57+08:00 ] 127.0.0.1 /index.php?s=/Media/Game/dow_url_generate/game_id/447.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0413s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0413s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0416s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0417s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0412s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.632062s ]
+INFO: [ app_init ] --END-- [ RunTime:1.632172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0411s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0409s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-12-21T15:26:59+08:00 ] 127.0.0.1 /index.php?s=/Media/Member/is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `sys_hooks` [ RunTime:0.0422s ]
+SQL: SELECT `name`,`addons` FROM `sys_hooks`  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `sys_addons` [ RunTime:0.0423s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0457s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0420s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0424s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0419s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0422s ]
+SQL: SELECT `id`,`name` FROM `sys_addons` WHERE `status` = 1 AND `name` IN ('UploadImages')  [ RunTime:0.0423s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.645234s ]
+INFO: [ app_init ] --END-- [ RunTime:1.645344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+NOTIC: [2] Declaration of Media\Controller\MemberController::detail() should be compatible with Media\Controller\BaseController::detail($model) F:\Visual-NMP-x64\www\zswh\Application\Media\Controller\MemberController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `sys_config` [ RunTime:0.0422s ]
+SQL: SELECT `type`,`name`,`value` FROM `sys_config` WHERE `status` = 1  [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tab_inside_letter` [ RunTime:0.0421s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `tab_inside_letter` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tab_message_letter` [ RunTime:0.0420s ]
+SQL: SELECT `message_id` FROM `tab_message_letter` WHERE `rec_account` = null GROUP BY message_id  [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tab_adv` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `tab_adv` WHERE ( pos_id=2 and status=1 ) LIMIT 1   [ RunTime:0.0419s ]
+NOTIC: [8] Memcache::connect(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect(): Can't connect to 127.0.0.1:11211, ������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ (10060) F:\Visual-NMP-x64\www\zswh\ThinkPHP\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tab_user` [ RunTime:0.0426s ]
+

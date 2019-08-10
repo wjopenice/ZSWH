@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title>玩转游戏平台-玩转盒子</title>
+    <meta name="keywords" content="玩转网络游戏,游戏,玩转盒子">
+    <meta name="description" content="玩转网络游戏,玩转盒子,游戏平台">
+    <link rel="stylesheet" href="__CSS__/public.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body class="bg">
+    <div class="head">
+        <a href="/Mobile/Merc/wapalreadlogin/type/wapmerc.html" class="back fl"></a>
+        <h1>申请游戏</h1>
+    </div>
+    <div class="wapmygamebox">
+        <!-- search -->
+        <form action="/Mobile/Merc/wapreqgame" method="post">
+        <div class="rsearchbox">
+            <div class="ov searchinput">
+                <input type="text" placeholder="请输入游戏名称" class="fl " name="game_name" value="{:I('game_name')}"><i class="fl" onclick="formsubmit()"></i>
+            </div>
+        </div>
+        </form>
+        <!--  detail  -->
+        <div class="mygamebox" style="margin-top: 10px">
+            <ul class="gift_ul mygameul mgulactive">
+                <foreach name="list_data" item="v">
+                <li class="ov">
+                    <div class="gift_header fl"><img src="__ROOT__{$v.icon|get_cover='path'}" alt=""></div>
+                    <div class="gift_name all_play_name fl">
+                        <p class="gift_text all_play_text ofh"><?=$v['game_name']?></p>
+                        <p class="all_play_role"><?=$v['game_size']?>MB | <?=$v['game_type_name']?></p>
+                        <p class="gift_bag ofh"><?=$v['features']?></p>
+                    </div>
+                    <switch name="v['status']">
+                        <case value="0"><a href="javascript:;" class="bts proc receive_btn fr" style="background: #655959;">审核中</a></case>
+                        <case value="1"><a href="<if condition='$vo.dow_status eq 0'>#<else/>{:U('Down/down_file?game_id='.$vo['id'].'&promote_id='.$vo['promote_id'])}</if>" class="bts receive_btn fr" style="background: #00ff00;">下载</a></case>
+                        <case value="2"><a href="javascript:;" class="bts proc receive_btn fr" style="background: #655959;">审核失败</a></case>
+                        <default /><a href="javascript:;" class="bts receive_btn fr" onclick="apply(<?=$v['id']?>,this)" style="background: #e02222; color: white;border: none;">马上申请</a>
+                    </switch>
+                </li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src='__JS__/jquery.js'></script>
+<script type="text/javascript">
+    function formsubmit(){
+        $("form").submit();
+    }
+    function apply($gameid,obj){
+        $.ajax({
+            type:"post",
+            url:"/Mobile/Merc/apply",
+            dataType:"json",
+            data:{game_id:$gameid},
+            beforeSend:function(){
+                $(obj).attr("onclick","").html("审核中").css("background","#655959");
+            },
+            success:function(res){
+                console.log(res)
+                if(res.status){
+                    $(obj).attr("onclick","").html("审核中").css("background","#655959");
+                    alert(res.msg,);
+                }else{
+                    alert(res.msg);
+                }
+            },
+            error:function(){
+                alert('服务器故障');
+            }
+        })
+    }
+</script>
+</html>
