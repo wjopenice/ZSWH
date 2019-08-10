@@ -1,0 +1,63 @@
+@charset "utf-8";fieldset, hr, img{border: 0}
+button, input, input[type=button]{-webkit-appearance: none;outline: 0}
+a, body, html{-webkit-touch-callout: none}
+a, a:hover{text-decoration: none}
+:focus, a, a:focus, button, input{outline: 0}
+.cp, a, input[type=button], input[type=submit], label{cursor: pointer}
+.cb, .clear, .clearfix:after{clear: both}
+.clearfix, .zoom{zoom: 1}
+body, html{-webkit-tap-highlight-color: transparent;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-o-overflow-scrolling: touch;overflow-scrolling: touch}
+.clear, .clearfix:after, .dotdot{overflow: hidden}
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul{margin: 0;padding: 0}
+body{font-family: "Hiragino Sans GB", "Helvetica Neue", Helvetica, STHeiTi, "Microsoft Yahei", sans-serif;color: #666;background-color: #fff;position: relative}
+h1, h2, h3, h4, h5, h6{font-weight: 400}
+ul li{list-style-type: none;}
+img{vertical-align: middle}
+a{color: #666;-webkit-tap-highlight-color: transparent;}
+body{font-size: 16px;line-height: 1;margin: 0 auto;}
+html, body{position: relative;height: 100%;margin: 0 auto;}
+body{background: #fff;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px;color:#000;margin: 0;padding: 0;}
+.swiper-container{width: 100%;height: 100%;}
+.swiper-slide{position: relative;text-align: center;font-size: 18px;background: #fff no-repeat center center;background-size:cover;}
+html {max-width: 600px;}
+.part1{background-image: url(../images/index_bg.png);}
+.part2{background-image: url(../images/index_bg1.png);}
+.part3{background-image: url(../images/index_bg2.png);}
+.part4{background-image: url(../images/index_bg3.png);}
+.part5{background-image: url(../images/index_bg4.png);}
+.part6{background-image: url(../images/index_bg5.png);}
+.btn{position: absolute;top: 58%;}
+.more_icon img{position: absolute;top: 3%;right: 5%;}
+
+.mask{position:fixed;top:0;bottom:0;left:0;z-index:2002;display:none;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.mask_box{text-align: center;background: #fff;position: absolute;top: 7%;right: 5%;border-radius: 4px;}
+.mask_box li a{margin: .4rem;display: block;font-size: .3rem;color: #333;}
+.triangle_border_up{width: 0;height: 0;border-width: 0 6px 9px;border-style: solid;border-color: transparent transparent #ffffff;position: fixed;right: 6.2%;top: 6.1%;}
+
+.next{bottom: .6rem;height: .4rem;background: url(../images/next.png) no-repeat 0/contain;-webkit-animation: _down ease 1s both infinite;-moz-animation: _down ease 1s both infinite;animation: _down ease 1s both infinite;}
+.next{width: .3rem;height: .36rem;position: absolute;left: 50%;margin-left: -.15rem;z-index: 1000;}
+
+/*  微信mask  */
+.wechat{position:fixed;top:0;bottom:0;left:0;z-index:2001;display:none;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.wechat img{width:100%;}
+
+
+/*  联系我们  */
+.contact_box{overflow: hidden;}
+.return{float: left;padding: 5%;}
+.con_box{padding: 0 5%;}
+.name_company{text-align: center;font-size: .36rem;color: #333;font-weight: 600;margin-bottom: 5%;}
+.info{margin-bottom: 5%;}
+.info_title{font-size: .3rem;color: #333;}
+.info_c{font-size: .3rem;color: #666;line-height: .4rem;}
+.qrcode{overflow: hidden;margin-top: 20%;}
+.weibo{width: 50%;float: left;text-align: center;}
+.weibo img{width: 2.2rem;margin-bottom: 8%;}
+.weixin{width: 50%;float: left;text-align: center;}
+.weixin img{width: 2.2rem;margin-bottom: 8%;}
+
+
+
+
+
+

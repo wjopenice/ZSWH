@@ -1,0 +1,39 @@
+.content{background: #f4f4f4;}
+.w-title{background: #fff;margin-top: 1px;border-bottom-left-radius: .4rem;border-bottom-right-radius: .4rem;padding: .6rem .7rem;}
+.w-title h4{font-size: .8rem;font-weight: 600;color: #333;line-height: 1rem;}
+.w-list{margin-top: .6rem;overflow: hidden;}
+.w-list li{width: 33.3%;display: inline-block;float: left;}
+.w-list li p{font-size: .68rem;text-align: center;color: #999;}
+.w-list li span{display: block;font-size: .74rem;font-weight: 600;text-align: center;color: #333;margin-top: .3rem  ;}
+
+.explain{background: #fff;padding: .6rem .7rem;margin-top: .44rem;border-radius: .4rem;}
+.explain h4{font-size: .82rem;font-weight: 600;color: #333;margin-bottom: .6rem;}
+.e-detail p{font-size: .68rem;color: #444;}
+.e-detail img{height: 100%;padding: .4rem 0;width: 100%;}
+.explain h5{font-size: .74rem;font-weight: 600;color: #333;margin: .6rem 0;}
+.e-about{font-size: .68rem;color: #444;line-height: 1rem;}
+
+.node{background: #fff;padding: .6rem .7rem;margin-top: .44rem;border-radius: .4rem;}
+.node h4{font-size: .82rem;font-weight: 600;color: #333;margin-bottom: .6rem;}
+.head{width: 3.4rem;height: 3.4rem;margin-bottom: .44rem;}
+.head img{width: 100%;height: 100%;}
+.mechanism{font-size: .72rem;color: #666;width: 68px;text-align: center;}
+.m-name{border-radius: .2rem;font-size: .68rem;color: #666;}
+.triangle_border_up{width:0;height:0;border-width:0 8px 9px;border-style:solid;border-color:transparent transparent #e9e9e9;position:relative;left: 26px;top: 1px;}
+
+.prove{margin-bottom: .04rem;padding-bottom: 4rem;}
+.examine{margin: .4rem 0;}
+.receive{margin-top: .8rem;}
+.examine img{width: 1rem;vertical-align: top;margin-right: .8rem;}
+
+
+/*  swiper  */
+.wrapper .swiper-pagination-bullet-active{background: #fff;}
+.wrapper .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{bottom: 2px;}
+.wrapper{overflow: hidden;width: 100%;height: 0;padding-bottom: 50%;background: #666;}
+.swiper-img{width: 100%;height: 100%}
+
+
+/*-- 微信 --*/
+.wechat{position:fixed;top:0;bottom:0;left:0;z-index:2001;display:none;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.wechat img{width:100%;}

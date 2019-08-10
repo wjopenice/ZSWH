@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宠爱之家</title>
+    <meta name="keywords" content="宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/website/mobile/css/index.css">
+    <script src="/website/mobile/js/rem.js"></script>
+</head>
+<body>
+    <div class="contact_box">
+        <a class="return" href="/website/mobile_index"><img src="/website/mobile/images/return.png" width="66%" alt=""></a>
+    </div>
+    <div class="con_box">
+        <p class="name_company"><?=$result->title?></p>
+        <div class="info"><span class="info_title">地址：</span><span class="info_c"><?=$result->address?></span></div>
+        <div class="info"><span class="info_title">邮编：</span><span class="info_c"><?=$result->postal_code?></span></div>
+        <div class="info"><span class="info_title">客服QQ：</span><span class="info_c"><?=$result->qq?></span></div>
+        <div class="info"><span class="info_title">电子邮箱：</span><span class="info_c"><?=$result->email?></span></div>
+        <div class="qrcode">
+            <div class="weibo">
+                <img src="<?=$result->code_pic1?>" alt="">
+                <p><?=$result->code_title1?></p>
+            </div>
+            <div class="weixin">
+                <img src="<?=$result->code_pic2?>" alt="">
+                <p><?=$result->code_title2?></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/website/mobile/js/jquery.min.js"></script>
+    <script src="/website/mobile/js/swiper.min.js"></script>
+    <script src="/website/mobile/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>宠爱之家-发送图片消息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/apps/css/ticket.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+<!--  公共头部  -->
+<?php $this->view->partial("inc/header")?>
+<div class="clearfix"> </div>
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <!--  公共左部  -->
+        <?php $this->view->partial("inc/left")?>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>发送图片消息</h1>
+                </div>
+            </div>
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                    <a href="/index">主页</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span class="active">二级</span>
+                </li>
+            </ul>
+            <div class="profile-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light bordered">
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <form role="form" action="/admin/sendimage" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <label class="control-label">发送人名称</label>
+                                                <input type="text" name="name" value="宠爱小助手" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">发送图片</label>
+                                                <div style="overflow: hidden;">
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="image" > </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="margiv-top-10">
+                                                <button type="submit" id="s-btn" class="btn green">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/global/plugins/respond.min.js"></script>
+<script src="/assets/global/plugins/excanvas.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/profile.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="/kindeditor/kindeditor-all.js"></script>
+<script src="/kindeditor/lang/zh-CN.js"></script>
+<!--<script>
+    $(function () {
+        var editor = KindEditor.create('textarea[name="content"]');
+        $("#s-btn").click(function(){
+            console.log(editor.edit.doc.body.innerHTML)
+        });
+
+
+    });
+
+</script>-->
+</body>
+</html>
+

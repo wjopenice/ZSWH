@@ -1,0 +1,5 @@
+/* login btn */
+.form-actions{text-align: center;}
+.login .content .form-actions{border-bottom: 0;}
+.login .content{padding: 30px;}
+.login .logo{margin: 100px auto 0;}

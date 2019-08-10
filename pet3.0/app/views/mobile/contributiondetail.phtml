@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title><?=$data->nick_name?>的救助请求</title>
+    <meta name="keywords" content="宠爱捐款详情,宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/css/mobile/sm.min.css">
+    <link rel="stylesheet" href="/css/mobile/reset.css">
+    <link rel="stylesheet" href="/css/mobile/swiper.min.css">
+    <link rel="stylesheet" href="/css/mobile/contributiondetail.css">
+</head>
+<body>
+<div class="content">
+    <div class="wrapper">
+        <div style="background: #F2425A;width: 100%;position: fixed;top: 0;color: #fff;height: 1.2rem;line-height: 1.2rem;z-index: 999;text-align: center;font-size: .6rem;"><?=$data->nick_name?>已捐助<?=$data->total?>元</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <?php  $banner=json_decode($data->banner)?>
+                <?php foreach($banner as $k=>$v): ?>
+                    <div class="swiper-slide"><img class="swiper-img" src="<?=$v?>" alt=""></div>
+                <?php endforeach; ?>
+            </div>
+            <!--<div class="swiper-pagination"></div>-->
+        </div>
+    </div>
+    <!-- title -->
+    <div class="w-title">
+        <h4><?=$data->title?></h4>
+        <p style="font-size: .74rem;color: #666;margin-top: .4rem;"><?=$data->minititle?></p>
+        <ul class="w-list">
+            <li><p style="text-align: left;">急需筹款(元)</p><span style="text-align: left;"><?=$data->target_amount?></span></li>
+            <li><p>已筹金额(元)</p><span><?=$data->already_amount?></span></li>
+            <li><p style="text-align: right;">帮助次数</p><span style="text-align: right;"><?=$data->already_num?></span></li>
+        </ul>
+    </div>
+    <!-- explain -->
+    <div class="explain">
+        <div style="position: relative;"><span style="position: absolute;height: .9rem;left: -.7rem;top: .14rem;width: .2rem;background: #F2425A;"></span><h4>筹款说明</h4></div>
+        <div class="e-detail">
+            <?=$data->content?>
+        </div>
+        <h5>关于我们</h5>
+        <p class="e-about">宠爱之家是款集领养、救援、优品、社区、聊天、短视频于一体的公益性平台，我们让爱心人士资金捐助更加清晰透明，让救助爱宠更加便捷，让救助站求助渠道更加广阔，让萌宠交流更加有趣，让领养代替购买！ 我们是款致力于流浪小动物救助的app，多家救助站入驻，轻松发起援助、领养，以宠物会友交友，解决救助中心与爱心人士等资金问题以及领养问题。 用户可在平台注册身份认证，在线挑选喜欢的宠物领养，资金捐助清晰透明，让领养更加便捷。</p>
+    </div>
+    <!-- prove -->
+    <div class="node prove">
+        <div style="position: relative;height: 2rem;">
+            <span style="position: absolute;height: .9rem;left: -.7rem;top: .14rem;width: .2rem;background: #F2425A;"></span>
+            <h4 style="float: left;">资料证明</h4>
+            <div style="float: right;">
+                <img src="/img/mobile/selcet.png" style="width: .9rem;" alt="">
+                <span style="font-size: .66rem;color: #649F67;vertical-align: middle;">身份证明已审核</span>
+            </div>
+        </div>
+        <div class="m-name">
+            <p style="margin-bottom: .3rem;">机构名称：深圳致晟文化创新有限公司</p>
+            <p style="margin-bottom: .3rem;">统一社会信用代码：91440300MA5EH4UH26</p>
+            <p style="margin-bottom: .3rem;">发起人：<?=$data->sponsor?></p>
+            <p>接收人：<?=$data->receiver?></p>
+        </div>
+    </div>
+    <!-- footer -->
+    <div style="padding: .7rem;text-align: center;background: #fff;position: fixed;bottom: 0;width: 100%;left: 0;">
+        <p style="background: #F2425A;color: #fff;font-size: .9rem;padding: .54rem 0 .5rem;border-radius: .2rem;">资助一下,让它有个温暖的家</p>
+    </div>
+</div>
+
+<script src='/js/mobile/test.js'></script>
+<script src='/js/mobile/sm.min.js'></script>
+<script src='/js/mobile/jquery.js'></script>
+<script src='/js/mobile/swiper.min.js'></script>
+<script>
+    $(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: true,//可选选项，自动滑动
+            loop: true
+        });
+
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        $('.content').click(function() {
+            if (isAndroid) {
+                if(isWeChat()){
+                    weChatRes('/img/mobile/tips_weixin_android.png');
+                }else{
+                    window.location.href = 'https://www.pgyer.com/OwP5';
+                }
+            }
+            if (isIOS) {
+                if(isWeChat()){
+                    weChatRes('/img/mobile/tips_weixin_ios.png');
+                }else {
+                    window.location.href = 'https://www.pgyer.com/Cmb4';
+                }
+            }
+        });
+    })
+
+    function getOSType() {
+        if (/(Android)/i.test(navigator.userAgent)) {
+            return true;
+        }
+    }
+
+    //判断是wx
+    function isWeChat() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function sysTemInfo() {
+        var us = navigator.userAgent.toLowerCase();
+        if ((us.indexOf('android') > -1 || us.indexOf('linux') > -1) || navigator.platform.toLowerCase().indexOf('linux') != -1) {
+            return 'android';
+        } else if (us.indexOf('iphone') > -1 || us.indexOf('ipad') > -1) {
+            return 'ios';
+        }
+    }
+
+    //微信系统内容处理
+    function weChatRes(n) {
+        var html = '<div class="wechat" onclick="wechat()"><img src="' + n + '" alt="点击右上角，然后选择浏览器打开！"/></div>';
+        $('body').append(html);
+        $(".wechat").css("height", $(window).height()).show();
+    }
+
+    function wechat() {
+        $(".wechat").remove();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>宠爱之家-添加救助站信息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/apps/css/ticket.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+<!--  公共头部  -->
+<?php $this->view->partial("inc/header")?>
+<div class="clearfix"> </div>
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <!--  公共左部  -->
+        <?php $this->view->partial("inc/left")?>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>添加救助站信息</h1>
+                </div>
+            </div>
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                    <a href="/index">主页</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span class="active">二级</span>
+                </li>
+            </ul>
+            <div class="profile-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light bordered">
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <form role="form" action="/admin/addrescuestation/rescuestation/1" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <label class="control-label">救助站名称</label>
+                                                <input type="text" name="name" placeholder="宠爱之家宠物救助站" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">救助站介绍</label>
+                                                <textarea class="form-control" name="info" rows="5" placeholder="宠爱之家宠物救助站成立于2001年，隶属于宠爱宠物救助站集团股份有限公司。"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">联系方式</label>
+                                                <input type="text" name="tel" placeholder="0589-6615555" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">APP轮播图片（最多五张）</label>
+                                                <div style="overflow: hidden;">
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="himg[]"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="himg[]"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="himg[]"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="himg[]"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="himg[]"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">位置</label>
+                                                <input type="text" name="lbs" placeholder="广东省深圳市南山区海王星辰总部大厦" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">规模</label>
+                                                <input type="text" name="scale" placeholder="请输入救助站规模" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">当前宠物救助数</label>
+                                                <input type="text" name="pet_r_num" placeholder="请输入当前宠物救助数" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">救助人身份证</label>
+                                                <input type="text" name="receiver_cid" placeholder="请输入救助人身份证" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">营业执照</label>
+                                                <div style="overflow: hidden;">
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="business_license"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">经度</label>
+                                                <input type="text" name="longitude" placeholder="113.939574" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">纬度</label>
+                                                <input type="text" name="latitude"  placeholder="22.506471" class="form-control">
+                                            </div>
+                                            <div class="margiv-top-10">
+                                                <button type="submit" class="btn green">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/global/plugins/respond.min.js"></script>
+<script src="/assets/global/plugins/excanvas.min.js"></script>
+<script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/profile.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=您申请的key值"></script>
+<script>
+    var geocoder = new AMap.Geocoder({
+        // city 指定进行编码查询的城市，支持传入城市名、adcode 和 citycode
+        city: '全国'
+    });
+    var address = '北京市海淀区苏州街';//这里是需要转化的地址
+
+    geocoder.getLocation(address, function(status, result) {
+        if (status === 'complete' && result.info === 'OK') {
+            // result为对应的地理位置详细信息
+        }
+    };
+</script>
+</body>
+</html>

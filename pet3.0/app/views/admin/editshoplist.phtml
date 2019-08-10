@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>宠爱之家-商品编辑</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/apps/css/ticket.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+<!--  公共头部  -->
+<?php $this->view->partial("inc/header")?>
+<div class="clearfix"> </div>
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <!--  公共左部  -->
+        <?php $this->view->partial("inc/left")?>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>商品编辑</h1>
+                </div>
+            </div>
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                    <a href="/index">主页</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span class="active">二级</span>
+                </li>
+            </ul>
+            <div class="profile-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light bordered">
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <form role="form" action="" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="b3" value="<?=$arrdata->shopbanner['shop_banner3']?>">
+                                            <input type="hidden" name="b2" value="<?=$arrdata->shopbanner['shop_banner2']?>">
+                                            <input type="hidden" name="b1" value="<?=$arrdata->shopbanner['shop_banner1']?>">
+                                            <input type="hidden" name="p5" value="<?=$arrdata->pic['pic5']?>">
+                                            <input type="hidden" name="p4" value="<?=$arrdata->pic['pic4']?>">
+                                            <input type="hidden" name="p3" value="<?=$arrdata->pic['pic3']?>">
+                                            <input type="hidden" name="p2" value="<?=$arrdata->pic['pic2']?>">
+                                            <input type="hidden" name="p1" value="<?=$arrdata->pic['pic1']?>">
+                                            <input type="hidden" name="id" value="<?=$arrdata->id?>">
+                                            <div class="form-group">
+                                                <label class="control-label">轮播展示（最多三张）</label>
+                                                <div style="overflow: hidden;">
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                                                                <img src="<?=$arrdata->shopbanner['shop_banner1']?>" />
+                                                            </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="shop_banner1"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                                                                <img src="<?=$arrdata->shopbanner['shop_banner2']?>" />
+                                                            </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="shop_banner2"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                                                                <img src="<?=$arrdata->shopbanner['shop_banner3']?>" />
+                                                            </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="shop_banner3"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">商品名称</label>
+                                                <input type="text" name="shop_name" placeholder="请输入商品名称" class="form-control" value="<?=$arrdata->shop_name?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">商品品牌</label>
+                                                <input type="text" name="brand" placeholder="请输入商品品牌" class="form-control" value="<?=$arrdata->brand?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">适用类型</label>
+                                                <input type="text" name="shop_object" placeholder="请输入适用类型" class="form-control" value="<?=$arrdata->shop_object?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">使用阶段</label>
+                                                <input type="text" name="shop_stage" placeholder="请输入使用阶段" class="form-control" value="<?=$arrdata->shop_stage?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">商品重量（G）</label>
+                                                <input type="number" name="weight" placeholder="请输入商品重量（G）" class="form-control" value="<?=$arrdata->weight?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">保质期（年）</label>
+                                                <input type="number" name="shelf_life" placeholder="请输入保质期（年）" class="form-control" value="<?=$arrdata->shelf_life?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">商品金额（元）</label>
+                                                <input type="number" name="price" placeholder="请输入商品金额（元）" class="form-control" value="<?=$arrdata->price?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">商品库存</label>
+                                                <input type="number" name="inventory" placeholder="请输入商品库存" class="form-control" value="<?=$arrdata->inventory?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">详情图片（最多五张）</label>
+                                                <div style="overflow: hidden;">
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                                                                <img src="<?=$arrdata->pic['pic1']?>" />
+                                                            </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="pic1"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">  <img src="<?=$arrdata->pic['pic2']?>" /></div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="pic2"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">  <img src="<?=$arrdata->pic['pic3']?>" /></div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="pic3"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> <img src="<?=$arrdata->pic['pic4']?>" /> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="pic4"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2" style="padding-left: 0;float: initial;display: inline-block;">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> <img src="<?=$arrdata->pic['pic5']?>" /> </div>
+                                                            <div>
+                                                            <span class="btn red btn-outline btn-file">
+                                                                <span class="fileinput-new">选择图片</span>
+                                                                <span class="fileinput-exists">更换图片</span>
+                                                                <input type="file" name="pic5"> </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">删除</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <!--    <div class="form-group">
+                                                <div class="col-md-12 has-warning" style="padding: 0;margin-bottom: 20px;">
+                                                    <label for="select2-multiple" class="control-label">商品标签</label>
+                                                    <select id="select2-multiple" class="form-control select2-multiple" multiple name="type[]">
+                                                        <optgroup label="请选择（可多选）">
+                                                            <option value="品质">品质</option>
+                                                            <option value="精选">精选</option>
+                                                            <option value="有趣">有趣</option>
+                                                            <option value="进口">进口</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>-->
+                                            <div class="margiv-top-10">
+                                                <button type="submit" class="btn green">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/global/plugins/respond.min.js"></script>
+<script src="/assets/global/plugins/excanvas.min.js"></script>
+<script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/profile.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+<script src="/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+
+<script src="/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+<script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="/assets/pages/scripts/components-select2.min.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="applicable-device" content="mobile">
+    <title><?=$data['nick_name']?>分享的帖子</title>
+    <meta name="keywords" content="分享的帖子,宠爱之家,宠物,宠物网,宠物训练,宠物新闻,狗狗,猫猫,宠物狗,宠物猫,宠物鼠,宠物兔">
+    <meta name="description" content="宠爱之家作为宠物行业领先门户网站,主要提供和分享新潮的宠物行业新闻,宠物趣事,逗趣的宠物图片,视频,直播等全面的宠物医疗宠物养护宠物训练宠物美容等知识.">
+    <link rel="stylesheet" href="/css/mobile/sm.min.css">
+    <link rel="stylesheet" href="/css/mobile/reset.css">
+    <link rel="stylesheet" href="/css/mobile/stickshare.css">
+</head>
+<body>
+<div class="content">
+
+    <!-- pic -->
+    <div class="picbox">
+        <img src="/img/mobile/banner.png" class="banner" alt="">
+        <div class="logobox">
+            <img src="/img/mobile/logo.png" alt="" style="width: 3rem;height: 3rem;">
+            <p style="color: #666666;font-size: .76rem;text-align: center;margin-top: .4rem;">宠爱之家</p>
+        </div>
+    </div>
+
+    <!-- stickbox -->
+    <div class="stickbox">
+        <div class="headimg">
+            <?php
+            if($data['avatar']){
+                ?>
+                <img src="<?=$data['avatar']?>" style="width: 2.4rem;width: 2.4rem;height: 2.4rem;border-radius: 50%;" alt="">
+            <?php }
+            else{
+                ?>
+                <img src="/avatar.png" style="width: 2.4rem;width: 2.4rem;height: 2.4rem;border-radius: 50%;" alt="">
+            <?php }?>
+        </div>
+        <div class="headct">
+            <div class="headctbox">
+                <p class="htitle"><?=$data['nick_name']?></p>
+                <p class="hcbox"><?=$data['content']?></p>
+
+                <div class="svideo"><div class="l-pic"><img src="<?=$data['pic']?>" width="100%" height="100%" alt=""></div>
+                    <?php
+                    if($data['type']==1){
+                        ?>
+                        <img src="/img/mobile/icon_suspend.png" class="icon_suspend" alt="">
+                    <?php }
+                    ?>
+                </div>
+                <div class="placebox">
+                    <img src="/img/mobile/place.png" class="place" alt="">
+                    <p class="placetext"><?=$data['lbs']?></p>
+                </div>
+                <div class="stime"><?=date("Y/m/d H:i:s",$data['create_time'])?></div>
+                <div class="scomment"><img src="/img/mobile/comment.png" alt=""></div>
+                <?php
+                if($data['feedback_user']!=""){
+                    ?>
+                    <div class="commentbox">
+                        <p><span class="commentr"><?=$data['feedback_user']?>：</span><span class="commentrb">这是我用宠爱之家APP发的帖子，希望大家支持下喔！</span></p>
+                    </div>
+                <?php }
+                ?>
+
+            </div>
+        </div>
+        <div class="downbtn" id="downbtn" style="margin-top: 14px">点击支持他</div>
+    </div>
+</div>
+
+
+
+<script src='/js/mobile/test.js'></script>
+<script src="/js/mobile/jquery.min.js"></script>
+<script src='/js/mobile/sm.min.js'></script>
+<script>
+    $(function () {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        $('.content').click(function() {
+            if (isAndroid) {
+                if(isWeChat()){
+                    weChatRes('/img/mobile/tips_weixin_android.png');
+                }else{
+                    window.location.href = 'https://www.pgyer.com/OwP5';
+                }
+            }
+            if (isIOS) {
+                if(isWeChat()){
+                    weChatRes('/img/mobile/tips_weixin_ios.png');
+                }else {
+                    window.location.href = 'https://www.pgyer.com/Cmb4';
+                }
+            }
+        });
+
+    });
+
+    function getOSType() {
+        if (/(Android)/i.test(navigator.userAgent)) {
+            return true;
+        }
+    }
+
+    //判断是wx
+    function isWeChat() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function sysTemInfo() {
+        var us = navigator.userAgent.toLowerCase();
+        if ((us.indexOf('android') > -1 || us.indexOf('linux') > -1) || navigator.platform.toLowerCase().indexOf('linux') != -1) {
+            return 'android';
+        } else if (us.indexOf('iphone') > -1 || us.indexOf('ipad') > -1) {
+            return 'ios';
+        }
+    }
+
+    //微信系统内容处理
+    function weChatRes(n) {
+        var html = '<div class="wechat" onclick="wechat()"><img src="' + n + '" alt="点击右上角，然后选择浏览器打开！"/></div>';
+        $('body').append(html);
+        $(".wechat").css("height", $(window).height()).show();
+    }
+
+    function wechat() {
+        $(".wechat").remove();
+    }
+
+
+</script>
+</body>
+</html>

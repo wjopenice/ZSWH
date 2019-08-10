@@ -1,0 +1,16 @@
+.groupbox{background: #fff;text-align: center;padding: 2.4rem 3rem;}
+.headpgroup{width: 6.8rem;height: 6.8rem;background: #ccc;display: inline-block;overflow: hidden;padding: .2rem 0 0 .2rem;}
+.imgbox{float: left;width: 2rem;height: 2rem;margin-right: .2rem;margin-bottom: .2rem;position: relative;}
+.imgbox img{width: 100%;height: 100%;}
+.imgbox .maskbox{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.33);}
+.groupname{font-size: .76rem;color: #333;padding: .4rem 0;}
+.groupnum{font-size: .76rem;color: #999;}
+
+.downbox{padding: 2rem .4rem;text-align: center;}
+.downname{font-size: .8rem;color: #333;padding: 0 0 1.4rem 0;}
+.dbtn{width: 10rem;height: 2.2rem;line-height: 2.2rem;background: rgba(131,197,195,1);border-radius: 4px;color: #fff;font-size: .8rem;display: inline-block;}
+
+
+/*-- 微信 --*/
+.wechat{position:fixed;top:0;bottom:0;left:0;z-index:2001;display:none;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.wechat img{width:100%;}

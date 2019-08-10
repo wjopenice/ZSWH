@@ -1,0 +1,255 @@
+<?php
+$urlstr = $_SERVER['REQUEST_URI'];
+$urlarr = explode("/",$urlstr);
+$urltype3 = isset($urlarr[3])? $urlarr[3] : "index";
+$urltype4 = isset($urlarr[4])? $urlarr[4] : "1";
+?>
+<style>
+    .grid-item__link {
+        color: inherit;
+        display: block;
+        width: 100%;
+    }
+    svg {
+        fill: currentColor;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+</style>
+<div class="page-sidebar navbar-collapse collapse">
+    <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+        <li class="nav-item <?php if($urltype3 == 'index'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-home"></i>
+                <span class="title">主页</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item  <?php if($urltype3 == 'index' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/index/index/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">数据统计</span>
+                        <span class="selected"></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'user'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-user"></i>
+                <span class="title">用户管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'user' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/user/user/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">APP用户</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'user' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/lockuser/user/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">锁定用户</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'map'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-pointer"></i>
+                <span class="title">地图管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'map' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/map/map/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">地图列表</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'group'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-wallet"></i>
+                <span class="title">广场管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'group' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/squarelist/group/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">帖子列表</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'shop'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-basket"></i>
+                <span class="title">商城管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'shop' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/shoplist/shop/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">商品列表</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'shop' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/orderedlist/shop/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">已下单列表</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'shop' && $urltype4 == 3){echo 'start active open';} ?>">
+                    <a href="/admin/shippedlist/shop/3" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">已发货列表</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'shop' && $urltype4 == 4){echo 'start active open';} ?>">
+                    <a href="/admin/shopflow/shop/4" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">订单流水</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'shop' && $urltype4 == 5){echo 'start active open';} ?>">
+                    <a href="/admin/useraddress/shop/5" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">用户地址</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'member'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-social-dribbble"></i>
+                <span class="title">群聊管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'member' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/newgroup/member/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">群审核列表</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'member' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/grouplist/member/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">已通过列表</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'donationlist'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-puzzle"></i>
+                <span class="title">捐助管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'donationlist' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/donationlist/donationlist/1" class="nav-link " style="padding: 9px 14px 9px 47px;">
+                        <span class="title">捐助列表</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'donationlist' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/commonweal/donationlist/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">捐助流水</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'hospitallist'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-briefcase"></i>
+                <span class="title">医院管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'hospitallist' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/hospitallist/hospitallist/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">医院列表</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'setting'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-settings"></i>
+                <span class="title">系统管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/switch/setting/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">开关设置</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/systemntion/setting/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">系统通知</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 3){echo 'start active open';} ?>">
+                    <a href="/admin/userfb/setting/3" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">用户反馈</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 4){echo 'start active open';} ?>">
+                    <a href="/admin/userag/setting/4" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">用户协议</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 5){echo 'start active open';} ?>">
+                    <a href="/admin/appupload/setting/5" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">Android更新</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'setting' && $urltype4 == 6){echo 'start active open';} ?>">
+                    <a href="/admin/iosupload/setting/6" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">IOS更新</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'rescuestation'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-layers"></i>
+                <span class="title">救助站管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'rescuestation' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/rescuestation/rescuestation/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">救助站列表</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'ai'){echo 'start active open';} ?>">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-feed"></i>
+                <span class="title">宠爱小助手</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'ai' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/admin/sendtext/ai/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">发送文本消息</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'ai' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/admin/sendimage/ai/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">发送图片消息</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item <?php if($urltype3 == 'news'){echo 'start active open';} ?>">
+            <a href="/img/medium.svg" class="grid-item__link nav-link nav-toggle">
+                <i class="icon-medium">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0 0-.143.362v9.067a.376.376 0 0 0 .143.361l1.257 1.234v.271h-6.322v-.27l1.302-1.265c.128-.128.128-.165.128-.36V8.99l-3.62 9.195h-.49L6.69 8.99v6.163a.85.85 0 0 0 .233.707l1.694 2.054v.271H3.815v-.27L5.51 15.86a.82.82 0 0 0 .218-.707V8.027a.624.624 0 0 0-.203-.527L4.019 5.686v-.27h4.674l3.613 7.923 3.176-7.924h4.456v.271z"></path>
+                    </svg>
+                </i>
+                <span class="title">媒体管理</span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item <?php if($urltype3 == 'news' && $urltype4 == 1){echo 'start active open';} ?>">
+                    <a href="/news/wapabout/news/1" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">H5关于我们</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php if($urltype3 == 'news' && $urltype4 == 2){echo 'start active open';} ?>">
+                    <a href="/news/wapcontactus/news/2" class="nav-link" style="padding: 9px 14px 9px 47px;">
+                        <span class="title">H5联系我们</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
