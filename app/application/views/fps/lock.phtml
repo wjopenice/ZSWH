@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
+<body>
+    <div id="div_root" style="overflow: hidden; width: 90%; margin: 0 auto;">
+        <div id="div_left" style="float: left; width: 50%;">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>ID</td>
+                    <td>订单号</td>
+                </tr>
+                <?php foreach ($data as $k=>$v): ?>
+                    <tr>
+                        <td><?=$v['id']?></td>
+                        <td onclick="chk(this)"><?=$v['out_trade_no']?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+        <div id="div_right" style="float: right; width: 50%;">
+            <p>点击订单号自动生成订单详情</p>
+        </div>
+    </div>
+    <script>
+    function chk(tag) {
+        var trade = tag.innerText;
+        $.post("/pay/lock",{out_trade_no:trade},function (msg) {
+            console.log(msg);
+            var htmltable = "<p>订单状态详情：</p> " +
+                                "<table border='1' cellspacing='0' cellpadding='5'>" +
+                                "<tr><td>app_id</td><td>"+msg.data.app_id+"</td></tr>" +
+                                "<tr><td>nonce_str</td><td>"+msg.data.nonce_str+"</td></tr>" +
+                                "<tr><td>biz_code</td><td>"+msg.data.biz_code+"</td></tr>" +
+                                "<tr><td>biz_msg</td><td>"+msg.data.biz_msg+"</td></tr>" +
+                                "<tr><td>attach</td><td>"+msg.data.biz_data+"</td></tr>" +
+                            "</table>";
+            $("#div_right").empty();
+            $("#div_right").html(htmltable)
+        },'json');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-用户列表</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/newstype.css?v=2018122117" rel="stylesheet" />
+    <style>.laytable-cell-1-0-0{width: 10%;}.laytable-cell-1-0-1{width: 10%;}</style>
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+    <form action="/index/log" method="get">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">账号搜索</label>
+                <div class="layui-input-block">
+                    <input type="text" name="search" placeholder="请输入账号/手机号" id="search_val" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">日期选择</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" id="date" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid">-</div>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" id="date1" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <button type="button" class="layui-btn layuiadmin-btn-useradmin">
+                    <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span>ID</span></div></th>
+                    <th data-field="account" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>账号</span></div></th>
+                    <th data-field="nickname" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>昵称</span></div></th>
+                    <th data-field="email" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>邮箱</span></div></th>
+                    <th data-field="phone" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>手机号</span></div></th>
+                    <th data-field="register_time" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>注册时间</span></div></th>
+                    <th data-field="login_time" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>登录时间</span></div></th>
+                    <th data-field="promote_account" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>渠道</span></div></th>
+                    <th data-field="points" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>积分</span></div></th>
+                    <th data-field="等级" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span>等级</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody id="list_body">
+                <?php foreach ($userData as $key=>$value): ?>
+                    <tr>
+                        <td data-field="id" class="layui-unselect laytable-cell-1-0-0"><div class="layui-table-cell"><span><?=$value['id']?></span></div></td>
+                        <td data-field="account" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['account']?></span></div></td>
+                        <td data-field="nickname" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['nickname']?></span></div></td>
+                        <td data-field="email" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['email']?></span></div></td>
+                        <td data-field="phone" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['phone']?></span></div></td>
+                        <td data-field="register_time" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$value['register_time'])?></span></div></td>
+                        <td data-field="login_time" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=date("Y-m-d H:i:s",$value['login_time'])?></span></div></td>
+                        <td data-field="promote_account" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['promote_account']?></span></div></td>
+                        <td data-field="points" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['points']?></span></div></td>
+                        <td data-field="等级" class="layui-unselect laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$value['vip_level']?></span></div></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<?=$showstr?>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+    });
+</script>
+
+</body>
+</html>

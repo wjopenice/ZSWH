@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
+<body>
+    <?php  $secret = "CYD3yzcod66PmVeNWhtUyFpwE82pmwJaZllNau5uQIqTs74y"; ?>
+<!--    <form action="/pay/fps" method="post">-->
+        请输入金额：
+        <input type="text" name="total_fee" value="">
+        <br><br>
+        请选择支付通道：
+        <input type="radio" name="pay_type" value="2">支付宝
+        <input type="radio" name="pay_type" value="4">微信
+        <br><br>
+        <input type="hidden" name="out_trade_no" value="">
+<!--        <input type="submit" value="下单">-->
+        <input type="button" value="下单" onclick="send()">
+<!--    </form>-->
+   <div id="div" style="position: fixed;top: 20%; left: 50%; width: 200px; height: 200px; border: solid 1px black;"></div>
+
+ <script>
+  var x;
+  function send() {
+      var text = $(":text").val();
+      var radio = $("input[type='radio'][name='pay_type']:checked").val();
+      var trade = '<?=hash_hmac("sha256",time(),$secret)?>';
+       x = trade;
+       $.post("/pay/fps",{total_fee:text,pay_type:radio,out_trade_no:trade},function (msg) {
+
+           console.log(msg);
+
+             $("#div").empty();
+             $("#div").html("<img src='"+msg+"' width='200' height='200' />");
+       });
+   }
+
+   function ajaxtime() {
+       $.post("/pay/log",{out_trade_no:x},function (msg2) {
+           if(msg2 == 1){
+               alert("支付成功");
+               location.href = location.href;
+               return false;
+           }
+       });
+   }
+   window.setInterval("ajaxtime()",5000);
+   </script>
+</body>
+</html>

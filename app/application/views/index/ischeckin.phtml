@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏盒子APP后台管理-日期选择</title>
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <style>
+        .popup span{cursor: pointer;margin-right: 20px;display: inline-block;border: 1px solid #b1b1b1;border-radius: 2px;padding: 5px 10px;font-size: 14px;}
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <?$m = date("m")?>
+        <span onclick="window.location.href='/index/editcheckin?m=<?=$m?>'">本月</span>
+        <?php if( ($m+1) == 13){$m = 01;}else{$m = $m + 1; if($m<10) $m="0".$m;} ?>
+        <span onclick="window.location.href='/index/editcheckin?m=<?=$m?>'">下一个月</span>
+    </div>
+    <script src="/public/js/jquery.js"></script>
+</body>
+</html>

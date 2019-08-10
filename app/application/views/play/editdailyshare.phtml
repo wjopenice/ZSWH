@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-添加每日分享</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/play/addplay.css?v=20193261430" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">添加每日分享</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">任务标题</label>
+            <div class="layui-input-inline">
+                <input type="text" name="content" placeholder="请输入任务标题" autocomplete="off" class="layui-input" value="<?=$data->content?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">任务描述</label>
+            <div class="layui-input-inline">
+                <input type="text" name="describe" placeholder="请输入任务描述" autocomplete="off" class="layui-input" value="<?=$data->remark?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">积分</label>
+            <div class="layui-input-inline">
+                <input type="text" name="point" placeholder="请输入积分" autocomplete="off" class="layui-input" value="<?=$data->point?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图标</label>
+            <div class="layui-input-inline">
+                <input type="file" name="icon" value="" class="lay-input-img">
+                <img src="<?=$data->icon?>"  />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否是会员</label>
+            <div class="layui-input-inline lay-input">
+                <input type="radio" name="is_member"  value="0"  <?php if($data->is_member==0) echo "checked";?>>否&nbsp;&nbsp;
+                <input type="radio" name="is_member"  value="1"  <?php if($data->is_member==1) echo "checked";?>>是
+            </div>
+        </div>
+
+        <!--  生成是否启用会员等级  -->
+        <div class="layui-form-item" id="grade_text">
+            <?php if($data->is_member==1){
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v1" min="0" value="'.$data->v1.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v2" min="0" value="'.$data->v2.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v3" min="0" value="'.$data->v3.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v4" min="0" value="'.$data->v4.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v5" min="0" value="'.$data->v5.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v6" min="0" value="'.$data->v6.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v7" min="0" value="'.$data->v7.'"></div></div>';
+                echo '<div style="overflow:hidden;margin:10px 0;"><label class="layui-form-label">会员等级V1</label>
+<div class="layui-input-inline lay-input"><input type="number" placeholder="请输入V1等级积分" class="giftnum" name="v8" min="0" value="'.$data->v8.'"></div></div>';
+            }?>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="<?=$data->id?>">
+                <input type="submit" class="layui-btn" value="立即提交" min="">
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            $(".start_time").attr('max',end_time);
+        });
+    })
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form;
+        form.on('radio',function(data){
+            //alert(data.value);//判断单选框的选中值
+            if(data.value == '1'){
+                $("#grade_text").empty();
+                $("#grade_text").html("<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V1</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V1等级积分' class='giftnum' name='v1' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V2</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V2等级积分' class='giftnum' name='v2' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V3</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V3等级积分' class='giftnum' name='v3' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V4</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V4等级积分' class='giftnum' name='v4' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V5</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V5等级积分' class='giftnum' name='v5' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V6</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V6等级积分' class='giftnum' name='v6' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V7</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V7等级积分' class='giftnum' name='v7' min='0' value=''>"+
+                    "</div></div>"+
+                    "<div style='overflow:hidden;margin:10px 0;'><label class='layui-form-label'>会员等级V8</label>"+
+                    "<div class='layui-input-inline lay-input'>"+
+                    "<input type='number' placeholder='请输入V8等级积分' class='giftnum' name='v8' min='0' value=''>"+
+                    "</div></div>"
+                );
+            }else{
+                $("#grade_text").empty();
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-会员每月礼包</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/membergift.css?v=2018122122" rel="stylesheet" />
+</head>
+<body>
+<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+    <form action="" method="get">
+        <div class="layui-form-item">
+            <div class="layui-inline" style="margin-left: 10px;">
+                <button type="button" class="layui-btn layui-btn-normal">
+                    <a href="/index/addmemberweek" class="layui_a"><i class="layui-icon layui-icon-add-circle-fine"></i><span class="layui_a_span">新增等级</span></a>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="layui-form layui-border-box layui-table-view">
+    <div class="layui-table-box">
+        <div class="layui-table-header">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <thead>
+                <tr>
+                    <th class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>会员等级</span></div></th>
+                    <th class="laytable-cell-1-0-1"><div class="layui-table-cell"><span>积分</span></div></th>
+                    <th class="laytable-cell-1-0-2"><div class="layui-table-cell"><span>优惠券ID</span></div></th>
+                    <th class="laytable-cell-1-0-3"><div class="layui-table-cell"><span>平台币</span></div></th>
+                    <th class="laytable-cell-1-0-5"><div class="layui-table-cell"><span>礼包</span></div></th>
+                    <th class="laytable-cell-1-0-5"><div class="layui-table-cell"><span>礼包游戏</span></div></th>
+                    <th class="laytable-cell-1-0-6 layui_th_end"><div class="layui-table-cell"><span>操作</span></div></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="layui-table-body layui-table-main">
+            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                <tbody>
+                <?php foreach ($userData as $k=>$v): ?>
+                <tr>
+                    <td class="laytable-cell-1-0-0"><div class="layui-table-cell"><span>V<?=$v['level']?></span></div></td>
+                    <td class="laytable-cell-1-0-1"><div class="layui-table-cell"><span><?=$v['point']?></span></div></td>
+                    <td class="laytable-cell-1-0-2"><div class="layui-table-cell"><span><?=get_coupon_name($v['coupon_id'])?>元代金券</span></span></div></td>
+                    <td class="laytable-cell-1-0-3"><div class="layui-table-cell"><span><?=$v['balance']?></span></div></td>
+                    <td class="laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=get_giftbag_name($v['gift_id'])?></span></div></td>
+                    <td class="laytable-cell-1-0-5"><div class="layui-table-cell"><span><?=get_game_name($v['game_id'])?></span></div></td>
+                    <td class="laytable-cell-1-0-6"><div class="layui-table-cell">
+                            <span class="layui-btn layui-btn-xs layui-btn-info" onclick="window.location.href='/index/editmemberweek?id=<?=$v['id']?>'">编辑</span>
+                            <span class="layui-btn layui-btn-xs layui-btn-danger"  onclick="window.location.href='/index/delmemberweek?id=<?=$v['id']?>'">删除</span>
+                        </div></td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<?=$showstr?>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+</body>
+</html>

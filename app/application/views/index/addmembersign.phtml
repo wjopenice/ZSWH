@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>游戏盒子APP后台管理-添加补签次数</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/addmembergift.css?v201932514" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/index/addmembersign" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">签到编辑</div>
+    <div class="layui_body" style="margin-top: 10px;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">会员等级</label>
+            <div class="layui-input-inline">
+                <select lay-filter="" name="level" required>
+                    <option value="0">通用等级</option>
+                    <option value="1">V1</option>
+                    <option value="2">V2</option>
+                    <option value="3">V3</option>
+                    <option value="4">V4</option>
+                    <option value="5">V5</option>
+                    <option value="6">V6</option>
+                    <option value="7">V7</option>
+                    <option value="8">V8</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">补签次数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="num" placeholder="请输入补签次数" autocomplete="off" class="layui-input" value="0">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="立即提交" />
+            </div>
+        </div>
+
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+
+</body>
+</html>
+
+

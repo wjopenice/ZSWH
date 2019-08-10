@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>游戏盒子APP后台管理-添加连续签到</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/index/addcontinuity.css?v201932515" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">签到编辑</div>
+    <div class="layui_body" style="margin-top: 10px;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">开始时间</label>
+         <div class="layui-input-inline">
+                <select name="startdate" lay-verify="required" lay-search="" lay-filter="timer">
+                    <option value="<?=date("Y/m/01")?>"><?=date("Y/m/01")?></option>
+                    <option value="<?=date('Y/m/01',strtotime("+1 month"))?>"><?=date('Y/m/01',strtotime("+1 month"))?></option>
+                </select>
+            </div>
+         <!--   <div class="layui-input-inline">
+                <input type="date" name="startdate" readonly autocomplete="off" class="layui-input start_time" id="starttime" >
+            </div>-->
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">结束时间</label>
+            <div class="layui-input-inline">
+                <input type="date" name="enddate" required autocomplete="off" class="layui-input end_time">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">签到次数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="num" readonly placeholder="请输入签到次数" class="layui-input" id="num">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">积分</label>
+            <div class="layui-input-inline">
+                <input type="text" name="point" placeholder="请输入签到积分" class="layui-input" value="0">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">优惠券</label>
+            <?php foreach ($arr as $k=>$v):?>
+                <div class='layui-input-inline lay-inputimg' style="width: 100px;">
+                    <div class='coupon' onclick='chk(this,this.dataset.iconid)' data-iconid="<?=$v['id']?>">
+                        <img src='/public/img/index/6yuan_beijing.png' width='100' height='50'  />
+                        <span style='display: none; width: 100px; height: 50px;background: url(/public/img/index/selcet_djq.png);'></span>
+                        <p style="position: absolute; top: 26%; left: 12%; color: white; font-weight: bold;">￥<?=$v['amount']?> 代金卷</p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+            <div class='layui-input-inline lay-inputimg' style="width: 100px;">
+                <div class='coupon' onclick='chk(this,this.dataset.iconid)' data-iconid="0">
+                    <img src='/public/img/index/6yuan_beijing.png' width='100' height='50'  />
+                    <span style='display: none; width: 100px; height: 50px;background: url(/public/img/index/selcet_djq.png);'></span>
+                    <p style="position: absolute; top: 26%; left: 12%; color: white; font-weight: bold;">不选</p>
+                </div>
+            </div>
+            <input type='hidden' id='coupon_id' name='coupon_id' value='0'>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">平台币</label>
+            <div class="layui-input-inline">
+                <input type="text" name="balance" placeholder="请输入签到平台币" class="layui-input" value="0">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">游戏</label>
+            <div class="layui-input-inline">
+                <select name="game_id" lay-verify="required" lay-search="" lay-filter="game">
+                    <option value="0">直接选择或搜索选择</option>
+                    <?php foreach ($game as $k=>$v): ?>
+                        <option value="<?=$v['id']?>"><?=$v['game_name']?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包</label>
+            <div class="layui-input-inline" id="gift">
+                <select name="gift_id" >
+                    <option value="0">请选择礼包</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class="layui-btn" value="立即提交" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    $(document).ready(function () {
+        var time = new Date();
+        var day = "01";
+        var month = ("0" + (time.getMonth() + 1)).slice(-2);
+        var today = time.getFullYear() + "-" + (month) + "-" + (day);
+        $('#starttime').val(today);
+        $(".end_time").attr('min',today);
+    })
+
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+
+            console.log(start_time);
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            console.log(end_time);
+            var time = new Date();
+            var day = "01";
+            var month = ("0" + (time.getMonth() + 1)).slice(-2);
+            var today = time.getFullYear() + "-" + (month) + "-" + (day);
+            if(end_time==today)
+            {
+                alert("请选择日期大于起始日期");
+                $(".end_time").val('');
+            }
+           var date= $(".end_time").val().substring( $(".end_time").val().length, $(".end_time").val().length-2);
+            var fdStart = date.indexOf("0");
+            if(fdStart == 0){
+                $("#num").val(date.substring( date.length, date.length-1));
+
+            }else {
+                $("#num").val(date);
+            }
+            $(".start_time").attr('max',end_time);
+        });
+    });
+
+    function chk(that,data) {
+        $(".coupon span").css("display","none");
+        $(that).find("span").css({"display":"inline-block","position":"absolute","z-index":"99","top":"0","left":"0","backgroundSize":"100px 50px"});
+        $("#coupon_id").val(data);
+    }
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form;
+       form.on('select(game)', function(tag){
+            var httpurl = "http://127.0.0.1:20085";
+            $.get("/index/getgiftbag",{game_id:tag.value},function(msg){
+                var data=$.parseJSON(msg);
+                var options='<select style=" display: block;padding-right: 30px;cursor: pointer;height: 38px;line-height: 1.3;line-height: 38px;border-width: 1px;' +
+                    'border-style: solid;background-color: #fff;border-radius: 2px;width: 100%; " name="gift_id">  <option value="0">请选择礼包</option>';
+                for(var i=0;i<data.length;i++)
+                {
+                    options=options+"<option value='"+data[i].id+"'>"+data[i].giftbag_name+"</option>";
+                }
+                options=options+"</select>";
+                console.log(options)
+                $("#gift").html(options);
+            })
+        });
+    });
+</script>
+</body>
+</html>

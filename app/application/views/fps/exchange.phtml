@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
+<body>
+<div id="div_root" style="overflow: hidden; width: 90%; margin: 0 auto;">
+    <div id="div_left" style="float: left; width: 50%;">
+        <select id="curr1" name="curr1" style="float: left;">
+            <option>--请选择-</option>
+            <option value="USDT">火币</option>
+            <option value="BTC">比特币</option>
+            <option value="ETH">以太坊</option>
+<!--            <option value="USD">美元</option>-->
+<!--            <option value="EUR">欧元</option>-->
+<!--            <option value="JPY">日元</option>-->
+<!--            <option value="KRW">韩元</option>-->
+<!--            <option value="HKD">港币</option>-->
+<!--            <option value="TWD">台币</option>-->
+        </select>
+        <p style="float: left; margin: 0 20px;">OR</p>
+        <select id="curr2" name="curr2" style="float: left;">
+            <option>--请选择-</option>
+            <option value="CNY">人民币</option>
+            <option value="USD">美元</option>
+            <option value="USDT">火币</option>
+            <option value="BTC">比特币</option>
+            <option value="ETH">以太坊</option>
+<!--            <option value="USD">美元</option>-->
+<!--            <option value="EUR">欧元</option>-->
+<!--            <option value="JPY">日元</option>-->
+<!--            <option value="KRW">韩元</option>-->
+<!--            <option value="HKD">港币</option>-->
+<!--            <option value="TWD">台币</option>-->
+        </select>
+        <br>
+        <br>
+        <input type="button" value="查询" onclick="chk()">
+    </div>
+    <div id="div_right" style="float: right; width: 50%;">
+        <p>选择币种自动生成对应币种汇率详情</p>
+    </div>
+</div>
+<script>
+    function chk() {
+        var ch1 = $("#curr1").val();
+        var ch2 = $("#curr2").val();
+        $.post("/pay/exchange",{curr1:ch1,curr2:ch2},function (msg) {
+            console.log(msg);
+            var htmltable = "<p>汇率：</p> " +
+                "<table border='1' cellspacing='0' cellpadding='5'>" +
+                "<tr><td>汇率：</td><td>"+msg.data.biz_data.price+"</td></tr>" +
+                "</table>";
+            $("#div_right").empty();
+            $("#div_right").html(htmltable)
+        },'json');
+    }
+</script>
+</body>
+</html>

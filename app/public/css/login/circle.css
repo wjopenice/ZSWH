@@ -1,0 +1,66 @@
+/*   header   */
+.hbox{background: url("../../../public/img/circle/h-bg.png") no-repeat;height: 4.4rem;background-size: 100% 100%;position: relative;}
+
+/*   head-box  */
+.head-box{height: .8rem;border-bottom: 1px solid #E6E6E6;text-align: center;line-height: .8rem;background: #fff;border-top-left-radius: .4rem;border-top-right-radius: .4rem;}
+.h-name{display: inline-block;border-bottom: 2px solid #6795EF;color: #6795EF;font-size: .3rem;}
+.h-card{position: absolute;bottom: .32rem;width: 74%;background: #fff;border-radius: .12rem;left: 50%;margin-left: -37%;height: 1.4rem;overflow: hidden;}
+.f-num{font-size: .3rem;color: #6594EE;margin-top: .05rem;}
+.f-t{margin-top: .1rem;color: #666666;}
+
+
+/*  share header  */
+.share{background: #f4f4f4;}
+.share-box{background: #fff;}
+.header{padding: .3rem;overflow: hidden;}
+.head-img{margin-right: .25rem;float: left;width: 1rem;height: 1rem;}
+.head-img img{width: 1rem;height: 1rem;border-radius: 50%;}
+.header-text{float: left;height: 1rem;}
+.info-list{margin: .1rem 0;overflow: hidden;}
+.name{font-size: .34rem;color: #f5bb55;width: 1.7rem;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;height: .4rem;line-height: .4rem;float: left;}
+.n-time{color: #999;}
+.province ,.city{line-height: .4rem;float: left;margin-right: .2rem;}
+.detail-box {font-size: .3rem;color: #404040;line-height: .42rem;padding: 0 .3rem;border-bottom: 1px solid #E6E6E6;}
+#detail-body{margin-bottom: .2rem;}
+
+/*  朋友圈图片展示  */
+.pic-list{display: flex;flex-direction: row;flex-wrap: wrap;}
+.pic-img{width: 31.33%;height: 3rem;text-align: center;display:flex;align-items:center;justify-content: center;margin: 1%;overflow: hidden;border-radius: .12rem;}
+.pic-img img{height: 100%;border-radius: .12rem;}
+.topTip{line-height: 20px;}
+
+/*  点赞和评论  */
+.comment-box{margin: .3rem 0;overflow: hidden;}
+.fa{float: left;width: 33.3%;text-align: center;}
+.fimg1{vertical-align: bottom;width: .36rem;}
+.fimg2{width: .36rem;vertical-align: bottom;}
+.fimg3{width: .3rem;vertical-align: bottom;}
+.f-num1{color: #999;line-height: .34rem;vertical-align: bottom;margin-left: .1rem;font-size: .28rem;}
+.f-num2{color: #999;line-height: .34rem;vertical-align: bottom;margin-left: .1rem;font-size: .28rem;}
+.f-num3{color: #999;line-height: .35rem;vertical-align: bottom;margin-left: .1rem;font-size: .28rem;}
+
+/*  video  */
+.vjs-poster{border-radius: .12rem;}
+.vjs-has-started .vjs-control-bar{border-bottom-left-radius: .12rem;border-bottom-right-radius: .12rem;}
+.video-js{width: 100%;height: 4.8rem;border-radius: .12rem;}
+.video-js .vjs-big-play-button{height: 1.6em;width: 1.6em;top: 50%;left: 50%;margin-left: -.8em;margin-top: -.8em;border-radius: 100%;background: #FFA05E;border: .06666em solid #FFA05E;}
+
+
+/*   评论列表   */
+/*.f-title{border-bottom: 1px solid #f7f7f7;padding: .3rem .4rem;overflow: hidden;}
+.f-title .c-num span{margin-right: .2rem;}
+.f-title .f-num span{margin-left: .2rem;color: #666;}
+.c-num{float: left;}
+.f-num{float: right;}
+.c-list{padding-bottom: 1.6rem;}
+.c-list li{padding: .4rem .4rem 0;overflow: hidden;}
+.c-list li .head-img{width: 19%;margin-right: 0;}
+.c-list li .header-text{width: 81%;height: 100%;}*/
+
+/*   下载APP   */
+/*.down-app{overflow: hidden;position: fixed;bottom: 0;left: 0;right: 0;z-index: 1;height: 1.2rem;background: #fff;-webkit-box-shadow: 0 0 7px rgba(89,89,89,.35);box-shadow: 0 0 7px rgba(89,89,89,.35);padding: 0 .4rem;}
+.down-app img{width: 1.2rem;height: 1.2rem;float: left;}
+.app{float: left;margin-top: .25rem;}
+.app-name{font-size: .34rem;color: #f5bb55;}
+.app-text{font-size: .26rem;color: #666;padding: .1rem 0;}
+.down-btn{float: right;background: #f5bb55;color: #fff;padding: .2rem;border-radius: .1rem;margin: .26rem 0;-webkit-box-shadow: 0 0 7px rgba(89,89,89,.35);box-shadow: 0 0 7px rgba(89,89,89,.35);}*/

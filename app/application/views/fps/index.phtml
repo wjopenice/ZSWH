@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{width: 400px; height: 150px; display: flex;}
+        li{list-style: none; padding: 5px 15px; background: cyan; text-align: center;color: white; font-weight: bold; line-height: 20px; border: 1px solid #333;border-radius: 5px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+     <ul>
+         <li onclick="window.location.href='/fps/one'" style="background: #ff6535; ">统一下单</li>
+         <li onclick="window.location.href='/fps/list'" style="background: #ffa435;">订单查询</li>
+         <li onclick="window.location.href='/fps/lock'" style="background: #555555;">关闭查询</li>
+         <li style="background: #2a7aa9;">申请退款</li>
+         <li style="background: #26b86e;">查询退款</li>
+         <li style="background: #ff7c53;">商户转账</li>
+         <li onclick="window.location.href='/fps/exchange'" style="background: #4795c3;">查询汇率</li>
+         <li  onclick="window.location.href='/fps/fiatdelivery'" style="background: #f1415c;">提现申请下单</li>
+         <li onclick="window.location.href='/fps/fiatdeliverylist'" style="background: #b9684e;">提现订单查询</li>
+     </ul>
+</body>
+</html>

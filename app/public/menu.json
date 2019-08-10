@@ -1,0 +1,69 @@
+[
+  {
+    "pid": 1,
+    "title": "福利管理",
+    "icon":"dollar",
+    "data":[
+      {"id":4,"url":"/index/continuity","title":"每月连续签到"},
+      {"id":5,"url":"/index/ischeckin","title":"每月签到编辑"},
+      {"id":7,"url":"/index/membergift","title":"会员等级月奖励"},
+      {"id":7,"url":"/index/memberweek","title":"会员等级周奖励"},
+      {"id":7,"url":"/index/membersign","title":"会员补签次数"},
+      {"id":7,"url":"/index/membcheck","title":"会员固定日签到"},
+      {"id":4,"url":"/play/dailyshare","title":"每日分享"},
+      {"id":4,"url":"/play/downintegral","title":"下载赚积分"},
+      {"id":5,"url":"/play/rechargeintegral","title":"充值赚积分"},
+      {"id":6,"url":"/play/integralmall","title":"积分商城"}
+
+    ]
+  },
+  {
+    "pid": 2,
+    "title": "圈子管理",
+    "icon":"user",
+    "data":[
+      {"id":2,"url":"/play/group","title":"圈子列表"},
+      {"id":3,"url":"/play/grouptype","title":"圈子分类"}
+    ]
+  },
+  {
+    "pid": 2,
+    "title": "资讯管理",
+    "icon":"template-1",
+    "data":[
+      {"id":1,"url":"/index/newstype","title":"资讯分类"},
+      {"id":2,"url":"/index/newslist","title":"资讯列表"}
+    ]
+  },
+  {
+    "pid": 2,
+    "title": "推荐位管理",
+    "icon":"face-smile-b",
+    "data":[
+      {"id":1,"url":"/play/typebanner","title":"热游推荐"}
+
+    ]
+  },
+  {
+    "pid": 3,
+    "title": "礼包管理",
+    "icon":"layouts",
+    "data":[
+      {"id":1,"url":"/gamegift/gamegift","title":"游戏礼包"}
+    ]
+  },
+  {
+    "pid": 0,
+    "title": "系统管理",
+    "icon":"home",
+    "data":[
+      {"id":1,"url":"/index/administrators","title":"后台管理员"},
+      {"id":2,"url":"/index/user","title":"APP用户"},
+      {"id":3,"url":"/index/checkin","title":"用户签到"},
+      {"id":4,"url":"/index/log","title":"用户日志"},
+      {"id":5,"url":"/index/debug","title":"意见反馈"},
+      {"id":6,"url":"/index/sysnotice","title":"系统通知"},
+      {"id":7,"url":"/index/setting","title":"应用升级"}
+    ]
+  }
+]

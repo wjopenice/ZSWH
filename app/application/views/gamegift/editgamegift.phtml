@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-添加分类</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/gamegift/addgamegift.css?v=201904291452" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="/gamegift/editgamegift" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">添加礼包</div>
+    <div class="layui_body">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="giftbag_name" placeholder="请输入礼包名称" autocomplete="off" class="layui-input" value="<?=$data['giftbag_name']?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包码</label>
+            <div class="layui-input-inline">
+                <textarea style="width: 400px;height: 150px;" placeholder="请输入礼包码" name="novice"><?=str_replace(",","\n",$data['novice'])?></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包内容</label>
+            <div class="layui-input-inline">
+                <textarea style="width: 400px;height: 150px;" placeholder="请输入礼包内容" name="desribe"><?=$data['desribe']?></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">使用方法</label>
+            <div class="layui-input-inline">
+                <textarea style="width: 400px;height: 150px;" placeholder="请输入礼包内容" name="digest"><?=$data['digest']?></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包状态</label>
+            <div class="layui-input-inline lay-input">
+                <input type="radio" name="status"  value="0" <?php if($data['status']==0) echo "checked";?>>关闭&nbsp;
+                <input type="radio" name="status"  value="1" <?php if($data['status']==1) echo "checked";?>>开启
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">游戏名称</label>
+            <div class="layui-input-inline">
+                <select name="game_id" lay-verify="required" lay-search="">
+                    <option value="">直接选择或搜索选择</option>
+                    <?php foreach ($game as $k=>$v): ?>
+                        <option value="<?=$v['id']?>" <?php if($data['game_id']==$v['id']) echo "selected";?>><?=$v['game_name']?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+        <div id="timebox" <?php if($data['appointment']==1)echo  'style="display: none!important;"';?>>
+            <div class="layui-form-item">
+                <label class="layui-form-label">开始领取</label>
+                <div class="layui-input-inline">
+                    <input type="date" name="start_time"  autocomplete="off" class="layui-input start_time"
+                           <?php if($data['start_time']) { ?>value="<?=date("Y-m-d",$data['start_time'])?>" <?php }?>>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结束领取</label>
+                <div class="layui-input-inline">
+                    <input type="date" name="end_time"  autocomplete="off" class="layui-input end_time"
+                           <?php if($data['end_time']) { ?>value="<?=date("Y-m-d",$data['end_time'])?>" <?php }?>>
+                </div>
+            </div>
+        </div>
+        <div id="datebox" <?php if($data['appointment']==1) echo  'style="display: block!important;"';?>>
+            <div class="layui-form-item">
+                <label class="layui-form-label">开始预约</label>
+                <div class="layui-input-inline">
+                    <input type="date" name="start_date"  autocomplete="off" class="layui-input start_time1"
+                           <?php if($data['start_date']) { ?>value="<?=date("Y-m-d",$data['start_date'])?>" <?php }?>>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结束预约</label>
+                <div class="layui-input-inline">
+                    <input type="date" name="end_date"  autocomplete="off" class="layui-input end_time1"
+                           <?php if($data['end_date']) { ?>value="<?=date("Y-m-d",$data['end_date'])?>" <?php }?>>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">礼包位置</label>
+            <div class="layui-input-block">
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="recommend" title="推荐礼包" value="1" <?php if($data['recommend']==1) echo "checked";?>>
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="hot" title="热门礼包" value="2"  <?php if($data['hot']==1) echo "checked";?>>
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="special" title="特殊礼包" value="3"  <?php if($data['special']==1) echo "checked";?>>
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="luxury" title="豪华礼包" value="4"  <?php if($data['luxury']==1) echo "checked";?>>
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="appointment" title="预约礼包" value="5"  <?php if($data['appointment']==1) echo "checked";?>>
+                <input type="checkbox" name="position[]" lay-skin="primary" lay-filter="sign" title="签到礼包" value="6"  <?php if($data['sign']==1) echo "checked";?>>
+            </div>
+        </div>
+    </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" value="<?=$data['id']?>" name="id">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    layui.use(['layer', 'jquery', 'form'], function () {
+        var form = layui.form;
+        form.on('checkbox(appointment)', function(tag){
+            //console.log(tag.elem.checked);
+            if(tag.elem.checked == true){
+                $("#datebox").show(500)
+                $("#timebox").hide(500)
+            }else{
+                $("#datebox").hide(500)
+                $("#timebox").show(500)
+            }
+        });
+    });
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            $(".start_time").attr('max',end_time);
+        });
+        $(".start_time1").change(function(){
+            var start_time = $(".start_time1").val();
+            $(".end_time1").attr('min',start_time);
+        });
+
+        $(".end_time1").change(function(){
+            var end_time = $(".end_time1").val();
+            $(".start_time1").attr('max',end_time);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?php error_reporting(0); ?>
+<!doctype html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏盒子APP后台管理-编辑签到</title>
+    <style>table{background: #e8e8e8;}td,th{background: white;}</style>
+</head>
+<body style="height: 100%;margin: 0;padding: 0;">
+  <?php
+  $y = isset($_GET['y'])?$_GET['y']:date("Y"); //当前年
+  $m = isset($_GET['m'])?$_GET['m']:date("m"); //当前月
+  $d = isset($_GET['d'])?$_GET['d']:date("d"); //当前日
+  $days = date("t",mktime(0,0,0,$m,$d,$y));//获取当月的天数
+  $statweek = date("w",mktime(0,0,0,$m,1,$y));//获取当月的第一天是星期几
+  ?>
+  <table style='height: 100%;background: #eaeaea' width='100%' align='center' cellpadding='0' cellspacing='1'>
+      <tr style='height: 110px;'>
+          <th>星期天</th>
+          <th>星期一</th>
+          <th>星期二</th>
+          <th>星期三</th>
+          <th>星期四</th>
+          <th>星期五</th>
+          <th>星期六</th>
+      </tr>
+      <tr>
+      <?php for($i=0;$i<$statweek;$i++): ?>
+          <td align='center'>&nbsp;</td>
+      <?php endfor; ?>
+      <?php
+
+      //$arrData
+
+      for($j=0;$j<$days;$j++){
+      $i++;
+      $day = ($j<9)?"0".($j+1):$j+1;
+      ?>
+        <td align="center" onclick="window.location.href='/index/addcheckin?date=<?=$y."-".$m."-".$day?>&m=<?=$m?>'" bgcolor="white">
+            <img src='<?=$arrData[$j]['icon']?>' style="width: 100px;"/>
+            <div style='text-align: center;width: 100%;'>
+                <div style='display: inline-block;text-align: center;box-shadow: 1px 1px 10px #bababa;border-radius: 8px;padding: 2px 10px;background: #f5d44c;color: white; '>
+                    <?=$arrData[$j]['create_time']?>
+                </div>
+            </div>
+        </td>
+      <?php if($i % 7 == 0): ?>
+        </tr><tr>
+      <?php endif; ?>
+      <?php } ?>
+      <?php while($i % 7 !== 0){ ?>
+          <td align='center'>&nbsp;</td>
+      <?php  $i++;  }?>
+      </tr>
+  </table>
+</body>
+</html>
+
+
+
+

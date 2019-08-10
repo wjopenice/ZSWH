@@ -1,0 +1,11 @@
+body{background-color: #fff;}
+.layui-layout-admin .layui-body{background-color: #f2f2f2;}
+.layui-tab{margin: 0;}
+.layui-tab-title{padding: 5px 0;}
+.layui-tab-title{background-color: #fff;}
+.layui-table .layui_th_end{border-right: 0!important;}
+
+/*    分页    */
+#pages{margin: 10px 10px;line-height: 26px;}
+#pages a{display: inline-block;height: 26px;line-height: 26px;padding: 0 10px;float: left;}
+#pages a.active{background: #009688;color: #fff;border-radius: 3px;}

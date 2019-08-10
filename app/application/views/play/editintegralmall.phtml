@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-积分商城代金券添加</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css" rel="stylesheet" />
+    <link href="/public/css/play/addintegralmall.css" rel="stylesheet" />
+</head>
+<body>
+<form class="layui-form" action="" method="post" enctype="multipart/form-data">
+    <div class="layui-card-header">积分商城代金券添加</div>
+    <div class="layui_body">
+        <div class="layui-form-item">
+            <label class="layui-form-label">使用规则</label>
+            <div class="layui-input-inline">
+                <select name="userule">
+                    <option value="全场游戏通用">全场游戏通用</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">适用游戏</label>
+            <div class="layui-input-inline">
+                <select name="apply_game">
+                    <option value="安卓游戏">安卓游戏</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图标</label>
+            <div class="layui-input-inline">
+                <input type="file" name="pic" value="" class="lay-input-img">
+                <img src="<?=$data->pic?>"  />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">兑换积分</label>
+            <div class="layui-input-inline">
+                <input type="text" class="giftnum" placeholder="请输入兑换积分" name="point" value="<?=$data->point?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">金额</label>
+            <div class="layui-input-inline">
+                <input type="number" class="giftnum" placeholder="请输入金额" name="amount" value="<?=$data->amount?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">抵用金额</label>
+            <div class="layui-input-inline">
+                <input type="number" class="giftnum" placeholder="请输入抵用金额" name="credit" value="<?=$data->credit?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">数量</label>
+            <div class="layui-input-inline">
+                <input type="number" class="giftnum" placeholder="请输入数量" name="num" value="<?=$data->num?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">使用介绍</label>
+            <div class="layui-input-inline">
+           <!--     <input type="text" class="giftnum" placeholder="请输入详情" name="content">-->
+                <textarea style="width: 400px;height: 150px;" placeholder="请输入详情" name="content" ><?=$data->content?></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">起始时间</label>
+            <div class="layui-input-inline">
+                <input type="date" id="date_info" name="start_time" class="lay-input-img start_time" max="" value="<?=date("Y-m-d",$data->start_time)?>">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">结束时间</label>
+            <div class="layui-input-inline">
+                <input type="date" name="end_time" class="lay-input-img end_time" min="" value="<?=date("Y-m-d",$data->end_time)?>">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="<?=$data->id?>">
+                <input type="submit" class="layui-btn" value="立即提交">
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script>
+    $(function(){
+        $(".start_time").change(function(){
+            var start_time = $(".start_time").val();
+            $(".end_time").attr('min',start_time);
+        });
+
+        $(".end_time").change(function(){
+            var end_time = $(".end_time").val();
+            $(".start_time").attr('max',end_time);
+        });
+    });
+
+</script>
+</body>
+</html>

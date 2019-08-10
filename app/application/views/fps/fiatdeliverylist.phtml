@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>title</title>
+    <style>
+        table{border-right:1px solid #ccc;border-bottom:1px solid #ccc}
+        table td{border-left:1px solid #ccc;border-top:1px solid #ccc;padding: 5px;}
+    </style>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
+<body>
+    <div id="div_root" style="overflow: hidden; width: 90%; margin: 0 auto;">
+        <div id="div_left" style="float: left; width: 55%;font-size: 14px;">
+            <table border="0" cellspacing="1" cellpadding="0">
+                <tr>
+                    <td>ID</td>
+                    <td>下发明细ID</td>
+                     <td style="width: 100px">下发状态</td>
+
+                </tr>
+                <?php foreach ($data as $k=>$v): ?>
+                    <tr>
+                        <td><?=$v['id']?></td>
+                        <td  onclick="chk(this)"><?=$v['out_delivery_no']?></td>
+                        <td>
+                            <?php
+                            if($v['status']==0)
+                            {
+                                echo "等待下发";
+                            }
+                            else{
+                                echo "下发成功";
+                            }
+                            ?>
+                        </td>
+
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+        <div id="div_right" style="float: right; width: 45%;font-size: 14px;">
+            <p>点击下发明细ID自动生成订单详情</p>
+        </div>
+    </div>
+    <script>
+    function chk(tag) {
+        var trade = tag.innerText;
+        $.post("/pay/fiatdeliverylist",{trade_no:trade},function (msg) {
+            console.log(msg);
+            var htmltable = "<p>订单详情：</p> " ;
+            htmltable=htmltable+  "<table border='1' cellspacing='0' cellpadding='5'>" ;
+
+            for(var i in msg.data.biz_data)
+            {
+                var biz_data=msg.data.biz_data[i];
+                htmltable=htmltable+ "<tr><td>app_id</td><td>"+msg.data.app_id+"</td></tr>" +
+                    "<tr><td>nonce_str</td><td>"+msg.data.nonce_str+"</td></tr>" +
+                    "<tr><td>biz_code</td><td>"+msg.data.biz_code+"</td></tr>" +
+                    "<tr><td>biz_msg</td><td>"+msg.data.biz_msg+"</td></tr>" +
+                    "<tr><td>amount</td><td>"+biz_data.amount+"</td></tr>" +
+                    "<tr><td>delivery_order_id</td><td>"+biz_data.delivery_order_id+"</td></tr>" +
+                    "<tr><td>out_delivery_no</td><td>"+biz_data.out_delivery_no+"</td></tr>" +
+                    "<tr><td>fee_type</td><td>"+biz_data.fee_type+"</td></tr>" +
+                    "<tr><td>time_end</td><td>"+biz_data.time_end+"</td></tr>"
+            }
+            htmltable=htmltable+ "</table>";
+            $("#div_right").empty();
+            $("#div_right").html(htmltable)
+        },'json');
+    }
+    </script>
+</body>
+</html>

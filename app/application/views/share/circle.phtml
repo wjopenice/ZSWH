@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 强制让文档的宽度与设备的宽度保持1:1,并且文档最大的宽度比例是1.0,且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <!-- WebApp全屏模式,隐藏地址栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 禁止百度转码显示 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 添加到IOS主屏后的标题 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>多肉盒子-圈子分享</title>
+    <link rel="stylesheet" href="/public/css/login/font_989957_1f57g23zn59.css">
+    <link rel="stylesheet" href="/public/css/login/public.css">
+    <link rel="stylesheet" href="/public/css/login/video-js.min.css">
+    <link rel="stylesheet" href="/public/css/login/circle.css">
+    <style>
+        .header-text {float: left;height: 1rem;}
+        .name{font-size: .3rem; color: #333; width: 4.4rem; display: inline-block;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: .4rem;line-height: .4rem;float: left;}
+        .down-app img {width: 1.0rem;height: 1.0rem;float: left;padding: .1rem;}
+    </style>
+</head>
+<body>
+    <!--  header  -->
+    <div class="hbox">
+        <header class="header" id="header" style="padding: .6rem .3rem;">
+            <div class="head-img" style="width: 1.3rem;height: 1.3rem;">
+                <img style="width: 1.1rem;height: 1.1rem;border: .1rem solid rgba(255, 255, 255, 0.2);" src="http://<?=$_SERVER['HTTP_HOST'].$data['avatar']?>" alt="">
+            </div>
+            <div class="header-text" style="margin-top: .15rem;">
+                <p class="info-list"><span class="name" style="font-size: .34rem;width: 2.6rem;color: #fff;"><?=$data['nickname']?></span></p>
+                <p class="n-time" style="color: #EDEDED;"><?=$data['u_sign']?></p>
+            </div>
+            <div style="float: right;"><span style="display: inline-block;background: #FFA05E;color: #fff;font-size: .3rem;padding: .04rem .34rem;border-radius: .12rem;margin-top: .24rem;"><span style="font-size: .5rem;float: left;">+</span><span style="float: left;margin-top: .1rem;margin-left: .1rem;">关注</span></span></div>
+        </header>
+        <div class="h-card">
+            <div style="width: 49.5%;float: left;height: .8rem;margin-top: .3rem;border-right: 1px solid #f1f1f1;text-align: center;"><p class="f-num"><?=$data['group_type_num']?></p><p class="f-t">关注</p></div>
+            <div style="width: 50%;float: left;height: .8rem;margin-top: .3rem;text-align: center;"><p class="f-num"><?=$data['user_num']?></p><p class="f-t">粉丝</p></div>
+        </div>
+    </div>
+    <!--  share box  -->
+    <div class="share">
+        <div class="head-box"><span class="h-name">圈子</span></div>
+        <?php foreach($result as $k=>$v): ?>
+            <?php if(!empty($v['pic'])): ?>
+                <?php if(strstr($v['pic'], '.mp4') != false):?>
+                    <div class="share-box">
+                        <header class="header" id="header">
+                            <div class="head-img"><img src="<?=$v['avatar']?>" alt=""></div>
+                            <div class="header-text">
+                                <p class="info-list"><span class="name"><?=$v['nickname']?></span></p>
+                                <p class="n-time"><?=$v['create_time']?></p>
+                            </div>
+                        </header>
+                        <div class="detail-box">
+                            <p id="detail-body"><?=$v['content']?></p>
+                            <!--  模仿朋友圈图片展示  -->
+                            <?php $arrpic = json_decode($v['pic'],true); ?>
+                            <div class="video-box">
+                                <video id="my-video" class="video-js" controls  preload="auto" data-setup="{}">
+                                    <source src="<?=$arrpic[0]?>" type="video/mp4">
+                                </video>
+                            </div>
+                            <!--  点赞评论  -->
+                            <div class="comment-box">
+                                <p class="fa"><img class="fimg1" src="/public/img/circle/icon_zan.png" alt=""><span class="f-num1"><?=$v['click_num']?></span></p>
+                                <p class="fa"><img class="fimg2" src="/public/img/circle/icon_pinlun.png" alt=""></span><span class="f-num2"><?=$v['feedback_num']?></span></p>
+                                <p class="fa"><img class="fimg3" src="/public/img/circle/icon_fenxiang.png" alt=""><span class="f-num3"><?=$v['share_num']?></span></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php else:?>
+                    <div class="share-box">
+                        <header class="header" id="header">
+                            <div class="head-img"><img src="<?=$v['avatar']?>" alt=""></div>
+                            <div class="header-text">
+                                <p class="info-list"><span class="name"><?=$v['nickname']?></span></p>
+                                <p class="n-time"><?=$v['create_time']?></p>
+                            </div>
+                        </header>
+                        <div class="detail-box">
+                            <p id="detail-body"><?=$v['content']?></p>
+                            <!--  模仿朋友圈图片展示  -->
+                            <?php $arrpic = json_decode($v['pic'],true); ?>
+                            <ul class="pic-list" id="picList">
+                                <?php for($i=0;$i<count($arrpic);$i++): ?>
+                                    <li class="pic-img"><img src="<?=$arrpic[$i]?>"></li>
+                                <?php endfor;?>
+                            </ul>
+                            <!--  点赞评论  -->
+                            <div class="comment-box">
+                                <p class="fa"><img class="fimg1" src="/public/img/circle/icon_zan.png" alt=""><span class="f-num1"><?=$v['click_num']?></span></p>
+                                <p class="fa"><img class="fimg2" src="/public/img/circle/icon_pinlun.png" alt=""></span><span class="f-num2"><?=$v['feedback_num']?></span></p>
+                                <p class="fa"><img class="fimg3" src="/public/img/circle/icon_fenxiang.png" alt=""><span class="f-num3"><?=$v['share_num']?></span></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif;?>
+            <?php else: ?>
+                <div class="share-box">
+                    <header class="header" id="header">
+                        <div class="head-img"><img src="<?=$v['avatar']?>" alt=""></div>
+                        <div class="header-text">
+                            <p class="info-list"><span class="name"><?=$v['nickname']?></span></p>
+                            <p class="n-time"><?=$v['create_time']?></p>
+                        </div>
+                    </header>
+                    <div class="detail-box">
+                        <p id="detail-body"><?=$v['content']?></p>
+                        <!--  点赞评论  -->
+                        <div class="comment-box">
+                            <p class="fa"><img class="fimg1" src="/public/img/circle/icon_zan.png" alt=""><span class="f-num1"><?=$v['click_num']?></span></p>
+                            <p class="fa"><img class="fimg2" src="/public/img/circle/icon_pinlun.png" alt=""></span><span class="f-num2"><?=$v['feedback_num']?></span></p>
+                            <p class="fa"><img class="fimg3" src="/public/img/circle/icon_fenxiang.png" alt=""><span class="f-num3"><?=$v['share_num']?></span></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
+    <div id="mask" style="position: fixed;width: 100%;height: 100%;left: 0;top: 0;"></div>
+
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/picTool.js"></script>
+    <script src="/public/js/video.min.js"></script>
+    <script>
+        $(function(){
+            "use strict";//严格模式
+            var video;//video标签
+            var scale = 0.8;//第一帧图片与源视频的比例
+            video = $("#my-video");//赋值标签
+            video.on("loadeddata", function () {//加载完成事件，调用函数
+                var canvas = document.createElement("canvas");//canvas画布
+                canvas.width = video.videoWidth * scale;
+                canvas.height = video.videoHeight * scale;
+                canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);//画图
+                video.setAttribute("poster", canvas.toDataURL("image/png"));//关键一步 —— 设置标签的 poster 属性的值为 base64 编译过后的canvas绘图。
+            });
+
+            $('#mask').click(function () {
+                alert(1111)
+            });
+        })
+    </script>
+</body>
+</html>

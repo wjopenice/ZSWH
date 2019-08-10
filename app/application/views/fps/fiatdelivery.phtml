@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+</head>
+<body>
+    <form action="/pay/fiatdelivery" method="post">
+        请输入金额：
+        <input type="text" name="amount" value="" id="amount">
+        <br><br>
+        请输入姓名：
+        <input type="text" name="name" value="" id="name">
+        <br><br>
+        请输入手机号：
+        <input type="text" name="phone" value="" id="phone">
+        <br><br>
+        请选择证件类型：
+        <input type="radio" name="cert_type" value="1" checked>身份证
+        <br><br>
+        请输入证件号：
+        <input type="text" name="certno" value="" id="certno">
+        <br><br>
+        请选择账户类型：
+        <input type="radio" name="account_type" value="0" checked>借记卡
+        <input type="radio" name="account_type" value="1" checked>贷记卡
+        <input type="radio" name="account_type" value="2" checked>对公账户
+        <br><br>
+        请输入卡号：
+        <input type="text" name="card" value="" id="card">
+        <br><br>
+        请输入银行编码：
+        <input type="text" name="bankcode" value="" id="bankcode">
+        <br><br>
+        请输入银行名称：
+        <input type="text" name="bank_general_name" value="" id="bank_general_name">
+        <br><br>
+        请输入总联行号：
+        <input type="text" name="bank_general_code" value="" id="bank_general_code">
+        <br><br>
+        请输入支行联行号：
+        <input type="text" name="bank_branch_code" value="" id="bank_branch_code">
+        <br><br>
+        <input type="button" value="下单" onclick="send()">
+    </form>
+
+
+ <script>
+     function send() {
+         var amount = $("#amount").val();
+         var name = $("#name").val();
+         var phone = $("#phone").val();
+         var cert_type=1;
+         var certno = $("#certno").val();
+         var account_type = $("input[type='radio'][name='account_type']:checked").val();
+         var card = $("#card").val();
+         var bankcode = $("#bankcode").val();
+         var bank_general_name = $("#bank_general_name").val();
+         var bank_general_code = $("#bank_general_code").val();
+         var bank_branch_code = $("#bank_branch_code").val();
+         $.post("/pay/fiatdelivery",{amount:amount,name:name,phone:phone,cert_type:cert_type,certno:certno,account_type:account_type,
+             card:card,bankcode:bankcode,bank_general_name:bank_general_name,bank_general_code:bank_general_code,bank_branch_code:bank_branch_code},function (msg) {
+            alert(msg);
+         });
+     }
+   </script>
+</body>
+</html>

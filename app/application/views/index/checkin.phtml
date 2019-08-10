@@ -1,0 +1,126 @@
+<?php
+$time1 = date("Y-m-d",time()-3600*24*13);
+$time2 = date("Y-m-d",time()-3600*24*12);
+$time3 = date("Y-m-d",time()-3600*24*11);
+$time4 = date("Y-m-d",time()-3600*24*10);
+$time5 = date("Y-m-d",time()-3600*24*9);
+$time6 = date("Y-m-d",time()-3600*24*8);
+$time7 = date("Y-m-d",time()-3600*24*7);
+$time8 = date("Y-m-d",time()-3600*24*6);
+$time9 = date("Y-m-d",time()-3600*24*5);
+$time10 = date("Y-m-d",time()-3600*24*4);
+$time11 = date("Y-m-d",time()-3600*24*3);
+$time12 = date("Y-m-d",time()-3600*24*2);
+$time13 = date("Y-m-d",time()-3600*24*1);
+$time14 = date("Y-m-d",time());
+?>
+<!doctype html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多肉盒子APP后台管理-用户签到</title>
+    <link href="/public/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="/public/css/common/public.css?v=20193201138" rel="stylesheet" />
+    <style>
+        .echarts_view{height: 400px;}
+    </style>
+</head>
+<body style="height: 100%; margin: 0">
+<div>
+    <!-- 填充内容 -->
+    <div class="layui-card">
+        <div class="layui-card-header">每日活跃用户数</div>
+        <div class="layui-card-body echarts_view">
+            <div id="echarts_date" style="height: 100%"></div>
+        </div>
+    </div>
+</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/layui/layui.all.js"></script>
+<script src="/public/js/echarts.min.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        //echarts每日活跃数
+        var dom = document.getElementById("echarts_date");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['安卓（Andriod）用户签到数', '苹果（Ios）用户签到数']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            yAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.01]
+            },
+            xAxis: {
+                type: 'category',
+                data: [
+                    '<?=$time1?>',
+                    '<?=$time2?>',
+                    '<?=$time3?>',
+                    '<?=$time4?>',
+                    '<?=$time5?>',
+                    '<?=$time6?>',
+                    '<?=$time7?>',
+                    '<?=$time8?>',
+                    '<?=$time9?>',
+                    '<?=$time10?>',
+                    '<?=$time11?>',
+                    '<?=$time12?>',
+                    '<?=$time13?>',
+                    '<?=$time14?>',
+                ]
+            },
+            series: [
+                {
+                    name: '安卓（Andriod）用户签到数',
+                    type: 'bar',
+                    data: [
+                        <?=get_stat($time1)?>,
+                        <?=get_stat($time2)?>,
+                        <?=get_stat($time3)?>,
+                        <?=get_stat($time4)?>,
+                        <?=get_stat($time5)?>,
+                        <?=get_stat($time6)?>,
+                        <?=get_stat($time7)?>,
+                        <?=get_stat($time8)?>,
+                        <?=get_stat($time9)?>,
+                        <?=get_stat($time10)?>,
+                        <?=get_stat($time11)?>,
+                        <?=get_stat($time12)?>,
+                        <?=get_stat($time13)?>,
+                        <?=get_stat($time14)?>
+                    ]
+                },
+                {
+                    name: '苹果（Ios）用户签到数',
+                    type: 'bar',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                }
+            ]
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+
+    });
+
+</script>
+</body>
+</html>
